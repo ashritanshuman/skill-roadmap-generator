@@ -1,0 +1,196 @@
+/* Responsive Media Queries */
+
+/* Tablet Devices (768px to 1023px) */
+@media (max-width: 1023px) {
+
+    /* Global Layout */
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    /* Home Page */
+    .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl) var(--spacing-md);
+    }
+
+    /* Roadmap Page */
+    .roadmap-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .sidebar {
+        position: static;
+        order: -1;
+        /* Move progress tracker above phases */
+    }
+
+    .progress-card {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .progress-circle {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+    .progress-inner {
+        width: 66px;
+        height: 66px;
+    }
+
+    .progress-percentage {
+        font-size: 18px;
+    }
+
+    .progress-info {
+        flex: 1;
+        margin-left: var(--spacing-md);
+    }
+
+    .progress-card .btn {
+        width: auto;
+    }
+}
+
+/* Mobile Devices (320px to 767px) */
+@media (max-width: 767px) {
+    :root {
+        --font-size-xxl: 36px;
+        --font-size-xl: 28px;
+        --font-size-large: 22px;
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Navbar Mobile */
+    .nav-menu {
+        display: none;
+        /* simple hamburger fallback or hidden for basic implementation */
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    /* Use a basic CSS-only "menu" toggle for mobile if preferred, or just keep essential nav only */
+    /* For this simple layout, we'll keep logo and a small 'mobile' button */
+
+    /* Home Page */
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-container {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: var(--spacing-sm);
+    }
+
+    .search-input-wrapper {
+        display: flex;
+        background: var(--color-bg-primary);
+        border-radius: var(--border-radius-md);
+        padding: 8px;
+        box-shadow: var(--shadow-sm);
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .popular-tags-container {
+        flex-direction: column;
+    }
+
+    .popular-tags {
+        justify-content: center;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    /* Footer Mobile */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    /* Roadmap Page Layout Elements */
+    .roadmap-title {
+        font-size: 32px;
+    }
+
+    .roadmap-actions {
+        flex-direction: column;
+    }
+
+    .roadmap-actions .btn {
+        width: 100%;
+    }
+
+    .progress-card {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+
+    .progress-info {
+        margin-left: 0;
+    }
+
+    .progress-card .btn {
+        width: 100%;
+    }
+
+    .phase-container {
+        padding-left: var(--spacing-lg);
+    }
+
+    .phase-container::before {
+        left: 2px;
+        /* adjust timeline line */
+    }
+
+    .topic-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .topic-item .badge {
+        margin-left: 0;
+    }
+
+    .topic-link {
+        margin-left: 0;
+        align-self: flex-end;
+    }
+}

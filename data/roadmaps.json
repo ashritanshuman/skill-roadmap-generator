@@ -1,0 +1,781 @@
+{
+  "roadmaps": [
+    {
+      "id": "web-dev-001",
+      "title": "Web Development",
+      "slug": "web-development",
+      "description": "Master the modern frontend and backend ecosystem from HTML/CSS to advanced React and Node.js patterns.",
+      "shortDescription": "Master the modern frontend and backend ecosystem from HTML/CSS to advanced React and Node.js patterns.",
+      "duration": "12 Weeks",
+      "durationMonths": 3,
+      "difficulty": "BEGINNER",
+      "totalModules": 8,
+      "icon": "💻",
+      "color": "#61DAFB",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Beginner Fundamentals",
+          "description": "Establish the core foundations of the web.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-001",
+              "title": "HTML & CSS Basics",
+              "icon": "📄",
+              "description": "Semantic structures, CSS Box Model, and layout techniques.",
+              "estimatedHours": 20,
+              "topics": [
+                {
+                  "name": "MDN Structure Guide",
+                  "difficulty": "EASY",
+                  "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                  "completed": false
+                },
+                {
+                  "name": "Flexbox Crash Course",
+                  "difficulty": "EASY",
+                  "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+                  "completed": false
+                },
+                {
+                  "name": "CSS Grid Mastery",
+                  "difficulty": "MEDIUM",
+                  "link": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-002",
+              "title": "JavaScript Fundamentals",
+              "icon": "⚡",
+              "description": "Variables, functions, DOM manipulation, and events.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "Variables & Data Types",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "DOM Manipulation",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Event Handling",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "Frontend Frameworks",
+          "description": "Build single-page applications efficiently.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-003",
+              "title": "React Basics",
+              "icon": "⚛️",
+              "description": "Components, props, state, and lifecycle methods.",
+              "estimatedHours": 40,
+              "topics": [
+                {
+                  "name": "React Components",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "State & Props",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "React Hooks",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-004",
+              "title": "API Integration",
+              "icon": "🔌",
+              "description": "Fetch API, REST APIs, and handling JSON data in React.",
+              "estimatedHours": 20,
+              "topics": [
+                {
+                  "name": "Fetch and Promises",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Error Handling",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Backend Development",
+          "description": "Server-side programming and databases.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-005",
+              "title": "Node.js & Express",
+              "icon": "🟢",
+              "description": "Server setup, routing, and middleware.",
+              "estimatedHours": 35,
+              "topics": [
+                {
+                  "name": "Node Fundamentals",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Express Routing",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-006",
+              "title": "Database Fundamentals",
+              "icon": "🗄️",
+              "description": "SQL vs NoSQL, modeling, and queries.",
+              "estimatedHours": 25,
+              "topics": [
+                {
+                  "name": "MongoDB Basics",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Mongoose ORM",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-science-001",
+      "title": "Data Science",
+      "slug": "data-science",
+      "description": "Learn to analyze complex datasets, build predictive models, and visualize insights using Python and SQL.",
+      "shortDescription": "Analyze complex datasets, build predictive models, and visualize insights.",
+      "duration": "24 Weeks",
+      "durationMonths": 6,
+      "difficulty": "INTERMEDIATE",
+      "totalModules": 7,
+      "icon": "📊",
+      "color": "#3776AB",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Python & Statistics Basics",
+          "description": "Foundations for manipulating data.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-007",
+              "title": "Python for Data Science",
+              "icon": "🐍",
+              "description": "Data structures, loops, functions, and standard libraries.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "List Comprehensions",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Functions & Lambdas",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-008",
+              "title": "Intro to Statistics",
+              "icon": "📈",
+              "description": "Probability distributions, hypothesis testing, and variance.",
+              "estimatedHours": 25,
+              "topics": [
+                {
+                  "name": "Descriptive Statistics",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Probability Theory",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "Data Wrangling",
+          "description": "Cleaning and preparing data for ML models.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-009",
+              "title": "Pandas & Numpy",
+              "icon": "🐼",
+              "description": "Dataframes, arrays, filtering, and aggregation.",
+              "estimatedHours": 40,
+              "topics": [
+                {
+                  "name": "Numpy Arrays",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Pandas GroupBy & Apply",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Machine Learning Fundamentals",
+          "description": "Training algorithms on datasets to predict outcomes.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-010",
+              "title": "Scikit-Learn Basics",
+              "icon": "🤖",
+              "description": "Regression, Classification, and Clustering algorithms.",
+              "estimatedHours": 50,
+              "topics": [
+                {
+                  "name": "Linear Regression",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Random Forests",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-001",
+      "title": "Artificial Intelligence",
+      "slug": "artificial-intelligence",
+      "description": "Dive into deep learning, natural language processing, and computer vision with PyTorch and TensorFlow.",
+      "shortDescription": "Deep learning, natural language processing, and computer vision.",
+      "duration": "16 Weeks",
+      "durationMonths": 4,
+      "difficulty": "ADVANCED",
+      "totalModules": 6,
+      "icon": "🧠",
+      "color": "#FF6F00",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Math & ML Foundations",
+          "description": "Linear Algebra, Calculus, and core ML concepts.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-011",
+              "title": "Linear Algebra & Calc",
+              "icon": "📐",
+              "description": "Vectors, matrices, gradients, and partial derivatives.",
+              "estimatedHours": 35,
+              "topics": [
+                {
+                  "name": "Matrix Multiplications",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Gradient Descent",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "Deep Learning Frameworks",
+          "description": "Building neural architectures.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-012",
+              "title": "PyTorch Basics",
+              "icon": "🔥",
+              "description": "Tensors, Autograd, and building simple NNs.",
+              "estimatedHours": 40,
+              "topics": [
+                {
+                  "name": "Tensor Operations",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Custom Datasets",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Specialized AI Domains",
+          "description": "NLP and Computer Vision applications.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-013",
+              "title": "Natural Language Processing",
+              "icon": "🗣️",
+              "description": "Transformers, Word Embeddings, and LLMs.",
+              "estimatedHours": 45,
+              "topics": [
+                {
+                  "name": "Word2Vec",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Attention Mechanism",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity-001",
+      "title": "Cybersecurity",
+      "slug": "cybersecurity",
+      "description": "Learn network security, ethical hacking, and secure software development to protect critical systems.",
+      "shortDescription": "Network security, ethical hacking, and secure software development.",
+      "duration": "20 Weeks",
+      "durationMonths": 5,
+      "difficulty": "INTERMEDIATE",
+      "totalModules": 7,
+      "icon": "🛡️",
+      "color": "#4CAF50",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Networking & OS Fundamentals",
+          "description": "How computers and protocols communicate.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-014",
+              "title": "Network Protocols",
+              "icon": "🌐",
+              "description": "TCP/IP, the OSI Model, DNS, and Routing.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "OSI Model Layers",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Packet Sniffing",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-015",
+              "title": "Linux Administration",
+              "icon": "🐧",
+              "description": "Command line, permissions, and system administration.",
+              "estimatedHours": 25,
+              "topics": [
+                {
+                  "name": "File Permissions",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Bash Scripting",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "Offensive Security",
+          "description": "Learning how attackers exploit vulnerabilities.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-016",
+              "title": "Web App Exploitation",
+              "icon": "🕷️",
+              "description": "OWASP Top 10, XSS, SQLi, and CSRF.",
+              "estimatedHours": 35,
+              "topics": [
+                {
+                  "name": "SQL Injection",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Cross-Site Scripting",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Defensive Operations",
+          "description": "Protecting assets from cyber threats.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-017",
+              "title": "Incident Response & Forensics",
+              "icon": "🕵️",
+              "description": "Log analysis, malware handling, and threat hunting.",
+              "estimatedHours": 40,
+              "topics": [
+                {
+                  "name": "SIEM Tools",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Memory Forensics",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobile-001",
+      "title": "Mobile Development",
+      "slug": "mobile-development",
+      "description": "Create cross-platform mobile apps for iOS and Android using modern frameworks like React Native or Flutter.",
+      "shortDescription": "Create cross-platform mobile apps for iOS and Android.",
+      "duration": "14 Weeks",
+      "durationMonths": 3,
+      "difficulty": "INTERMEDIATE",
+      "totalModules": 7,
+      "icon": "📱",
+      "color": "#02569B",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Language & Framework Basics",
+          "description": "Core concepts for your chosen mobile framework.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-018",
+              "title": "Dart & Flutter Basics",
+              "icon": "🐦",
+              "description": "Dart syntax, stateless and stateful widgets.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "Dart Futures/Streams",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Material Widgets",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "State Management & APIs",
+          "description": "Creating dynamic and interconnected applications.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-019",
+              "title": "State Management",
+              "icon": "🔄",
+              "description": "Provider, Riverpod, or BLoC architecture.",
+              "estimatedHours": 35,
+              "topics": [
+                {
+                  "name": "Provider Setup",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "BLoC Pattern",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-020",
+              "title": "Networking & persistence",
+              "icon": "☁️",
+              "description": "HTTP requests, REST APIs, and SQLite/SharedPrefs.",
+              "estimatedHours": 25,
+              "topics": [
+                {
+                  "name": "REST API Integration",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Local Database",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Native Features & Deployment",
+          "description": "Shipping the application to App Stores.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-021",
+              "title": "Device APIs & Push Notifications",
+              "icon": "🔔",
+              "description": "Camera, GPS, and Firebase Cloud Messaging.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "Geolocation Setup",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "FCM Integration",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloud-001",
+      "title": "Cloud Architecture",
+      "slug": "cloud-architecture",
+      "description": "Design and manage scalable, highly-available infrastructure using AWS, Azure, or Google Cloud Platform.",
+      "shortDescription": "Design scalable infrastructure using AWS, Azure, or GCP.",
+      "duration": "18 Weeks",
+      "durationMonths": 4,
+      "difficulty": "ADVANCED",
+      "totalModules": 7,
+      "icon": "☁️",
+      "color": "#FF9900",
+      "phases": [
+        {
+          "phaseNumber": 1,
+          "title": "Cloud Foundations",
+          "description": "Understanding cloud concepts and basic services.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-022",
+              "title": "Compute & Storage Basics",
+              "icon": "💻",
+              "description": "Virtual Machines (EC2), Object Storage (S3), and VPCs.",
+              "estimatedHours": 30,
+              "topics": [
+                {
+                  "name": "EC2 Provisioning",
+                  "difficulty": "EASY",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "S3 Permissions",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            },
+            {
+              "id": "module-023",
+              "title": "Identity & Security",
+              "icon": "🔑",
+              "description": "IAM roles, policies, and least privilege.",
+              "estimatedHours": 20,
+              "topics": [
+                {
+                  "name": "IAM Policy Structure",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "Security Groups",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 2,
+          "title": "Architecture Patterns",
+          "description": "Designing for high availability and fault tolerance.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-024",
+              "title": "Scaling & Load Balancing",
+              "icon": "⚖️",
+              "description": "Auto Scaling Groups, ALBs, and CloudFront.",
+              "estimatedHours": 35,
+              "topics": [
+                {
+                  "name": "Load Balancer Setup",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "CDN Caching Rules",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phaseNumber": 3,
+          "title": "Modern Cloud Practices",
+          "description": "Containers, Serverless, and DevOps Integration.",
+          "locked": false,
+          "modules": [
+            {
+              "id": "module-025",
+              "title": "Docker & Kubernetes",
+              "icon": "🐳",
+              "description": "Containerizing apps and orchestrating with EKS/GKE.",
+              "estimatedHours": 45,
+              "topics": [
+                {
+                  "name": "Writing Dockerfiles",
+                  "difficulty": "MEDIUM",
+                  "link": "#",
+                  "completed": false
+                },
+                {
+                  "name": "K8s Deployments",
+                  "difficulty": "HARD",
+                  "link": "#",
+                  "completed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

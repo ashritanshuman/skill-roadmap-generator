@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathGen - Personalized Tech Roadmaps</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-icon">🗺️</span> PathGen
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="#explore" class="nav-link">Explore</a>
+                <a href="how-it-works.html" class="nav-link">How it Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <a href="#signin" class="nav-actions-text">Sign In</a>
+                <a href="#getstarted" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">Your Personalized Path to <span class="highlight">Tech Mastery</span></h1>
+            <p class="hero-subtitle">
+                Stop wondering what to learn next. Generate a custom learning
+                roadmap tailored to your goals and current skill level.
+            </p>
+            
+            <div class="search-wrapper">
+                <div class="search-container">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" id="search-input" class="search-input" placeholder="What do you want to learn? (e.g., React, Python, UI Design...)">
+                    <button class="btn btn-primary search-btn" id="search-button">Generate</button>
+                </div>
+            </div>
+            
+            <div class="popular-tags-container">
+                <span class="popular-tags-label">Popular:</span>
+                <div class="popular-tags">
+                    <span class="pill popular-tag">Fullstack Dev</span>
+                    <span class="pill popular-tag">ML Engineer</span>
+                    <span class="pill popular-tag">Cloud Architect</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Popular Paths Section -->
+    <section id="explore" class="popular-paths">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>Explore Popular Paths</h2>
+                    <p class="section-subtitle">Hand-crafted roadmaps by industry experts.</p>
+                </div>
+                <a href="#all-paths" class="view-all-link">View all paths →</a>
+            </div>
+            
+            <!-- Cards will be populated here by JS -->
+            <div class="roadmap-grid" id="roadmap-grid">
+                <!-- Fallback loading state or empty div -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding Column -->
+                <div class="footer-column">
+                    <a href="index.html" class="nav-brand footer-brand">
+                        <span class="nav-brand-icon">🗺️</span> PathGen
+                    </a>
+                    <p class="footer-tagline">
+                        Your personalized guide to navigating the complex world of technology.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="GitHub">💻</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">🔗</a>
+                    </div>
+                </div>
+                
+                <!-- Links Columns -->
+                <div class="footer-column">
+                    <h4>PRODUCT</h4>
+                    <div class="footer-link-list">
+                        <a href="#explore" class="footer-link">Roadmaps</a>
+                        <a href="#" class="footer-link">Assessment</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Success Stories</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>RESOURCES</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Documentation</a>
+                        <a href="#" class="footer-link">Community</a>
+                        <a href="#" class="footer-link">Guides</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>COMPANY</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 PathGen - All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

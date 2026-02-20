@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - PathGen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/roadmap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-icon">🗺️</span> PathGen
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html#explore" class="nav-link">Explore</a>
+                <a href="how-it-works.html" class="nav-link">How it Works</a>
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#signin" class="nav-actions-text">Sign In</a>
+                <a href="#getstarted" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="index.html#explore">Roadmaps</a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current" id="breadcrumb-current">Loading...</span>
+        </div>
+
+        <!-- Roadmap Header -->
+        <header class="roadmap-header">
+            <h1 class="roadmap-title" id="roadmap-title">Loading Roadmap...</h1>
+            <p class="roadmap-description" id="roadmap-description">
+                Please wait while we load the roadmap details.
+            </p>
+
+            <div class="roadmap-meta">
+                <span class="badge" id="duration-badge">- MONTHS</span>
+                <span class="badge" id="difficulty-badge">-</span>
+                <span class="badge" id="modules-badge">- MODULES</span>
+            </div>
+
+            <div class="roadmap-actions">
+                <button class="btn btn-secondary">Save to Profile</button>
+                <button class="btn btn-primary">Start Learning</button>
+            </div>
+        </header>
+
+        <!-- Dynamic Roadmap Content -->
+        <div class="roadmap-content">
+
+            <!-- Phases Container -->
+            <div class="phases-container" id="phases-container">
+                <!-- Rendered by roadmap.js -->
+            </div>
+
+            <!-- Sidebar: Progress Tracker -->
+            <aside class="sidebar">
+                <div class="card progress-card">
+                    <h3 class="progress-title">Your Progress</h3>
+
+                    <div class="progress-circle">
+                        <div class="progress-inner">
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-info">
+                        <p class="progress-text">0/0 Lessons Completed</p>
+                        <button class="btn btn-primary">Resume Learning</button>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="index.html" class="nav-brand footer-brand">
+                        <span class="nav-brand-icon">🗺️</span> PathGen
+                    </a>
+                    <p class="footer-tagline">
+                        Your personalized guide to navigating the complex world of technology.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="GitHub">💻</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">🔗</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>PRODUCT</h4>
+                    <div class="footer-link-list">
+                        <a href="index.html#explore" class="footer-link">Roadmaps</a>
+                        <a href="#" class="footer-link">Assessment</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Success Stories</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>RESOURCES</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Documentation</a>
+                        <a href="#" class="footer-link">Community</a>
+                        <a href="#" class="footer-link">Guides</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>COMPANY</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 PathGen - All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/roadmap.js"></script>
+</body>
+
+</html>

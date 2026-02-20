@@ -1,0 +1,92 @@
+body {
+    font-family: var(--font-family-primary);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-fast);
+}
+
+/* Typography elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    color: var(--color-text-primary);
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+}
+
+h4 {
+    font-size: var(--font-size-md);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: var(--spacing-sm);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-md);
+}
+
+.mt-3 {
+    margin-top: var(--spacing-lg);
+}
+
+.mt-4 {
+    margin-top: var(--spacing-xl);
+}
+
+.mb-1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Hidden class for JS */
+.hidden {
+    display: none !important;
+}
