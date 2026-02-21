@@ -1,32 +1,12 @@
 # Skill Roadmap Generator Website
 
 ![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![JSON](https://img.shields.io/badge/JSON-000000?logo=json&logoColor=white)
 
 > A comprehensive web-based platform that generates personalized learning roadmaps for technical skills, helping students and professionals navigate their educational journey efficiently.
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Demo](#demo)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Roadmaps Available](#roadmaps-available)
-- [Development](#development)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Team](#team)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ---
 
@@ -79,23 +59,10 @@ This web application provides:
 
 ## 🎬 Demo
 
-### Screenshots
-
-#### Landing Page
-![Landing Page](assets/screenshots/landing-page.png)
-*Browse through various skill categories*
-
-#### Roadmap View
-![Roadmap View](assets/screenshots/roadmap-view.png)
-*Visual timeline showing learning progression*
-
-#### Topic Details
-![Topic Details](assets/screenshots/topic-details.png)
-*Expandable cards with resources and practice projects*
 
 ### Live Demo
 
-🔗 [View Live Demo](#) *(Link will be added after deployment)*
+🔗 [View Live Demo](https://pathgen-srg.vercel.app/)
 
 ---
 
@@ -117,48 +84,6 @@ This web application provides:
 - **Figma**: UI/UX mockups
 - **Draw.io**: Workflow diagrams
 - **Canva**: Graphics and icons
-
----
-
-## 📁 Project Structure
-
-```
-skill-roadmap-generator/
-│
-├── index.html                 # Landing page with skill categories
-├── roadmap.html              # Roadmap display page
-├── about.html                # About/Help page
-│
-├── css/
-│   ├── styles.css            # Global styles and variables
-│   ├── landing.css           # Landing page specific styles
-│   ├── roadmap.css           # Roadmap page specific styles
-│   └── responsive.css        # Media queries for responsiveness
-│
-├── js/
-│   ├── main.js               # Core application logic
-│   ├── roadmapLoader.js      # JSON loading and parsing
-│   ├── interactions.js       # UI interactions and animations
-│   └── search.js             # Search and filter functionality
-│
-├── data/
-│   └── roadmaps.json         # All roadmap data
-│
-├── assets/
-│   ├── images/               # Icons, illustrations, logos
-│   │   ├── icons/            # Skill category icons
-│   │   └── screenshots/      # Demo screenshots
-│   └── fonts/                # Custom fonts (if any)
-│
-├── docs/
-│   ├── synopsis.pdf          # Project synopsis
-│   ├── design-document.pdf   # Design and wireframes
-│   └── test-report.pdf       # Testing documentation
-│
-├── README.md                 # Project documentation (this file)
-├── LICENSE                   # License information
-└── .gitignore               # Git ignore rules
-```
 
 ---
 
@@ -213,52 +138,6 @@ skill-roadmap-generator/
 1. **Adding New Roadmaps**: Edit `data/roadmaps.json` and add your roadmap following the existing structure
 2. **Customizing Styles**: Modify CSS files in the `css/` directory
 3. **Adding Features**: Extend JavaScript files in the `js/` directory
-
----
-
-## 🗺️ Roadmaps Available
-
-Currently includes learning paths for:
-
-1. **Web Development** 🌐
-   - Frontend (HTML, CSS, JavaScript, React)
-   - Backend (Node.js, Express, Databases)
-   - Full-Stack deployment
-
-2. **Data Science** 📊
-   - Python programming
-   - Statistics & Mathematics
-   - Machine Learning fundamentals
-
-3. **AI/Machine Learning** 🤖
-   - Python and libraries (NumPy, Pandas)
-   - ML algorithms
-   - Deep Learning basics
-
-4. **Cloud Computing** ☁️
-   - Cloud platforms (AWS/Azure/GCP)
-   - Infrastructure basics
-   - Deployment strategies
-
-5. **Cybersecurity** 🔒
-   - Network security
-   - Ethical hacking
-   - Security best practices
-
-6. **Mobile Development** 📱
-   - Android/iOS development
-   - React Native
-   - App deployment
-
-7. **DevOps** 🔧
-   - CI/CD pipelines
-   - Docker & Kubernetes
-   - Infrastructure as Code
-
-8. **Blockchain** ⛓️
-   - Blockchain fundamentals
-   - Smart contracts
-   - DApp development
 
 ---
 
@@ -322,49 +201,6 @@ Each roadmap follows this structure:
 - Comment complex logic
 - Keep functions small and focused
 - Maintain consistent indentation (2 spaces)
-
----
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-#### Functionality Tests
-- [ ] All skill cards display correctly
-- [ ] Clicking "Explore Roadmap" navigates properly
-- [ ] JSON data loads without errors
-- [ ] All phases render dynamically
-- [ ] Topic cards expand/collapse correctly
-- [ ] External links open in new tabs
-- [ ] Search filters skills in real-time
-- [ ] Back navigation works
-
-#### Responsive Design Tests
-- [ ] Mobile (320px - 480px): Single column layout
-- [ ] Tablet (481px - 768px): 2-column grid
-- [ ] Desktop (769px+): 3-column grid
-- [ ] All text is readable at different sizes
-- [ ] Touch targets are at least 44x44px
-
-#### Browser Compatibility
-- [ ] Chrome (latest)
-- [ ] Firefox (latest)
-- [ ] Safari (latest)
-- [ ] Edge (latest)
-
-#### Performance Tests
-- [ ] Page loads in under 3 seconds
-- [ ] No console errors
-- [ ] Images are optimized
-
-### Running Tests
-
-```bash
-# No automated tests yet
-# Manual testing checklist provided above
-# Future: Add Jest for unit testing
-```
-
 ---
 
 ## 🤝 Contributing
@@ -499,18 +335,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 - **v1.0.0** (Current) - Initial release with core features
 - **v0.1.0** - Beta version for testing
-
----
-
-## 📊 Project Statistics
-
-- **Total Roadmaps**: 8
-- **Total Topics**: 60+
-- **Learning Resources**: 200+
-- **Estimated Development Hours**: 100+
-- **Lines of Code**: 2000+
-- **Supported Browsers**: 4 (Chrome, Firefox, Safari, Edge)
-- **Supported Devices**: Desktop, Tablet, Mobile
 
 ---
 
