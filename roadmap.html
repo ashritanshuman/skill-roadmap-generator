@@ -35,6 +35,10 @@
             </div>
 
             <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="moon-icon">🌙</span>
+                    <span class="sun-icon">☀️</span>
+                </button>
                 <a href="#signin" class="nav-actions-text">Sign In</a>
                 <a href="#getstarted" class="btn btn-primary">Get Started</a>
             </div>
@@ -61,14 +65,18 @@
             </p>
 
             <div class="roadmap-meta">
-                <span class="badge" id="duration-badge">- MONTHS</span>
-                <span class="badge" id="difficulty-badge">-</span>
-                <span class="badge" id="modules-badge">- MODULES</span>
+                <span class="badge" id="duration-badge" data-difficulty="">⏱️ - MONTHS</span>
+                <span class="badge" id="difficulty-badge" data-difficulty="">📊 -</span>
+                <span class="badge" id="modules-badge">📚 - MODULES</span>
             </div>
 
             <div class="roadmap-actions">
-                <button class="btn btn-secondary">Save to Profile</button>
-                <button class="btn btn-primary">Start Learning</button>
+                <button class="btn btn-secondary">
+                    <span>🔖</span> Save to Profile
+                </button>
+                <button class="btn btn-primary">
+                    <span>🚀</span> Start Learning
+                </button>
             </div>
         </header>
 
@@ -85,7 +93,7 @@
                 <div class="card progress-card">
                     <h3 class="progress-title">Your Progress</h3>
 
-                    <div class="progress-circle">
+                    <div class="progress-circle" style="--progress: 0%">
                         <div class="progress-inner">
                             <span class="progress-percentage">0%</span>
                         </div>
@@ -93,8 +101,24 @@
 
                     <div class="progress-info">
                         <p class="progress-text">0/0 Lessons Completed</p>
-                        <button class="btn btn-primary">Resume Learning</button>
+                        <button class="btn btn-primary btn-sm">Resume Learning</button>
                     </div>
+                </div>
+
+                <!-- Quick Info Card -->
+                <div class="info-card">
+                    <h4 class="info-card-title">💡 Pro Tip</h4>
+                    <p class="info-card-content">
+                        Complete each module in order to unlock the next phase. Track your progress and celebrate small wins along the way!
+                    </p>
+                </div>
+
+                <!-- Resources Card -->
+                <div class="info-card">
+                    <h4 class="info-card-title">🔗 Resources</h4>
+                    <p class="info-card-content">
+                        All resources are carefully curated from trusted platforms like MDN, freeCodeCamp, and official documentation.
+                    </p>
                 </div>
             </aside>
 

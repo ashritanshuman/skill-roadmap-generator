@@ -35,6 +35,10 @@
             
             <!-- Action Buttons -->
             <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="moon-icon">🌙</span>
+                    <span class="sun-icon">☀️</span>
+                </button>
                 <a href="#signin" class="nav-actions-text">Sign In</a>
                 <a href="#getstarted" class="btn btn-primary">Get Started</a>
             </div>
@@ -72,7 +76,7 @@
     <!-- Popular Paths Section -->
     <section id="explore" class="popular-paths">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <div class="section-title">
                     <h2>Explore Popular Paths</h2>
                     <p class="section-subtitle">Hand-crafted roadmaps by industry experts.</p>
@@ -81,8 +85,52 @@
             </div>
             
             <!-- Cards will be populated here by JS -->
-            <div class="roadmap-grid" id="roadmap-grid">
+            <div class="roadmap-grid stagger-children" id="roadmap-grid">
                 <!-- Fallback loading state or empty div -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h2>Why Choose PathGen?</h2>
+                <p class="section-subtitle">Everything you need to accelerate your learning journey</p>
+            </div>
+            <div class="features-grid stagger-children">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Curated Paths</h3>
+                    <p class="feature-description">Expert-crafted roadmaps that take you from beginner to professional</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">Time Estimates</h3>
+                    <p class="feature-description">Realistic timelines to help you plan your learning schedule</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Track Progress</h3>
+                    <p class="feature-description">Visual progress tracking to keep you motivated</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-title">Best Resources</h3>
+                    <p class="feature-description">Hand-picked tutorials, docs, and courses from top platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title reveal">Ready to Start Your Journey?</h2>
+            <p class="cta-subtitle reveal">Join thousands of learners who have accelerated their careers with PathGen</p>
+            <div class="cta-buttons reveal">
+                <a href="#explore" class="btn btn-primary btn-lg">Explore Roadmaps</a>
+                <a href="how-it-works.html" class="btn btn-secondary btn-lg">How It Works</a>
             </div>
         </div>
     </section>

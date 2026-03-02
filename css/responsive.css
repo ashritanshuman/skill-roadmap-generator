@@ -1,151 +1,218 @@
-/* Responsive Media Queries */
+/* Clean Responsive Design - Mobile First */
 
-/* Tablet Devices (768px to 1023px) */
+/* ============================================
+   TABLET BREAKPOINT (768px - 1023px)
+   ============================================ */
 @media (max-width: 1023px) {
-
-    /* Global Layout */
     .container {
-        padding: 0 var(--spacing-lg);
+        padding: 0 var(--spacing-5);
     }
 
-    /* Home Page */
-    .roadmap-grid {
-        grid-template-columns: repeat(2, 1fr);
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--spacing-12) 0 var(--spacing-10);
     }
 
     .hero-title {
-        font-size: 42px;
+        font-size: var(--font-size-3xl);
+    }
+
+    /* Search */
+    .search-container {
+        flex-direction: column;
+        padding: var(--spacing-3);
+    }
+
+    .search-btn {
+        width: 100%;
+        margin-top: var(--spacing-2);
+    }
+
+    /* Grid */
+    .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Roadmap */
+    .roadmap-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        order: -1;
     }
 
     /* Footer */
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-xl) var(--spacing-md);
+        gap: var(--spacing-8);
     }
 
-    /* Roadmap Page */
-    .roadmap-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
-
-    .sidebar {
-        position: static;
-        order: -1;
-        /* Move progress tracker above phases */
-    }
-
-    .progress-card {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        padding: var(--spacing-md) var(--spacing-lg);
-    }
-
-    .progress-circle {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 0;
-    }
-
-    .progress-inner {
-        width: 66px;
-        height: 66px;
-    }
-
-    .progress-percentage {
-        font-size: 18px;
-    }
-
-    .progress-info {
-        flex: 1;
-        margin-left: var(--spacing-md);
-    }
-
-    .progress-card .btn {
-        width: auto;
+    .footer-column:first-child {
+        grid-column: 1 / -1;
     }
 }
 
-/* Mobile Devices (320px to 767px) */
+/* ============================================
+   MOBILE BREAKPOINT (max-width: 767px)
+   ============================================ */
 @media (max-width: 767px) {
-    :root {
-        --font-size-xxl: 36px;
-        --font-size-xl: 28px;
-        --font-size-large: 22px;
+    h1 {
+        font-size: var(--font-size-2xl);
     }
 
-    .container {
-        padding: 0 var(--spacing-md);
+    h2 {
+        font-size: var(--font-size-xl);
     }
 
-    /* Navbar Mobile */
+    h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Navbar */
+    .navbar {
+        height: 64px;
+    }
+
     .nav-menu {
         display: none;
-        /* simple hamburger fallback or hidden for basic implementation */
-    }
-
-    .nav-actions {
-        display: none;
-    }
-
-    /* Use a basic CSS-only "menu" toggle for mobile if preferred, or just keep essential nav only */
-    /* For this simple layout, we'll keep logo and a small 'mobile' button */
-
-    /* Home Page */
-    .roadmap-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .search-container {
-        flex-direction: column;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-        gap: var(--spacing-sm);
-    }
-
-    .search-input-wrapper {
-        display: flex;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
         background: var(--color-bg-primary);
-        border-radius: var(--border-radius-md);
-        padding: 8px;
-        box-shadow: var(--shadow-sm);
-        width: 100%;
+        flex-direction: column;
+        padding: var(--spacing-4);
+        gap: var(--spacing-3);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-lg);
     }
 
-    .search-input {
-        width: 100%;
+    .nav-menu.active {
+        display: flex;
     }
 
-    .search-btn {
-        width: 100%;
-        padding: 16px;
+    .nav-link {
+        padding: var(--spacing-3) 0;
     }
 
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: var(--spacing-2);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        width: 24px;
+        height: 2px;
+        background: var(--color-text-primary);
+        transition: all var(--transition-fast);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--spacing-10) 0 var(--spacing-8);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    /* Tags */
     .popular-tags-container {
         flex-direction: column;
+        gap: var(--spacing-2);
     }
 
-    .popular-tags {
-        justify-content: center;
+    /* Sections */
+    .popular-paths,
+    .features-section,
+    .cta-section {
+        padding: var(--spacing-10) 0;
     }
 
     .section-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-3);
+        margin-bottom: var(--spacing-6);
     }
 
-    /* Footer Mobile */
-    .footer-grid {
+    /* Grids */
+    .roadmap-grid,
+    .features-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: var(--spacing-4);
     }
 
-    /* Roadmap Page Layout Elements */
+    /* Cards */
+    .card {
+        padding: var(--spacing-4);
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    /* CTA */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Roadmap */
+    .breadcrumb {
+        padding: var(--spacing-4) 0;
+        font-size: var(--font-size-xs);
+    }
+
     .roadmap-title {
-        font-size: 32px;
+        font-size: var(--font-size-2xl);
     }
 
     .roadmap-actions {
@@ -156,41 +223,145 @@
         width: 100%;
     }
 
-    .progress-card {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--spacing-md);
-    }
-
-    .progress-info {
-        margin-left: 0;
-    }
-
-    .progress-card .btn {
-        width: 100%;
-    }
-
+    /* Phases */
     .phase-container {
-        padding-left: var(--spacing-lg);
+        padding-left: var(--spacing-8);
+    }
+
+    .phase-number {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-xs);
     }
 
     .phase-container::before {
-        left: 2px;
-        /* adjust timeline line */
+        left: 16px;
     }
 
+    .phase-title {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Modules */
+    .module-header {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+
+    .module-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .module-title {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Topics */
     .topic-item {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--spacing-xs);
-    }
-
-    .topic-item .badge {
-        margin-left: 0;
+        gap: var(--spacing-2);
     }
 
     .topic-link {
-        margin-left: 0;
-        align-self: flex-end;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Progress */
+    .progress-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .progress-percentage {
+        font-size: var(--font-size-xl);
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: var(--spacing-10) 0 var(--spacing-6);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-6);
+        text-align: center;
+    }
+
+    .footer-tagline {
+        max-width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    :root {
+        --container-padding: var(--spacing-4);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: var(--font-size-sm);
+    }
+
+    .pill {
+        padding: 4px 12px;
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .navbar,
+    .site-footer,
+    .sidebar,
+    .roadmap-actions,
+    .toggle-btn {
+        display: none !important;
+    }
+
+    body {
+        background: var(--color-bg-primary);
+        color: var(--color-text-primary);
+    }
+
+    .phase-container::before {
+        background: var(--color-border);
+    }
+    
+    .module-card {
+        break-inside: avoid;
+        border: 1px solid var(--color-border);
     }
 }
