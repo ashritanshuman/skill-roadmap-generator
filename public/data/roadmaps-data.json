@@ -15,9 +15,9 @@
         {
           "id": 1,
           "title": "Foundation",
-          "subtitle": "HTML & CSS — The Web's Skeleton",
+          "subtitle": "HTML & CSS \u2014 The Web's Skeleton",
           "duration": "4-6 weeks | 2 hrs/day",
-          "description": "Everything on the web is HTML and CSS. Before frameworks, before JavaScript — understand how browsers render content, how the box model works, and how to structure information semantically. This is your bedrock.",
+          "description": "Everything on the web is HTML and CSS. Before frameworks, before JavaScript \u2014 understand how browsers render content, how the box model works, and how to structure information semantically. This is your bedrock.",
           "sections": [
             {
               "title": "HTML Fundamentals",
@@ -40,7 +40,7 @@
                 "Display types: block, inline, inline-block, none",
                 "Positioning: static, relative, absolute, fixed, sticky",
                 "CSS specificity and the cascade",
-                "Units: px, %, em, rem, vw, vh — CSS variables"
+                "Units: px, %, em, rem, vw, vh \u2014 CSS variables"
               ]
             },
             {
@@ -51,7 +51,7 @@
                 "Flexbox: flex-grow, flex-shrink, flex-basis, order",
                 "CSS Grid: grid-template-columns/rows, fr unit, grid-gap",
                 "Grid areas, named lines, auto-fill vs auto-fit",
-                "When to use Flexbox vs Grid — the key mental model"
+                "When to use Flexbox vs Grid \u2014 the key mental model"
               ]
             },
             {
@@ -81,15 +81,15 @@
         {
           "id": 2,
           "title": "Core Language",
-          "subtitle": "JavaScript — The Brain of the Web",
+          "subtitle": "JavaScript \u2014 The Brain of the Web",
           "duration": "8-10 weeks | 2-3 hrs/day",
-          "description": "JavaScript is the only programming language of the browser. Master it deeply before touching any framework. React, Vue, Node — they are all just JavaScript. Weak JS fundamentals will haunt you in every technical interview.",
+          "description": "JavaScript is the only programming language of the browser. Master it deeply before touching any framework. React, Vue, Node \u2014 they are all just JavaScript. Weak JS fundamentals will haunt you in every technical interview.",
           "sections": [
             {
               "title": "JS Foundations",
               "subtitle": "Variables, Types & Control Flow",
               "topics": [
-                "var vs let vs const — hoisting and temporal dead zone",
+                "var vs let vs const \u2014 hoisting and temporal dead zone",
                 "Data types: string, number, boolean, null, undefined, symbol",
                 "Type coercion: == vs === and why this matters",
                 "Control flow: if/else, switch, ternary operator",
@@ -104,7 +104,7 @@
                 "Arrays: map, filter, reduce, find, forEach, some, every",
                 "Array and object destructuring, spread/rest operators",
                 "Object creation, methods, shorthand syntax",
-                "Closures — the most important JS concept for interviews",
+                "Closures \u2014 the most important JS concept for interviews",
                 "The 'this' keyword in different contexts",
                 "Prototype chain and how inheritance works"
               ]
@@ -113,10 +113,10 @@
               "title": "Async JavaScript",
               "subtitle": "Promises, Async/Await & APIs",
               "topics": [
-                "The Event Loop — how JS handles concurrency",
+                "The Event Loop \u2014 how JS handles concurrency",
                 "Callbacks and why Promises were invented",
                 "Promises: .then(), .catch(), .finally(), Promise.all()",
-                "async/await syntax — the modern standard",
+                "async/await syntax \u2014 the modern standard",
                 "fetch() API for HTTP requests, JSON parse and stringify",
                 "Error handling with try/catch in async code"
               ]
@@ -172,9 +172,9 @@
         {
           "id": 3,
           "title": "Frontend Framework",
-          "subtitle": "React — The Industry Standard",
+          "subtitle": "React \u2014 The Industry Standard",
           "duration": "8-10 weeks | 2-3 hrs/day",
-          "description": "React powers 40% or more of all web apps. It is the most-hired frontend skill in 2025. Learn it properly — components, hooks, state management, and data fetching. This is where you become employable as a frontend developer.",
+          "description": "React powers 40% or more of all web apps. It is the most-hired frontend skill in 2025. Learn it properly \u2014 components, hooks, state management, and data fetching. This is where you become employable as a frontend developer.",
           "sections": [
             {
               "title": "React Core",
@@ -182,7 +182,7 @@
               "topics": [
                 "What React is and why it exists (Virtual DOM concept)",
                 "JSX: JavaScript + HTML syntax, expressions in JSX",
-                "Functional components — forget class components in 2025",
+                "Functional components \u2014 forget class components in 2025",
                 "Props: passing data down, default props, prop validation",
                 "Children prop and component composition patterns",
                 "Conditional rendering: &&, ternary, early return"
@@ -218,9 +218,9 @@
               "topics": [
                 "Fetching on mount with useEffect (the manual way)",
                 "Loading states, error states, empty states pattern",
-                "TanStack Query (React Query) — industry standard tool",
+                "TanStack Query (React Query) \u2014 industry standard tool",
                 "useQuery, useMutation, query invalidation pattern",
-                "Axios vs fetch — when to use each",
+                "Axios vs fetch \u2014 when to use each",
                 "Optimistic updates pattern for better UX"
               ]
             },
@@ -230,9 +230,9 @@
               "topics": [
                 "CSS Modules: scoped styles, how to import and use",
                 "Tailwind CSS: utility-first, responsive modifiers (prioritize this)",
-                "shadcn/ui component library — setup and usage",
+                "shadcn/ui component library \u2014 setup and usage",
                 "Lucide icons, Radix UI accessible primitives",
-                "Styled-components/Emotion (CSS-in-JS) — know it exists"
+                "Styled-components/Emotion (CSS-in-JS) \u2014 know it exists"
               ]
             },
             {
@@ -243,7 +243,7 @@
                 "Context API for simple global state",
                 "Zustand: lightweight modern choice (recommended)",
                 "Redux Toolkit: for larger apps and legacy codebases",
-                "Server state vs client state — the key mental model"
+                "Server state vs client state \u2014 the key mental model"
               ]
             }
           ],
@@ -254,16 +254,28 @@
             "Full CRUD app with routing and protected pages"
           ],
           "outcomes": [
-            "Junior Frontend Developer — $70K to $90K",
-            "React Developer — $80K to $100K",
-            "Frontend Engineer — $85K to $110K"
+            "Junior Frontend Developer \u2014 $70K to $90K",
+            "React Developer \u2014 $80K to $100K",
+            "Frontend Engineer \u2014 $85K to $110K"
           ]
         }
       ],
       "timeline": [
-        { "period": "Month 1-2", "focus": "HTML, CSS & Responsive Design", "milestone": "Deploy a portfolio site to Netlify or Vercel" },
-        { "period": "Month 2-4", "focus": "JavaScript Fundamentals through Async", "milestone": "Build a working weather app and a CRUD todo app" },
-        { "period": "Month 4-6", "focus": "React + Tailwind + React Query", "milestone": "START applying for Junior Frontend Developer jobs" }
+        {
+          "period": "Month 1-2",
+          "focus": "HTML, CSS & Responsive Design",
+          "milestone": "Deploy a portfolio site to Netlify or Vercel"
+        },
+        {
+          "period": "Month 2-4",
+          "focus": "JavaScript Fundamentals through Async",
+          "milestone": "Build a working weather app and a CRUD todo app"
+        },
+        {
+          "period": "Month 4-6",
+          "focus": "React + Tailwind + React Query",
+          "milestone": "START applying for Junior Frontend Developer jobs"
+        }
       ]
     },
     {
@@ -281,9 +293,9 @@
         {
           "id": 1,
           "title": "Foundation",
-          "subtitle": "HTML & CSS — The Web's Skeleton",
+          "subtitle": "HTML & CSS \u2014 The Web's Skeleton",
           "duration": "4-6 weeks | 2 hrs/day",
-          "description": "Everything on the web is HTML and CSS. Before frameworks, before JavaScript — understand how browsers render content, how the box model works, and how to structure information semantically. This is your bedrock.",
+          "description": "Everything on the web is HTML and CSS. Before frameworks, before JavaScript \u2014 understand how browsers render content, how the box model works, and how to structure information semantically. This is your bedrock.",
           "sections": [
             {
               "title": "HTML Fundamentals",
@@ -306,7 +318,7 @@
                 "Display types: block, inline, inline-block, none",
                 "Positioning: static, relative, absolute, fixed, sticky",
                 "CSS specificity and the cascade",
-                "Units: px, %, em, rem, vw, vh — CSS variables"
+                "Units: px, %, em, rem, vw, vh \u2014 CSS variables"
               ]
             },
             {
@@ -317,7 +329,7 @@
                 "Flexbox: flex-grow, flex-shrink, flex-basis, order",
                 "CSS Grid: grid-template-columns/rows, fr unit, grid-gap",
                 "Grid areas, named lines, auto-fill vs auto-fit",
-                "When to use Flexbox vs Grid — the key mental model"
+                "When to use Flexbox vs Grid \u2014 the key mental model"
               ]
             },
             {
@@ -347,15 +359,15 @@
         {
           "id": 2,
           "title": "Core Language",
-          "subtitle": "JavaScript — The Brain of the Web",
+          "subtitle": "JavaScript \u2014 The Brain of the Web",
           "duration": "8-10 weeks | 2-3 hrs/day",
-          "description": "JavaScript is the only programming language of the browser. Master it deeply before touching any framework. React, Vue, Node — they are all just JavaScript. Weak JS fundamentals will haunt you in every technical interview.",
+          "description": "JavaScript is the only programming language of the browser. Master it deeply before touching any framework. React, Vue, Node \u2014 they are all just JavaScript. Weak JS fundamentals will haunt you in every technical interview.",
           "sections": [
             {
               "title": "JS Foundations",
               "subtitle": "Variables, Types & Control Flow",
               "topics": [
-                "var vs let vs const — hoisting and temporal dead zone",
+                "var vs let vs const \u2014 hoisting and temporal dead zone",
                 "Data types: string, number, boolean, null, undefined, symbol",
                 "Type coercion: == vs === and why this matters",
                 "Control flow: if/else, switch, ternary operator",
@@ -370,7 +382,7 @@
                 "Arrays: map, filter, reduce, find, forEach, some, every",
                 "Array and object destructuring, spread/rest operators",
                 "Object creation, methods, shorthand syntax",
-                "Closures — the most important JS concept for interviews",
+                "Closures \u2014 the most important JS concept for interviews",
                 "The 'this' keyword in different contexts",
                 "Prototype chain and how inheritance works"
               ]
@@ -379,10 +391,10 @@
               "title": "Async JavaScript",
               "subtitle": "Promises, Async/Await & APIs",
               "topics": [
-                "The Event Loop — how JS handles concurrency",
+                "The Event Loop \u2014 how JS handles concurrency",
                 "Callbacks and why Promises were invented",
                 "Promises: .then(), .catch(), .finally(), Promise.all()",
-                "async/await syntax — the modern standard",
+                "async/await syntax \u2014 the modern standard",
                 "fetch() API for HTTP requests, JSON parse and stringify",
                 "Error handling with try/catch in async code"
               ]
@@ -438,9 +450,9 @@
         {
           "id": 3,
           "title": "Frontend Framework",
-          "subtitle": "React — The Industry Standard",
+          "subtitle": "React \u2014 The Industry Standard",
           "duration": "8-10 weeks | 2-3 hrs/day",
-          "description": "React powers 40% or more of all web apps. It is the most-hired frontend skill in 2025. Learn it properly — components, hooks, state management, and data fetching. This is where you become employable as a frontend developer.",
+          "description": "React powers 40% or more of all web apps. It is the most-hired frontend skill in 2025. Learn it properly \u2014 components, hooks, state management, and data fetching. This is where you become employable as a frontend developer.",
           "sections": [
             {
               "title": "React Core",
@@ -448,7 +460,7 @@
               "topics": [
                 "What React is and why it exists (Virtual DOM concept)",
                 "JSX: JavaScript + HTML syntax, expressions in JSX",
-                "Functional components — forget class components in 2025",
+                "Functional components \u2014 forget class components in 2025",
                 "Props: passing data down, default props, prop validation",
                 "Children prop and component composition patterns",
                 "Conditional rendering: &&, ternary, early return"
@@ -484,9 +496,9 @@
               "topics": [
                 "Fetching on mount with useEffect (the manual way)",
                 "Loading states, error states, empty states pattern",
-                "TanStack Query (React Query) — industry standard tool",
+                "TanStack Query (React Query) \u2014 industry standard tool",
                 "useQuery, useMutation, query invalidation pattern",
-                "Axios vs fetch — when to use each",
+                "Axios vs fetch \u2014 when to use each",
                 "Optimistic updates pattern for better UX"
               ]
             },
@@ -496,9 +508,9 @@
               "topics": [
                 "CSS Modules: scoped styles, how to import and use",
                 "Tailwind CSS: utility-first, responsive modifiers (prioritize this)",
-                "shadcn/ui component library — setup and usage",
+                "shadcn/ui component library \u2014 setup and usage",
                 "Lucide icons, Radix UI accessible primitives",
-                "Styled-components/Emotion (CSS-in-JS) — know it exists"
+                "Styled-components/Emotion (CSS-in-JS) \u2014 know it exists"
               ]
             },
             {
@@ -509,7 +521,7 @@
                 "Context API for simple global state",
                 "Zustand: lightweight modern choice (recommended)",
                 "Redux Toolkit: for larger apps and legacy codebases",
-                "Server state vs client state — the key mental model"
+                "Server state vs client state \u2014 the key mental model"
               ]
             }
           ],
@@ -520,9 +532,9 @@
             "Full CRUD app with routing and protected pages"
           ],
           "outcomes": [
-            "Junior Frontend Developer — $70K to $90K",
-            "React Developer — $80K to $100K",
-            "Frontend Engineer — $85K to $110K"
+            "Junior Frontend Developer \u2014 $70K to $90K",
+            "React Developer \u2014 $80K to $100K",
+            "Frontend Engineer \u2014 $85K to $110K"
           ]
         },
         {
@@ -563,7 +575,7 @@
               "topics": [
                 "Relational model: tables, rows, columns, primary keys",
                 "SQL: SELECT, INSERT, UPDATE, DELETE, WHERE clauses",
-                "JOINs: INNER, LEFT, RIGHT — when to use each type",
+                "JOINs: INNER, LEFT, RIGHT \u2014 when to use each type",
                 "Indexes: what they are, when to create them",
                 "Transactions: ACID properties, BEGIN/COMMIT/ROLLBACK",
                 "Database design: normalization, foreign keys, constraints",
@@ -578,19 +590,19 @@
                 "CRUD with Prisma: create, findMany, update, delete",
                 "Relations in Prisma: one-to-many, many-to-many",
                 "Drizzle ORM: SQL-like syntax, type safety (modern choice)",
-                "When to write raw SQL vs use an ORM — the honest answer"
+                "When to write raw SQL vs use an ORM \u2014 the honest answer"
               ]
             },
             {
               "title": "Authentication",
               "subtitle": "Security Fundamentals",
               "topics": [
-                "Password hashing with bcrypt — never store plaintext",
+                "Password hashing with bcrypt \u2014 never store plaintext",
                 "JWT access tokens + refresh token rotation pattern",
                 "Cookie-based sessions vs localStorage JWT tradeoffs",
                 "OAuth 2.0 flow: Login with Google implementation",
                 "Role-based access control (RBAC) patterns",
-                "HTTPS, CORS, CSRF, XSS — interview-level knowledge"
+                "HTTPS, CORS, CSRF, XSS \u2014 interview-level knowledge"
               ]
             },
             {
@@ -612,9 +624,9 @@
             "Twitter/X clone backend with complex table relations"
           ],
           "outcomes": [
-            "Full-Stack Developer — $90K to $115K",
-            "Backend Node.js Developer — $85K to $110K",
-            "Software Engineer — $95K to $120K"
+            "Full-Stack Developer \u2014 $90K to $115K",
+            "Backend Node.js Developer \u2014 $85K to $110K",
+            "Software Engineer \u2014 $95K to $120K"
           ]
         },
         {
@@ -629,7 +641,7 @@
               "subtitle": "Type-Safe JavaScript",
               "topics": [
                 "Basic types: string, number, boolean, arrays, tuples",
-                "Interfaces vs Types — when to use each one",
+                "Interfaces vs Types \u2014 when to use each one",
                 "Generics: writing reusable typed code",
                 "Union types, intersection types, discriminated unions",
                 "Type narrowing: typeof, instanceof, in operator",
@@ -642,7 +654,7 @@
               "subtitle": "The Full-Stack Framework",
               "topics": [
                 "App Router architecture vs Pages Router (use App Router)",
-                "Server Components vs Client Components — the key distinction",
+                "Server Components vs Client Components \u2014 the key distinction",
                 "File-based routing: pages, layouts, loading, error files",
                 "Server Actions: mutations without separate API routes",
                 "API Routes and Route Handlers for custom endpoints",
@@ -706,23 +718,23 @@
             "Real-time chat application (WebSockets + Prisma)"
           ],
           "outcomes": [
-            "Full-Stack Next.js Engineer — $110K to $140K",
-            "Senior Frontend Engineer — $120K to $150K",
-            "Software Engineer II — $115K to $145K"
+            "Full-Stack Next.js Engineer \u2014 $110K to $140K",
+            "Senior Frontend Engineer \u2014 $120K to $150K",
+            "Software Engineer II \u2014 $115K to $145K"
           ]
         },
         {
           "id": 6,
           "title": "Advanced / Senior Level",
           "subtitle": "System Design, Performance & Scale",
-          "duration": "Ongoing — this phase never ends",
-          "description": "Senior engineers don't just write features — they design systems. This phase covers what separates mid-level from senior: performance optimization, scalable architecture, cloud infrastructure, and engineering leadership.",
+          "duration": "Ongoing \u2014 this phase never ends",
+          "description": "Senior engineers don't just write features \u2014 they design systems. This phase covers what separates mid-level from senior: performance optimization, scalable architecture, cloud infrastructure, and engineering leadership.",
           "sections": [
             {
               "title": "Performance",
               "subtitle": "Web Performance Engineering",
               "topics": [
-                "Core Web Vitals: LCP, FID/INP, CLS — measure and optimize",
+                "Core Web Vitals: LCP, FID/INP, CLS \u2014 measure and optimize",
                 "Code splitting, lazy loading, dynamic imports",
                 "Bundle analysis with webpack-bundle-analyzer",
                 "Image optimization: WebP, AVIF, responsive images",
@@ -735,8 +747,8 @@
               "title": "Architecture",
               "subtitle": "System Design Patterns",
               "topics": [
-                "REST vs GraphQL vs tRPC — choosing the right API style",
-                "Microservices vs Monolith — honest engineering tradeoffs",
+                "REST vs GraphQL vs tRPC \u2014 choosing the right API style",
+                "Microservices vs Monolith \u2014 honest engineering tradeoffs",
                 "Event-driven architecture with message queues (BullMQ)",
                 "WebSockets and real-time application patterns",
                 "Database scaling: read replicas, sharding concepts",
@@ -801,20 +813,44 @@
             "Pass a system design interview: design Twitter from scratch"
           ],
           "outcomes": [
-            "Senior Software Engineer — $140K to $180K",
-            "Staff Engineer — $170K to $230K",
-            "Engineering Manager — $160K to $210K",
-            "CTO at a startup — $150K+ with equity"
+            "Senior Software Engineer \u2014 $140K to $180K",
+            "Staff Engineer \u2014 $170K to $230K",
+            "Engineering Manager \u2014 $160K to $210K",
+            "CTO at a startup \u2014 $150K+ with equity"
           ]
         }
       ],
       "timeline": [
-        { "period": "Month 1-2", "focus": "HTML, CSS & Responsive Design", "milestone": "Deploy a portfolio site to Netlify or Vercel" },
-        { "period": "Month 2-4", "focus": "JavaScript Fundamentals through Async", "milestone": "Build a working weather app and a CRUD todo app" },
-        { "period": "Month 4-6", "focus": "React + Tailwind + React Query", "milestone": "START applying for Junior Frontend Developer jobs" },
-        { "period": "Month 6-9", "focus": "Node.js + Express + PostgreSQL", "milestone": "Deploy a full-stack app with auth and a real database" },
-        { "period": "Month 9-12", "focus": "TypeScript + Next.js + DevOps Basics", "milestone": "Apply for Full-Stack Engineer roles in the $100K+ range" },
-        { "period": "Month 12-18+", "focus": "System Design + Performance + AI Integration", "milestone": "Targeting Senior Engineer roles at $140K and above" }
+        {
+          "period": "Month 1-2",
+          "focus": "HTML, CSS & Responsive Design",
+          "milestone": "Deploy a portfolio site to Netlify or Vercel"
+        },
+        {
+          "period": "Month 2-4",
+          "focus": "JavaScript Fundamentals through Async",
+          "milestone": "Build a working weather app and a CRUD todo app"
+        },
+        {
+          "period": "Month 4-6",
+          "focus": "React + Tailwind + React Query",
+          "milestone": "START applying for Junior Frontend Developer jobs"
+        },
+        {
+          "period": "Month 6-9",
+          "focus": "Node.js + Express + PostgreSQL",
+          "milestone": "Deploy a full-stack app with auth and a real database"
+        },
+        {
+          "period": "Month 9-12",
+          "focus": "TypeScript + Next.js + DevOps Basics",
+          "milestone": "Apply for Full-Stack Engineer roles in the $100K+ range"
+        },
+        {
+          "period": "Month 12-18+",
+          "focus": "System Design + Performance + AI Integration",
+          "milestone": "Targeting Senior Engineer roles at $140K and above"
+        }
       ]
     },
     {
@@ -841,7 +877,7 @@
               "subtitle": "Programming Foundations",
               "topics": [
                 "Variables, data types, control flow, functions, scope",
-                "Lists, tuples, dicts, sets — Python's core data structures",
+                "Lists, tuples, dicts, sets \u2014 Python's core data structures",
                 "List comprehensions, generators, iterators",
                 "OOP: classes, inheritance, dunder/magic methods",
                 "File I/O: reading CSV, JSON, text files",
@@ -853,7 +889,7 @@
               "title": "Linear Algebra",
               "subtitle": "Vectors, Matrices & Tensors",
               "topics": [
-                "Scalars, vectors, matrices, tensors — definitions and intuition",
+                "Scalars, vectors, matrices, tensors \u2014 definitions and intuition",
                 "Matrix multiplication: the core operation of deep learning",
                 "Dot products, cross products, vector norms",
                 "Matrix inversion, transpose, determinants",
@@ -867,7 +903,7 @@
               "subtitle": "Derivatives & Optimization",
               "topics": [
                 "Derivatives: rate of change, slope intuition",
-                "Chain rule — the backbone of backpropagation",
+                "Chain rule \u2014 the backbone of backpropagation",
                 "Partial derivatives and gradients",
                 "Gradient descent: intuition and implementation",
                 "Learning rates, local vs global minima",
@@ -913,7 +949,7 @@
               "topics": [
                 "ndarray: creation, shape, dtype, dimensions",
                 "Indexing, slicing, boolean masking",
-                "Broadcasting rules — the most powerful NumPy concept",
+                "Broadcasting rules \u2014 the most powerful NumPy concept",
                 "Universal functions (ufuncs): vectorized operations",
                 "Linear algebra with np.linalg",
                 "Random number generation and seeding for reproducibility",
@@ -995,7 +1031,7 @@
               "title": "Model Evaluation",
               "subtitle": "Metrics & Validation",
               "topics": [
-                "Train/validation/test split — why 3 sets, not 2",
+                "Train/validation/test split \u2014 why 3 sets, not 2",
                 "Cross-validation: k-fold, stratified k-fold, time-series split",
                 "Classification metrics: accuracy, precision, recall, F1, ROC-AUC",
                 "Regression metrics: MSE, RMSE, MAE, R-squared, adjusted R-squared",
@@ -1062,9 +1098,9 @@
             "Fraud detection system with imbalanced class handling"
           ],
           "outcomes": [
-            "Junior Data Scientist — $85K to $105K",
-            "ML Analyst / Junior ML Engineer — $90K to $110K",
-            "Senior Data Analyst — $80K to $100K"
+            "Junior Data Scientist \u2014 $85K to $105K",
+            "ML Analyst / Junior ML Engineer \u2014 $90K to $110K",
+            "Senior Data Analyst \u2014 $80K to $100K"
           ]
         },
         {
@@ -1072,7 +1108,7 @@
           "title": "Deep Learning",
           "subtitle": "Neural Networks & Deep Learning",
           "duration": "10-12 weeks | 3 hrs/day",
-          "description": "Deep learning is the engine of modern AI. From image recognition to language models, everything runs on neural networks. Master PyTorch — the dominant research and production framework — and understand the architecture families that power today's AI systems.",
+          "description": "Deep learning is the engine of modern AI. From image recognition to language models, everything runs on neural networks. Master PyTorch \u2014 the dominant research and production framework \u2014 and understand the architecture families that power today's AI systems.",
           "sections": [
             {
               "title": "Neural Network Fundamentals",
@@ -1084,7 +1120,7 @@
                 "Forward pass: computing predictions layer by layer",
                 "Backpropagation: chain rule applied to computation graphs",
                 "Loss functions: MSE, Cross-Entropy, BCE, Focal loss",
-                "Build an MLP from scratch in NumPy — no frameworks allowed"
+                "Build an MLP from scratch in NumPy \u2014 no frameworks allowed"
               ]
             },
             {
@@ -1096,7 +1132,7 @@
                 "nn.Module: building custom layers and model architectures",
                 "Optimizers: SGD, Adam, AdamW, learning rate schedulers",
                 "DataLoader and Dataset: batching, shuffling, transforms",
-                "Training loop: forward, loss, backward, step — the pattern",
+                "Training loop: forward, loss, backward, step \u2014 the pattern",
                 "Saving and loading models: state_dict vs full model serialization"
               ]
             },
@@ -1106,7 +1142,7 @@
               "topics": [
                 "Batch normalization: why it stabilizes training dramatically",
                 "Dropout: regularization by random neuron silencing",
-                "Weight initialization: Xavier/Glorot, He/Kaiming — why it matters",
+                "Weight initialization: Xavier/Glorot, He/Kaiming \u2014 why it matters",
                 "Gradient clipping: preventing exploding gradients",
                 "Mixed precision training: FP16/BF16 for speed and memory",
                 "Learning rate warmup, cosine annealing, OneCycleLR",
@@ -1131,7 +1167,7 @@
               "subtitle": "Sequences & Time Series",
               "topics": [
                 "RNN: unrolling through time, the vanishing gradient problem",
-                "LSTM: cell state, forget/input/output gates — the fix for RNNs",
+                "LSTM: cell state, forget/input/output gates \u2014 the fix for RNNs",
                 "GRU: simplified LSTM, often equally effective with fewer params",
                 "Sequence-to-sequence: encoder-decoder architecture",
                 "Bidirectional RNNs and stacked RNN layers"
@@ -1159,9 +1195,9 @@
             "Real-time object detection application (YOLO + webcam)"
           ],
           "outcomes": [
-            "ML Engineer — $110K to $135K",
-            "Deep Learning Engineer — $115K to $140K",
-            "Computer Vision Engineer — $110K to $140K"
+            "ML Engineer \u2014 $110K to $135K",
+            "Deep Learning Engineer \u2014 $115K to $140K",
+            "Computer Vision Engineer \u2014 $110K to $140K"
           ]
         },
         {
@@ -1169,7 +1205,7 @@
           "title": "Large Language Models",
           "subtitle": "NLP, LLMs & Generative AI",
           "duration": "10-12 weeks | 3 hrs/day",
-          "description": "Language models are the most transformative technology of the decade. This phase covers the full NLP stack — from text preprocessing to fine-tuning your own LLM, building RAG systems, and deploying AI applications that leverage the frontier models.",
+          "description": "Language models are the most transformative technology of the decade. This phase covers the full NLP stack \u2014 from text preprocessing to fine-tuning your own LLM, building RAG systems, and deploying AI applications that leverage the frontier models.",
           "sections": [
             {
               "title": "NLP Foundations",
@@ -1178,7 +1214,7 @@
                 "Tokenization: word, subword (BPE, WordPiece, SentencePiece)",
                 "Text preprocessing: lowercasing, stopwords, stemming, lemmatization",
                 "Bag-of-words and TF-IDF: classical text representations",
-                "Word embeddings: Word2Vec, GloVe — semantic vector spaces",
+                "Word embeddings: Word2Vec, GloVe \u2014 semantic vector spaces",
                 "spaCy: industrial NLP pipeline for production use",
                 "Regular expressions for systematic text cleaning",
                 "Text classification, NER, POS tagging with modern tools"
@@ -1256,9 +1292,9 @@
             "Image generation application with Stable Diffusion and Gradio UI"
           ],
           "outcomes": [
-            "AI Engineer / LLM Engineer — $130K to $165K",
-            "NLP Engineer — $125K to $155K",
-            "Generative AI Application Developer — $120K to $150K"
+            "AI Engineer / LLM Engineer \u2014 $130K to $165K",
+            "NLP Engineer \u2014 $125K to $155K",
+            "Generative AI Application Developer \u2014 $120K to $150K"
           ]
         },
         {
@@ -1300,7 +1336,7 @@
                 "Apache Airflow: DAGs for data and ML pipeline orchestration",
                 "Prefect and Dagster: modern Python-native orchestration frameworks",
                 "Kubeflow Pipelines: ML workflows on Kubernetes clusters",
-                "Feature stores: Feast, Tecton — sharing features across teams",
+                "Feature stores: Feast, Tecton \u2014 sharing features across teams",
                 "Continuous Training (CT): automated retraining triggers on new data",
                 "GitHub Actions for CI/CD of ML model training pipelines"
               ]
@@ -1351,17 +1387,17 @@
             "Deploy a trained model to AWS SageMaker with auto-scaling"
           ],
           "outcomes": [
-            "Senior ML Engineer — $150K to $185K",
-            "MLOps Engineer — $140K to $175K",
-            "AI Platform Engineer — $145K to $180K"
+            "Senior ML Engineer \u2014 $150K to $185K",
+            "MLOps Engineer \u2014 $140K to $175K",
+            "AI Platform Engineer \u2014 $145K to $180K"
           ]
         },
         {
           "id": 7,
           "title": "Advanced / Research-Adjacent",
           "subtitle": "Specialization, Research & Leadership",
-          "duration": "Ongoing — this phase never ends",
-          "description": "At this level, you choose your domain, go deep, and start contributing original ideas. Whether it is RLHF for aligning LLMs, building recommendation systems at scale, or leading an ML platform team — this phase separates practitioners from pioneers.",
+          "duration": "Ongoing \u2014 this phase never ends",
+          "description": "At this level, you choose your domain, go deep, and start contributing original ideas. Whether it is RLHF for aligning LLMs, building recommendation systems at scale, or leading an ML platform team \u2014 this phase separates practitioners from pioneers.",
           "sections": [
             {
               "title": "Reinforcement Learning",
@@ -1371,7 +1407,7 @@
                 "Q-learning and Deep Q-Network (DQN)",
                 "Policy gradient methods: REINFORCE, PPO, A3C",
                 "RLHF: Reinforcement Learning from Human Feedback (how GPT/Claude are trained)",
-                "DPO: Direct Preference Optimization — the new RLHF alternative",
+                "DPO: Direct Preference Optimization \u2014 the new RLHF alternative",
                 "Gymnasium (OpenAI Gym): RL environments for experimentation",
                 "Stable-Baselines3: production-grade RL algorithm library"
               ]
@@ -1382,7 +1418,7 @@
               "topics": [
                 "Vision Transformers (ViT): treating image patches as tokens",
                 "Mixture of Experts (MoE): scaling efficiently (GPT-4, Mixtral)",
-                "State Space Models: Mamba, S4 — alternatives to attention mechanism",
+                "State Space Models: Mamba, S4 \u2014 alternatives to attention mechanism",
                 "Graph Neural Networks: GCN, GAT, GraphSAGE",
                 "Diffusion models deep dive: score matching, flow matching",
                 "Multi-modal architectures: CLIP, Flamingo, LLaVA in detail",
@@ -1447,21 +1483,49 @@
             "Contribute meaningfully to a major open-source ML project"
           ],
           "outcomes": [
-            "Senior ML Engineer — $160K to $200K",
-            "Staff ML Engineer — $200K to $270K",
-            "Research Scientist — $180K to $250K",
-            "ML Tech Lead / Director — $200K+ with significant equity"
+            "Senior ML Engineer \u2014 $160K to $200K",
+            "Staff ML Engineer \u2014 $200K to $270K",
+            "Research Scientist \u2014 $180K to $250K",
+            "ML Tech Lead / Director \u2014 $200K+ with significant equity"
           ]
         }
       ],
       "timeline": [
-        { "period": "Month 1-2", "focus": "Python + Math Foundations", "milestone": "Implement gradient descent from scratch without any help" },
-        { "period": "Month 2-3", "focus": "NumPy, Pandas & EDA", "milestone": "Publish a complete EDA notebook on Kaggle publicly" },
-        { "period": "Month 3-6", "focus": "Classical ML with Scikit-learn", "milestone": "START applying for Junior Data Scientist / ML Analyst roles" },
-        { "period": "Month 6-9", "focus": "Deep Learning with PyTorch", "milestone": "Implement a transformer character-level language model from scratch" },
-        { "period": "Month 9-13", "focus": "NLP, LLMs & Generative AI", "milestone": "Apply for ML Engineer and AI Engineer roles in the $120K+ range" },
-        { "period": "Month 13-18", "focus": "MLOps & Production Systems", "milestone": "Apply for Senior ML Engineer roles in the $150K+ range" },
-        { "period": "Month 18-24+", "focus": "Specialization, Research & Leadership", "milestone": "Staff Engineer / Research Scientist trajectory at $200K+" }
+        {
+          "period": "Month 1-2",
+          "focus": "Python + Math Foundations",
+          "milestone": "Implement gradient descent from scratch without any help"
+        },
+        {
+          "period": "Month 2-3",
+          "focus": "NumPy, Pandas & EDA",
+          "milestone": "Publish a complete EDA notebook on Kaggle publicly"
+        },
+        {
+          "period": "Month 3-6",
+          "focus": "Classical ML with Scikit-learn",
+          "milestone": "START applying for Junior Data Scientist / ML Analyst roles"
+        },
+        {
+          "period": "Month 6-9",
+          "focus": "Deep Learning with PyTorch",
+          "milestone": "Implement a transformer character-level language model from scratch"
+        },
+        {
+          "period": "Month 9-13",
+          "focus": "NLP, LLMs & Generative AI",
+          "milestone": "Apply for ML Engineer and AI Engineer roles in the $120K+ range"
+        },
+        {
+          "period": "Month 13-18",
+          "focus": "MLOps & Production Systems",
+          "milestone": "Apply for Senior ML Engineer roles in the $150K+ range"
+        },
+        {
+          "period": "Month 18-24+",
+          "focus": "Specialization, Research & Leadership",
+          "milestone": "Staff Engineer / Research Scientist trajectory at $200K+"
+        }
       ]
     },
     {
@@ -1488,7 +1552,7 @@
               "subtitle": "Programming Foundations",
               "topics": [
                 "Variables, data types, control flow, loops, functions",
-                "Lists, tuples, dicts, sets — core Python data structures",
+                "Lists, tuples, dicts, sets \u2014 core Python data structures",
                 "List comprehensions, generators, lambda functions",
                 "File I/O: reading CSV, JSON, text, Excel files",
                 "Error handling: try/except, custom exceptions",
@@ -1501,7 +1565,7 @@
               "subtitle": "The Language of Data",
               "topics": [
                 "Descriptive statistics: mean, median, mode, variance, std deviation",
-                "Percentiles, quartiles, IQR — understanding distributions",
+                "Percentiles, quartiles, IQR \u2014 understanding distributions",
                 "Probability: classical, conditional, Bayes' theorem",
                 "Common distributions: Normal, Binomial, Poisson, Exponential",
                 "Central Limit Theorem: why it matters for inference",
@@ -1513,9 +1577,9 @@
               "title": "SQL Essentials",
               "subtitle": "Querying Databases",
               "topics": [
-                "SELECT, FROM, WHERE, ORDER BY, LIMIT — the basics",
+                "SELECT, FROM, WHERE, ORDER BY, LIMIT \u2014 the basics",
                 "GROUP BY and aggregate functions: COUNT, SUM, AVG, MIN, MAX",
-                "JOINs: INNER, LEFT, RIGHT, FULL OUTER — with intuition",
+                "JOINs: INNER, LEFT, RIGHT, FULL OUTER \u2014 with intuition",
                 "Subqueries and CTEs (Common Table Expressions)",
                 "Window functions: ROW_NUMBER, RANK, LAG, LEAD, running totals",
                 "String and date functions for data cleaning in SQL",
@@ -1583,7 +1647,7 @@
               "title": "Visualization",
               "subtitle": "Charts That Tell Stories",
               "topics": [
-                "Matplotlib: figure, axes, subplots — the underlying architecture",
+                "Matplotlib: figure, axes, subplots \u2014 the underlying architecture",
                 "Seaborn: statistical plots with less code (histplot, boxplot, heatmap)",
                 "Plotly and Plotly Express: interactive charts for dashboards",
                 "Choosing the right chart type: bar, line, scatter, heatmap, violin",
@@ -1596,7 +1660,7 @@
               "title": "Exploratory Data Analysis",
               "subtitle": "Structured Investigation",
               "topics": [
-                "The EDA framework: shape → types → missingness → distributions → relationships",
+                "The EDA framework: shape \u2192 types \u2192 missingness \u2192 distributions \u2192 relationships",
                 "Univariate analysis: distributions, skewness, kurtosis, outliers",
                 "Bivariate analysis: scatter plots, correlation heatmaps, grouped charts",
                 "Multivariate analysis: pair plots, PCA biplots, facet grids",
@@ -1693,7 +1757,7 @@
           "title": "Machine Learning",
           "subtitle": "Predictive Modeling & Scikit-learn",
           "duration": "8-10 weeks | 3 hrs/day",
-          "description": "Machine learning is the analytical superpower of the modern data scientist. This phase builds mastery of the complete supervised and unsupervised learning toolkit — from the algorithms themselves to feature engineering, model evaluation, and production-ready pipelines.",
+          "description": "Machine learning is the analytical superpower of the modern data scientist. This phase builds mastery of the complete supervised and unsupervised learning toolkit \u2014 from the algorithms themselves to feature engineering, model evaluation, and production-ready pipelines.",
           "sections": [
             {
               "title": "Supervised Learning",
@@ -1702,7 +1766,7 @@
                 "Linear and Logistic Regression: the interpretable baselines",
                 "Decision Trees: splitting criteria, depth, overfitting intuition",
                 "Random Forest: bagging, feature importance, OOB error",
-                "Gradient Boosting: XGBoost, LightGBM, CatBoost — the competition winners",
+                "Gradient Boosting: XGBoost, LightGBM, CatBoost \u2014 the competition winners",
                 "Support Vector Machines: kernel trick, margins, C and gamma",
                 "K-Nearest Neighbors: distance metrics, curse of dimensionality",
                 "Naive Bayes: probabilistic classifiers, text classification use case"
@@ -1712,7 +1776,7 @@
               "title": "Model Evaluation",
               "subtitle": "Metrics & Validation",
               "topics": [
-                "Train/validation/test split — the correct 3-way split and why",
+                "Train/validation/test split \u2014 the correct 3-way split and why",
                 "Cross-validation: k-fold, stratified k-fold, leave-one-out",
                 "Classification: accuracy, precision, recall, F1, ROC-AUC, log loss",
                 "Regression: MAE, MSE, RMSE, MAPE, R-squared",
@@ -1726,7 +1790,7 @@
               "subtitle": "Where Most Value Is Created",
               "topics": [
                 "Encoding categoricals: one-hot, ordinal, target, frequency encoding",
-                "Scaling: StandardScaler, MinMaxScaler, RobustScaler — when to use each",
+                "Scaling: StandardScaler, MinMaxScaler, RobustScaler \u2014 when to use each",
                 "Missing value imputation: mean/median, KNN imputer, model-based",
                 "Creating features: interactions, ratios, aggregations, date features",
                 "Feature selection: variance threshold, correlation, mutual information, SHAP",
@@ -1778,9 +1842,9 @@
             "Customer segmentation and profiling for a fictional e-commerce business"
           ],
           "outcomes": [
-            "Junior Data Scientist — $85K to $100K",
-            "Data Analyst (Senior) — $80K to $100K",
-            "Business Intelligence Analyst — $75K to $95K"
+            "Junior Data Scientist \u2014 $85K to $100K",
+            "Data Analyst (Senior) \u2014 $80K to $100K",
+            "Business Intelligence Analyst \u2014 $75K to $95K"
           ]
         },
         {
@@ -1788,7 +1852,7 @@
           "title": "Advanced Analytics",
           "subtitle": "Time Series, NLP & Business Analytics",
           "duration": "8-10 weeks | 2-3 hrs/day",
-          "description": "Real businesses need forecasts, not just explanations. This phase extends your toolkit into the two most commercially valuable advanced areas of data science: time series forecasting and natural language processing — plus the analytics infrastructure that powers data-driven organizations.",
+          "description": "Real businesses need forecasts, not just explanations. This phase extends your toolkit into the two most commercially valuable advanced areas of data science: time series forecasting and natural language processing \u2014 plus the analytics infrastructure that powers data-driven organizations.",
           "sections": [
             {
               "title": "Time Series Analysis",
@@ -1797,7 +1861,7 @@
                 "Time series components: trend, seasonality, cyclical, residual",
                 "Stationarity: ADF test, differencing, log transformation",
                 "Autocorrelation (ACF) and partial autocorrelation (PACF) plots",
-                "Classical models: ARIMA, SARIMA — identification and fitting",
+                "Classical models: ARIMA, SARIMA \u2014 identification and fitting",
                 "Exponential smoothing: Holt-Winters, ETS models",
                 "Prophet by Meta: additive model with seasonality and holidays",
                 "ML for time series: lag features, rolling statistics, LightGBM"
@@ -1810,7 +1874,7 @@
                 "Text preprocessing: tokenization, lowercasing, stopwords, stemming",
                 "Bag-of-words and TF-IDF: classical text representations",
                 "Sentiment analysis: VADER, TextBlob, fine-tuned transformers",
-                "Topic modeling: LDA — discovering themes in document collections",
+                "Topic modeling: LDA \u2014 discovering themes in document collections",
                 "Word embeddings: Word2Vec, GloVe for semantic similarity",
                 "Using Hugging Face pipelines: sentiment, NER, zero-shot classification",
                 "Text classification: fine-tuning BERT for custom categories"
@@ -1850,9 +1914,9 @@
             "Causal analysis: measure the impact of a marketing campaign"
           ],
           "outcomes": [
-            "Data Scientist — $100K to $125K",
-            "Product Data Scientist — $105K to $130K",
-            "Applied Scientist (Industry) — $110K to $135K"
+            "Data Scientist \u2014 $100K to $125K",
+            "Product Data Scientist \u2014 $105K to $130K",
+            "Applied Scientist (Industry) \u2014 $110K to $135K"
           ]
         },
         {
@@ -1860,7 +1924,7 @@
           "title": "Data Engineering & MLOps",
           "subtitle": "Data Pipelines, Cloud & Deployment",
           "duration": "6-8 weeks | 2-3 hrs/day",
-          "description": "Data scientists who can own the full stack — from raw data ingestion to production model monitoring — are worth 2x their peers. This phase teaches you to build data pipelines, deploy models as APIs, and work confidently in cloud environments.",
+          "description": "Data scientists who can own the full stack \u2014 from raw data ingestion to production model monitoring \u2014 are worth 2x their peers. This phase teaches you to build data pipelines, deploy models as APIs, and work confidently in cloud environments.",
           "sections": [
             {
               "title": "Data Engineering Basics",
@@ -1869,7 +1933,7 @@
                 "ETL vs ELT: extract, transform, load patterns and when to use each",
                 "Apache Airflow: DAG authoring, scheduling, monitoring",
                 "dbt (data build tool): transformations in SQL with version control",
-                "Data warehouses: BigQuery, Snowflake, Redshift — concepts and querying",
+                "Data warehouses: BigQuery, Snowflake, Redshift \u2014 concepts and querying",
                 "Data lakes vs warehouses vs lakehouses (Delta Lake, Apache Iceberg)",
                 "Apache Spark and PySpark: distributed data processing basics",
                 "Streaming data concepts: Kafka, Kinesis (conceptual understanding)"
@@ -1928,9 +1992,9 @@
               "title": "Analytics Engineering",
               "subtitle": "The Modern Data Stack",
               "topics": [
-                "The modern data stack: ingestion (Fivetran) → warehouse → dbt → BI",
+                "The modern data stack: ingestion (Fivetran) \u2192 warehouse \u2192 dbt \u2192 BI",
                 "dbt: models, tests, documentation, seeds, sources",
-                "Medallion architecture: bronze → silver → gold data layers",
+                "Medallion architecture: bronze \u2192 silver \u2192 gold data layers",
                 "Semantic layer: defining business metrics consistently across tools",
                 "LookML / Looker: metric-layer definitions",
                 "Data catalog: documenting datasets for organizational discoverability"
@@ -1938,22 +2002,22 @@
             }
           ],
           "projects": [
-            "End-to-end data pipeline: ingest raw data → clean → model → dashboard",
+            "End-to-end data pipeline: ingest raw data \u2192 clean \u2192 model \u2192 dashboard",
             "Deploy a trained model as a FastAPI endpoint with Docker",
             "MLflow experiment tracking system for a multi-model comparison project"
           ],
           "outcomes": [
-            "Senior Data Scientist — $120K to $150K",
-            "ML Engineer (Data-focused) — $125K to $155K",
-            "Data Engineer (transitional) — $115K to $145K"
+            "Senior Data Scientist \u2014 $120K to $150K",
+            "ML Engineer (Data-focused) \u2014 $125K to $155K",
+            "Data Engineer (transitional) \u2014 $115K to $145K"
           ]
         },
         {
           "id": 7,
           "title": "Advanced / Leadership",
           "subtitle": "Specialization, Strategy & Influence",
-          "duration": "Ongoing — this phase never ends",
-          "description": "Senior data scientists do not just build models — they define strategy, mentor teams, and translate business problems into analytical frameworks. This phase covers advanced specializations, research skills, leadership, and the soft skills that determine who reaches principal and director levels.",
+          "duration": "Ongoing \u2014 this phase never ends",
+          "description": "Senior data scientists do not just build models \u2014 they define strategy, mentor teams, and translate business problems into analytical frameworks. This phase covers advanced specializations, research skills, leadership, and the soft skills that determine who reaches principal and director levels.",
           "sections": [
             {
               "title": "Deep Learning for DS",
@@ -2038,21 +2102,756 @@
             "Publish a technical blog post or paper on a novel analysis"
           ],
           "outcomes": [
-            "Senior Data Scientist — $140K to $170K",
-            "Principal Data Scientist — $165K to $200K",
-            "Data Science Manager — $155K to $195K",
-            "Director of Data Science — $185K+ with equity"
+            "Senior Data Scientist \u2014 $140K to $170K",
+            "Principal Data Scientist \u2014 $165K to $200K",
+            "Data Science Manager \u2014 $155K to $195K",
+            "Director of Data Science \u2014 $185K+ with equity"
           ]
         }
       ],
       "timeline": [
-        { "period": "Month 1-2", "focus": "Python, Statistics & SQL Foundations", "milestone": "Write complex SQL queries and basic Python EDA without Googling" },
-        { "period": "Month 2-4", "focus": "Pandas, Visualization & EDA", "milestone": "Publish a well-received EDA notebook on Kaggle" },
-        { "period": "Month 4-6", "focus": "Inferential Statistics & A/B Testing", "milestone": "Design and analyze a complete A/B test from scratch" },
-        { "period": "Month 6-9", "focus": "Machine Learning with Scikit-learn", "milestone": "START applying for Junior Data Scientist roles ($85K+)" },
-        { "period": "Month 9-12", "focus": "Time Series, NLP & Business Analytics", "milestone": "Apply for Data Scientist and Product DS roles ($100K+ range)" },
-        { "period": "Month 12-16", "focus": "Data Pipelines, Cloud & Deployment", "milestone": "Apply for Senior Data Scientist roles ($120K+ range)" },
-        { "period": "Month 16-20+", "focus": "Specialization, Causal Inference & Leadership", "milestone": "Principal Data Scientist trajectory at $165K+" }
+        {
+          "period": "Month 1-2",
+          "focus": "Python, Statistics & SQL Foundations",
+          "milestone": "Write complex SQL queries and basic Python EDA without Googling"
+        },
+        {
+          "period": "Month 2-4",
+          "focus": "Pandas, Visualization & EDA",
+          "milestone": "Publish a well-received EDA notebook on Kaggle"
+        },
+        {
+          "period": "Month 4-6",
+          "focus": "Inferential Statistics & A/B Testing",
+          "milestone": "Design and analyze a complete A/B test from scratch"
+        },
+        {
+          "period": "Month 6-9",
+          "focus": "Machine Learning with Scikit-learn",
+          "milestone": "START applying for Junior Data Scientist roles ($85K+)"
+        },
+        {
+          "period": "Month 9-12",
+          "focus": "Time Series, NLP & Business Analytics",
+          "milestone": "Apply for Data Scientist and Product DS roles ($100K+ range)"
+        },
+        {
+          "period": "Month 12-16",
+          "focus": "Data Pipelines, Cloud & Deployment",
+          "milestone": "Apply for Senior Data Scientist roles ($120K+ range)"
+        },
+        {
+          "period": "Month 16-20+",
+          "focus": "Specialization, Causal Inference & Leadership",
+          "milestone": "Principal Data Scientist trajectory at $165K+"
+        }
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "subtitle": "CI/CD & Infrastructure",
+      "icon": "rocket_launch",
+      "stats": {
+        "phases": 7,
+        "duration": "14-20 Months to Job",
+        "technologies": "50+ Technologies",
+        "salary": "$100K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Foundation",
+          "subtitle": "Linux, Networking & Scripting Basics",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "DevOps is built on three non-negotiable foundations: Linux, networking, and scripting. Every cloud server runs Linux. Every deployment crosses a network. Every automation requires scripting. These are not optional prerequisites \u2014 they are the daily tools you will use for your entire career.",
+          "sections": [
+            {
+              "title": "Linux Fundamentals",
+              "subtitle": "The Operating System of the Cloud",
+              "topics": [
+                "Linux distributions: Ubuntu, CentOS, RHEL, Amazon Linux \u2014 differences and use cases",
+                "Filesystem hierarchy: /, /etc, /var, /home, /opt, /tmp \u2014 what lives where",
+                "File and directory operations: ls, cd, cp, mv, rm, mkdir, find, locate",
+                "File permissions: chmod, chown, chgrp \u2014 read/write/execute, octal notation",
+                "Users and groups: useradd, usermod, passwd, sudo, /etc/passwd, /etc/sudoers",
+                "Process management: ps, top, htop, kill, pkill, nice, jobs, bg, fg",
+                "Package management: apt (Debian/Ubuntu), yum/dnf (RHEL/CentOS), package repos",
+                "Systemd and services: systemctl start/stop/enable/status, journalctl for logs",
+                "Disk management: df, du, mount, umount, fdisk, lsblk, /etc/fstab",
+                "Text editors: vim basics (insert, save, quit), nano for quick edits"
+              ]
+            },
+            {
+              "title": "Linux CLI Mastery",
+              "subtitle": "Command Line Power Tools",
+              "topics": [
+                "Text processing: grep, sed, awk, cut, sort, uniq, wc, head, tail",
+                "Pipes and redirection: |, >, >>, <, 2>, 2>&1, /dev/null",
+                "File viewing: cat, less, more, diff, wc",
+                "Archiving and compression: tar, gzip, gunzip, zip, unzip",
+                "Environment variables: export, .bashrc, .bash_profile, .profile, PATH",
+                "Cron jobs: crontab -e, cron syntax (minute/hour/day/month/weekday), cron.d",
+                "SSH: ssh, ssh-keygen, ssh-copy-id, ~/.ssh/config, key-based authentication",
+                "SCP and rsync: secure file transfer between servers",
+                "Screen and tmux: persistent terminal sessions, multiplexing",
+                "curl and wget: downloading files, testing HTTP endpoints from CLI"
+              ]
+            },
+            {
+              "title": "Networking Fundamentals",
+              "subtitle": "How the Internet Actually Works",
+              "topics": [
+                "OSI model: all 7 layers and what happens at each \u2014 not just memorization",
+                "TCP/IP: how packets travel, three-way handshake, connection states",
+                "IP addressing: IPv4 classes, CIDR notation, subnetting (calculate /24, /16, /28)",
+                "DNS: A, AAAA, CNAME, MX, TXT, NS records \u2014 how resolution works end to end",
+                "HTTP/HTTPS: methods (GET/POST/PUT/DELETE), status codes, headers, TLS handshake",
+                "Common ports: 22 (SSH), 80 (HTTP), 443 (HTTPS), 3306 (MySQL), 5432 (Postgres), 6379 (Redis)",
+                "Firewalls: iptables basics, ufw (Uncomplicated Firewall), inbound/outbound rules",
+                "Load balancing concepts: round-robin, least connections, health checks",
+                "NAT and proxies: how traffic is routed through private networks",
+                "Network debugging: ping, traceroute, netstat, ss, nslookup, dig, tcpdump basics"
+              ]
+            },
+            {
+              "title": "Shell Scripting",
+              "subtitle": "Automating Everything with Bash",
+              "topics": [
+                "Bash script structure: shebang (#!/bin/bash), permissions, execution",
+                "Variables: declaration, quoting, command substitution ($(), ``)",
+                "Conditionals: if/elif/else, test operators (-z, -n, -f, -d, -eq, -ne, -lt, -gt)",
+                "Loops: for, while, until, break, continue, loop over files and arrays",
+                "Functions: definition, arguments ($1, $2, $@), return values",
+                "String manipulation: substring, length, replace, split",
+                "Arrays: indexed arrays, associative arrays, iterating",
+                "Input/Output: read user input, here-documents (<<EOF), printf",
+                "Exit codes: $?, trap for error handling, set -e, set -u, set -o pipefail",
+                "Script best practices: logging, error handling, idempotency, dry-run flags"
+              ]
+            }
+          ],
+          "projects": [
+            "Write a bash script that automates server setup: installs packages, creates users, sets up SSH keys",
+            "Build a log rotation and archiving script with cron scheduling",
+            "Create a system health monitoring script that alerts when CPU/memory/disk exceeds thresholds",
+            "Set up a Linux VM from scratch (VirtualBox or Multipass) and configure it entirely via CLI"
+          ],
+          "outcomes": [
+            "Navigate and manage any Linux server without a GUI",
+            "Write bash scripts to automate repetitive operational tasks",
+            "Debug network connectivity issues using CLI tools",
+            "Configure users, permissions, services, and cron jobs confidently"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Version Control & Collaboration",
+          "subtitle": "Git, GitHub & Team Workflows",
+          "duration": "2-3 weeks | 2 hrs/day",
+          "description": "Git is the foundation of every DevOps workflow. Infrastructure as Code, CI/CD pipelines, and application deployments all start with a git push. Master it completely \u2014 not just the basics, but the branching strategies and team workflows that real engineering teams use.",
+          "sections": [
+            {
+              "title": "Git Core",
+              "subtitle": "Version Control Fundamentals",
+              "topics": [
+                "Git internals: working tree, staging area (index), local repository, remote repository",
+                "Core commands: init, clone, add, commit, status, log, diff, show",
+                "Branching: branch, checkout, switch \u2014 HEAD and detached HEAD state",
+                "Merging: merge (fast-forward vs 3-way), merge conflicts \u2014 resolving them correctly",
+                "Rebasing: rebase vs merge, interactive rebase (squash, fixup, reword, edit)",
+                "Remote operations: remote, fetch, pull, push, upstream tracking",
+                "Stashing: stash, stash pop, stash list, stash apply \u2014 saving work in progress",
+                "Tagging: lightweight vs annotated tags, semantic versioning (v1.2.3)",
+                "Undoing changes: reset (soft/mixed/hard), revert, restore, clean",
+                "Git log mastery: --oneline, --graph, --author, --since, --grep, --all"
+              ]
+            },
+            {
+              "title": "Branching Strategies",
+              "subtitle": "Team Workflows at Scale",
+              "topics": [
+                "GitFlow: main, develop, feature/*, release/*, hotfix/* \u2014 when it fits",
+                "Trunk-based development: short-lived feature branches, feature flags \u2014 the modern standard",
+                "GitHub Flow: simple branch \u2192 PR \u2192 merge pattern for CI/CD teams",
+                "Branch naming conventions: feat/, fix/, chore/, docs/, refactor/",
+                "Commit message conventions: Conventional Commits (feat:, fix:, chore:, BREAKING CHANGE:)",
+                "Monorepo vs polyrepo: tradeoffs for DevOps teams",
+                "Git hooks: pre-commit, pre-push, commit-msg \u2014 automating quality checks locally"
+              ]
+            },
+            {
+              "title": "GitHub / GitLab for DevOps",
+              "subtitle": "Collaboration & Automation Platform",
+              "topics": [
+                "Pull Requests / Merge Requests: description templates, reviewers, labels, milestones",
+                "Code review: inline comments, suggestion blocks, approval workflows",
+                "Branch protection rules: require PR reviews, status checks, linear history",
+                "GitHub Actions overview: workflows, jobs, steps, runners (covered deeply in CI/CD phase)",
+                "GitHub Packages: publishing Docker images and packages to GHCR",
+                "Issues and project boards: linking PRs to issues, automation",
+                "CODEOWNERS file: auto-assign reviewers based on file paths",
+                "Secrets management: GitHub Secrets, environment secrets, OIDC for cloud auth",
+                "GitLab CI/CD overview: .gitlab-ci.yml, pipelines, runners (if team uses GitLab)"
+              ]
+            }
+          ],
+          "projects": [
+            "Contribute to a team repository: open PRs, review code, resolve merge conflicts",
+            "Set up branch protection rules and a CODEOWNERS file on a personal repo",
+            "Configure local git hooks with pre-commit to run linting before every commit",
+            "Practice interactive rebase: clean up a messy branch history before merging"
+          ],
+          "outcomes": [
+            "Handle any git merge conflict without losing work",
+            "Implement and explain trunk-based development to a team",
+            "Set up a complete GitHub repository with protection rules and review workflows",
+            "Use git bisect to find the commit that introduced a bug"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Containerization",
+          "subtitle": "Docker & Container Fundamentals",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "Containers are the atomic unit of modern DevOps. Docker changed how software is built, shipped, and run. Understanding containers deeply \u2014 not just running docker run \u2014 is what separates real DevOps engineers from those who just copy commands from Stack Overflow.",
+          "sections": [
+            {
+              "title": "Docker Core",
+              "subtitle": "Containers from First Principles",
+              "topics": [
+                "Container vs VM: what containers actually are (namespaces + cgroups), why they are faster",
+                "Docker architecture: Docker daemon, Docker CLI, containerd, runc, image layers",
+                "Images vs containers: the read-only layer stack, copy-on-write, writable container layer",
+                "Docker CLI essentials: run, ps, stop, rm, images, pull, push, exec, logs, inspect",
+                "Port mapping: -p hostPort:containerPort, exposing services to the host",
+                "Volume mounting: -v and --mount, bind mounts vs named volumes, data persistence",
+                "Environment variables: -e, --env-file, injecting config at runtime",
+                "Container networking: bridge, host, none \u2014 default bridge network, container-to-container DNS",
+                "Resource limits: --memory, --cpus \u2014 preventing runaway containers",
+                "Docker inspect and docker stats: debugging container internals"
+              ]
+            },
+            {
+              "title": "Dockerfile Mastery",
+              "subtitle": "Building Production-Grade Images",
+              "topics": [
+                "Dockerfile instructions: FROM, RUN, COPY, ADD, WORKDIR, ENV, ARG, EXPOSE, CMD, ENTRYPOINT",
+                "CMD vs ENTRYPOINT: the difference, using both together for flexible images",
+                "Layer caching: order instructions to maximize cache hits, cache busting",
+                "Multi-stage builds: build stage + runtime stage, dramatically smaller images",
+                "Base image selection: alpine vs debian-slim vs distroless \u2014 size vs compatibility tradeoffs",
+                ".dockerignore: excluding node_modules, .git, secrets from build context",
+                "Build arguments (ARG) vs runtime environment (ENV): when to use each",
+                "Non-root user: running containers as non-root for security (USER instruction)",
+                "HEALTHCHECK instruction: defining container health for orchestrators",
+                "Image tagging strategy: latest vs semantic versions vs git SHA tags"
+              ]
+            },
+            {
+              "title": "Docker Compose",
+              "subtitle": "Multi-Container Local Development",
+              "topics": [
+                "docker-compose.yml structure: version, services, networks, volumes",
+                "Service definition: image, build, ports, volumes, environment, depends_on",
+                "Build context in Compose: building custom images alongside third-party services",
+                "Networking in Compose: default network, service discovery by service name",
+                "Named volumes vs bind mounts in Compose: persisting database data",
+                "Environment files: .env file, variable substitution in compose files",
+                "Profiles: conditional service startup for different environments",
+                "Health checks and depends_on condition: ensuring startup order correctly",
+                "Override files: docker-compose.override.yml for local dev vs CI differences",
+                "Compose CLI: up, down, ps, logs, exec, build, pull, restart"
+              ]
+            },
+            {
+              "title": "Container Security",
+              "subtitle": "Securing Your Containers",
+              "topics": [
+                "Image vulnerability scanning: Trivy, Snyk, Docker Scout \u2014 scan before pushing",
+                "Minimal base images: attack surface reduction with distroless or alpine",
+                "Secrets in containers: never bake secrets into images, use runtime injection",
+                "Read-only filesystems: --read-only flag, tmpfs for writable temp dirs",
+                "Dropping Linux capabilities: --cap-drop ALL, add back only what's needed",
+                "Docker Content Trust (DCT): image signing and verification",
+                "Container isolation: understanding what containers share with the host",
+                "Rootless Docker: running Docker daemon without root privileges"
+              ]
+            },
+            {
+              "title": "Container Registry",
+              "subtitle": "Storing and Distributing Images",
+              "topics": [
+                "Docker Hub: public/private repos, rate limits, automated builds",
+                "GitHub Container Registry (GHCR): integrating with GitHub Actions workflows",
+                "AWS ECR: private registry on AWS, authentication with IAM, lifecycle policies",
+                "Google Artifact Registry / GCR: equivalent on GCP",
+                "Harbor: self-hosted enterprise registry with security scanning",
+                "Image tagging and promotion: dev \u2192 staging \u2192 prod tagging strategy",
+                "Registry authentication: docker login, credential helpers, token rotation"
+              ]
+            }
+          ],
+          "projects": [
+            "Containerize a full-stack app (frontend + backend + database) with Docker Compose",
+            "Write a production-grade multi-stage Dockerfile that produces a minimal image under 50MB",
+            "Set up a private container registry and push/pull images with authentication",
+            "Scan a public Docker image with Trivy and fix all critical vulnerabilities found"
+          ],
+          "outcomes": [
+            "Write a production Dockerfile from scratch for any language/framework",
+            "Debug container networking issues between services in Docker Compose",
+            "Explain the difference between images, containers, and volumes to a junior engineer",
+            "Build Docker images in CI and push to a container registry automatically"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "CI/CD Pipelines",
+          "subtitle": "Continuous Integration & Continuous Delivery",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "CI/CD is the heart of DevOps. It is the practice of automating the path from a developer's commit to running software in production. Building fast, reliable, and secure pipelines is the core job of a DevOps engineer \u2014 this phase makes you dangerous.",
+          "sections": [
+            {
+              "title": "CI/CD Fundamentals",
+              "subtitle": "The Philosophy Before the Tools",
+              "topics": [
+                "Continuous Integration: what it means, why small frequent commits beat long-lived branches",
+                "Continuous Delivery vs Continuous Deployment: the critical difference",
+                "The deployment pipeline: commit \u2192 build \u2192 test \u2192 artifact \u2192 deploy \u2192 verify",
+                "Shift-left testing: catching bugs earlier in the pipeline, not in production",
+                "Artifact management: build once, deploy everywhere \u2014 immutable artifacts",
+                "Feature flags: decoupling deployment from release, dark launches",
+                "Deployment strategies: blue/green, canary, rolling update, recreate \u2014 when to use each",
+                "Mean Time to Recovery (MTTR) vs Mean Time Between Failures (MTBF): the right metrics",
+                "Pipeline as Code: why YAML/code-defined pipelines beat GUI-configured ones",
+                "The Four Key DORA Metrics: deployment frequency, lead time, change failure rate, MTTR"
+              ]
+            },
+            {
+              "title": "GitHub Actions",
+              "subtitle": "The Modern CI/CD Standard",
+              "topics": [
+                "Workflow anatomy: on (triggers), jobs, steps, runs-on, uses, with, env",
+                "Triggers: push, pull_request, schedule (cron), workflow_dispatch, repository_dispatch",
+                "Runners: GitHub-hosted (ubuntu-latest, windows, macos), self-hosted runners",
+                "Actions marketplace: using community actions, pinning to SHA for security",
+                "Writing custom actions: JavaScript actions, Docker actions, composite actions",
+                "Matrix builds: testing across multiple OS, Node versions, Python versions simultaneously",
+                "Caching dependencies: actions/cache for node_modules, pip, Maven, Gradle",
+                "Artifacts: actions/upload-artifact, download-artifact \u2014 passing files between jobs",
+                "Environments and approvals: production environment, required reviewers, deployment gates",
+                "OIDC authentication: keyless cloud auth to AWS/GCP/Azure without long-lived secrets",
+                "Reusable workflows: calling workflows from other workflows, DRY pipelines",
+                "Concurrency groups: preventing overlapping deployments to the same environment"
+              ]
+            },
+            {
+              "title": "Pipeline Patterns",
+              "subtitle": "Real-World CI/CD Design",
+              "topics": [
+                "Build pipeline: checkout \u2192 install deps \u2192 lint \u2192 test \u2192 build \u2192 docker build \u2192 push",
+                "Test stages: unit tests, integration tests, end-to-end tests \u2014 parallel execution",
+                "Security scanning in CI: SAST (Semgrep, CodeQL), dependency audit (npm audit, Snyk)",
+                "Docker image build and push: multi-platform builds (amd64 + arm64) with buildx",
+                "GitOps pattern: CI pushes image tag, CD watches repo \u2014 separation of concerns",
+                "Deployment pipeline: staging deploy \u2192 smoke tests \u2192 production deploy \u2192 health check",
+                "Rollback automation: automatic rollback on failed health check post-deploy",
+                "Notification integration: Slack/Teams alerts on pipeline failure, deployment success",
+                "Pipeline performance: parallelism, caching, incremental builds for fast feedback",
+                "Monorepo CI: path-based filtering, only build/test affected services"
+              ]
+            },
+            {
+              "title": "Other CI/CD Tools",
+              "subtitle": "GitLab CI, Jenkins & ArgoCD",
+              "topics": [
+                "GitLab CI/CD: .gitlab-ci.yml, stages, jobs, artifacts, environments, GitLab runners",
+                "Jenkins: Jenkinsfile (declarative vs scripted), plugins ecosystem, agent configuration",
+                "Jenkins shared libraries: reusable Groovy code across pipelines",
+                "CircleCI: orbs, workflows, resource classes, parallelism",
+                "ArgoCD: GitOps continuous delivery for Kubernetes, sync policies, app-of-apps pattern",
+                "Flux CD: alternative GitOps tool, Kustomize and Helm integration",
+                "Choosing the right tool: GitHub Actions for most teams, Jenkins for enterprise legacy",
+                "Pipeline security: secret scanning, SAST, container scanning as pipeline gates"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a complete GitHub Actions pipeline: lint \u2192 test \u2192 docker build \u2192 push to GHCR \u2192 deploy",
+            "Implement a matrix build that tests a Node.js app across Node 18, 20, and 22",
+            "Set up a GitOps workflow: CI updates image tag in a config repo, ArgoCD deploys it",
+            "Create a reusable GitHub Actions workflow used across 3 different microservice repos"
+          ],
+          "outcomes": [
+            "Build a CI/CD pipeline from scratch for any tech stack",
+            "Implement blue/green deployment with automated rollback on health check failure",
+            "Explain the DORA metrics and how your pipeline improves each one",
+            "Secure a pipeline with OIDC auth, secret scanning, and image vulnerability gates",
+            "Junior DevOps Engineer \u2014 $85K to $105K"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Infrastructure as Code",
+          "subtitle": "Terraform, Ansible & Configuration Management",
+          "duration": "8-10 weeks | 2-3 hrs/day",
+          "description": "Infrastructure as Code is the practice of managing servers, networks, and cloud resources through code instead of manual clicks. It brings software engineering practices \u2014 version control, code review, testing \u2014 to infrastructure. This is what makes DevOps engineers 10x more productive than sysadmins.",
+          "sections": [
+            {
+              "title": "Terraform",
+              "subtitle": "Infrastructure Provisioning at Scale",
+              "topics": [
+                "Terraform architecture: providers, resources, data sources, state \u2014 how it all connects",
+                "HCL syntax: blocks, arguments, expressions, functions, type constraints",
+                "Core workflow: terraform init \u2192 plan \u2192 apply \u2192 destroy",
+                "Providers: AWS, GCP, Azure providers \u2014 authentication, version pinning",
+                "Resources: declaring cloud resources (EC2, VPC, S3, RDS, etc.)",
+                "Data sources: reading existing infrastructure, referencing external state",
+                "Variables: input variables (var.), local values (local.), output values",
+                "Variable types: string, number, bool, list, map, object, tuple \u2014 type constraints",
+                "State management: terraform.tfstate, what it is, why it's critical",
+                "Remote state: S3 + DynamoDB backend (AWS), GCS backend (GCP) \u2014 locking",
+                "Terraform workspaces: multiple environments with same code",
+                "Modules: creating reusable modules, module sources (registry, git, local)",
+                "Module composition: calling modules, passing variables, consuming outputs",
+                "Count and for_each: creating multiple resources dynamically",
+                "Dynamic blocks: generating repeated nested blocks programmatically",
+                "Lifecycle meta-arguments: create_before_destroy, prevent_destroy, ignore_changes",
+                "Terraform import: bringing existing infrastructure under Terraform management",
+                "Terraform state commands: mv, rm, list, show \u2014 managing state directly",
+                "Sensitive values: marking outputs as sensitive, handling secrets safely"
+              ]
+            },
+            {
+              "title": "Terraform Best Practices",
+              "subtitle": "Production-Grade IaC",
+              "topics": [
+                "Directory structure: environments/ vs modules/ \u2014 the standard layout",
+                "DRY infrastructure: modules for reusable VPC, EKS cluster, RDS patterns",
+                "Terragrunt: DRY Terraform configurations across multiple environments",
+                "Terraform Cloud / HCP Terraform: remote runs, state, policy as code",
+                "CI/CD for Terraform: plan on PR, apply on merge \u2014 Atlantis, Terraform Cloud",
+                "Drift detection: terraform plan in CI to detect manual changes in cloud",
+                "Testing Terraform: Terratest (Go), terraform validate, tflint, checkov for security",
+                "Secrets in Terraform: never in state, use Vault provider or SSM Parameter Store",
+                "Cost estimation: Infracost \u2014 showing cost impact of infrastructure changes in PRs",
+                "Terraform upgrade path: tfupgrade, provider version constraints, state migrations"
+              ]
+            },
+            {
+              "title": "Ansible",
+              "subtitle": "Configuration Management & Application Deployment",
+              "topics": [
+                "Ansible architecture: control node, managed nodes, agentless (SSH-based)",
+                "Inventory: static inventory files, dynamic inventory (AWS EC2, GCP), groups",
+                "Ad-hoc commands: ansible -m module -a args \u2014 quick one-off tasks",
+                "Playbooks: YAML structure, plays, tasks, handlers, when conditions",
+                "Modules: command, shell, copy, template, file, package, service, user, git",
+                "Variables: vars, vars_files, host_vars, group_vars, variable precedence",
+                "Templates: Jinja2 templating for config file generation",
+                "Roles: directory structure, tasks/main.yml, handlers, templates, defaults, meta",
+                "Ansible Galaxy: downloading community roles, requirements.yml",
+                "Idempotency: why Ansible tasks must be idempotent and how to ensure it",
+                "Vault: encrypting secrets in Ansible (ansible-vault encrypt/decrypt)",
+                "Tags: running only specific parts of a playbook",
+                "Error handling: ignore_errors, failed_when, rescue blocks",
+                "Ansible for server provisioning: bootstrap a fresh server to production-ready state"
+              ]
+            },
+            {
+              "title": "Other IaC Tools",
+              "subtitle": "Pulumi, CDK & Cloud-Native Options",
+              "topics": [
+                "AWS CloudFormation: stacks, templates (YAML/JSON), changesets, nested stacks",
+                "AWS CDK: Infrastructure as actual code (TypeScript/Python), constructs, stacks",
+                "Pulumi: multi-cloud IaC in real programming languages (TypeScript, Python, Go)",
+                "Crossplane: Kubernetes-native infrastructure provisioning",
+                "Chef and Puppet: legacy configuration management \u2014 know they exist, why Ansible won",
+                "Choosing between tools: Terraform for provisioning, Ansible for configuration \u2014 the split"
+              ]
+            }
+          ],
+          "projects": [
+            "Provision a complete 3-tier AWS architecture with Terraform: VPC, ALB, EC2 ASG, RDS",
+            "Write a Terraform module for a reusable EKS cluster used across dev/staging/prod",
+            "Use Ansible to configure 5 fresh Ubuntu servers: install docker, nginx, create users, deploy app",
+            "Set up Atlantis or Terraform Cloud for automated plan/apply in a GitHub PR workflow"
+          ],
+          "outcomes": [
+            "Provision any cloud infrastructure with Terraform from scratch",
+            "Write reusable Terraform modules used by multiple teams",
+            "Configure entire server fleets with Ansible playbooks",
+            "Explain and implement remote state with locking and workspace isolation",
+            "DevOps Engineer \u2014 $100K to $125K"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Cloud Platforms & Kubernetes",
+          "subtitle": "AWS/GCP/Azure & Container Orchestration",
+          "duration": "10-12 weeks | 3 hrs/day",
+          "description": "Cloud is where all modern infrastructure lives. Kubernetes is how containers run at scale in production. These two topics are the core of senior DevOps work. Master one cloud deeply, understand the others broadly, and learn Kubernetes well enough to design and operate production clusters.",
+          "sections": [
+            {
+              "title": "AWS Core Services",
+              "subtitle": "The World's Dominant Cloud Platform",
+              "topics": [
+                "IAM: users, roles, policies, groups \u2014 principle of least privilege, policy simulator",
+                "IAM roles for services: EC2 instance profiles, ECS task roles, Lambda execution roles",
+                "VPC: subnets (public/private), route tables, internet gateway, NAT gateway, VPC peering",
+                "Security Groups vs NACLs: stateful vs stateless, inbound/outbound rules",
+                "EC2: instance types, AMIs, key pairs, user data scripts, placement groups",
+                "Auto Scaling Groups: launch templates, scaling policies (target tracking, step, scheduled)",
+                "Elastic Load Balancing: ALB (HTTP/HTTPS, path/host routing), NLB (TCP), target groups",
+                "S3: buckets, objects, versioning, lifecycle rules, cross-region replication, S3 events",
+                "S3 security: bucket policies, ACLs, Block Public Access, pre-signed URLs",
+                "RDS: managed relational DB, multi-AZ, read replicas, automated backups, parameter groups",
+                "ElastiCache: Redis and Memcached managed caching",
+                "CloudFront: CDN, origins, behaviors, cache invalidation, signed URLs",
+                "Route 53: hosted zones, record types, routing policies (simple, weighted, latency, failover)",
+                "Systems Manager (SSM): Parameter Store for secrets, Session Manager (no SSH needed)",
+                "CloudWatch: metrics, logs, alarms, dashboards, log insights queries",
+                "SNS and SQS: pub/sub messaging, decoupling services, dead letter queues",
+                "Lambda: serverless functions, event sources, layers, concurrency, cold starts",
+                "ECR: private container registry, image scanning, lifecycle policies",
+                "ECS: task definitions, services, Fargate vs EC2 launch type, service discovery"
+              ]
+            },
+            {
+              "title": "AWS Advanced & Other Clouds",
+              "subtitle": "EKS, Security & Multi-Cloud Awareness",
+              "topics": [
+                "EKS: managed Kubernetes, node groups vs Fargate, addon management, IRSA",
+                "AWS Well-Architected Framework: 6 pillars (operational excellence, security, reliability, performance, cost, sustainability)",
+                "AWS Organizations: multi-account strategy, SCPs, account vending",
+                "Cost management: Cost Explorer, Budgets, Savings Plans, Reserved Instances, Trusted Advisor",
+                "GCP equivalents: GKE (EKS), Cloud Run (Lambda+ECS), Cloud SQL (RDS), GCS (S3), Pub/Sub (SNS/SQS)",
+                "Azure equivalents: AKS (EKS), Azure Functions (Lambda), Azure SQL (RDS), Blob Storage (S3)",
+                "AWS Certifications: Solutions Architect Associate \u2014 most valuable DevOps cert, study path"
+              ]
+            },
+            {
+              "title": "Kubernetes Fundamentals",
+              "subtitle": "Container Orchestration Core Concepts",
+              "topics": [
+                "Kubernetes architecture: control plane (API server, etcd, scheduler, controller manager) vs worker nodes (kubelet, kube-proxy, container runtime)",
+                "Pods: the atomic unit, multi-container pods, init containers, sidecar pattern",
+                "Deployments: desired state, rollout strategy, rollback, revision history",
+                "ReplicaSets: how Deployments manage them, manual scaling",
+                "Services: ClusterIP, NodePort, LoadBalancer, ExternalName \u2014 when to use each",
+                "Ingress: Ingress controller (nginx, traefik), host/path routing, TLS termination",
+                "ConfigMaps: externalizing configuration from container images",
+                "Secrets: base64-encoded secrets, mounting as volumes vs env vars, external secrets",
+                "Namespaces: logical isolation, resource quotas, network policies per namespace",
+                "PersistentVolumes and PersistentVolumeClaims: storage abstraction, StorageClasses",
+                "Resource requests and limits: CPU/memory, VPA vs HPA",
+                "Horizontal Pod Autoscaler (HPA): CPU/memory and custom metrics scaling",
+                "Node affinity and taints/tolerations: controlling pod placement on nodes",
+                "DaemonSets: running a pod on every node (log agents, monitoring agents)",
+                "StatefulSets: ordered deployment, stable network identity for databases",
+                "Jobs and CronJobs: one-time and scheduled batch workloads"
+              ]
+            },
+            {
+              "title": "Kubernetes Operations",
+              "subtitle": "Running Clusters in Production",
+              "topics": [
+                "kubectl mastery: get, describe, apply, delete, exec, logs, port-forward, scale, rollout",
+                "kubectl contexts: managing multiple clusters, kubeconfig file, kubectx/kubens tools",
+                "Helm: package manager for Kubernetes, charts, values files, releases, repositories",
+                "Helm chart creation: templates, values.yaml, _helpers.tpl, named templates",
+                "Kustomize: overlay-based configuration management, base + overlays pattern",
+                "Kubernetes RBAC: Roles, ClusterRoles, RoleBindings, ClusterRoleBindings, service accounts",
+                "Network Policies: microsegmentation, restricting pod-to-pod traffic",
+                "Pod Disruption Budgets (PDB): ensuring availability during node drains and upgrades",
+                "Cluster autoscaler: automatically adding/removing nodes based on pending pods",
+                "Vertical Pod Autoscaler (VPA): right-sizing resource requests automatically",
+                "Kubernetes upgrades: control plane first, then nodes \u2014 zero-downtime upgrade procedure",
+                "etcd backup and restore: critical for disaster recovery",
+                "Kubernetes debugging: describe, logs, events, exec into pods, ephemeral containers",
+                "Service mesh concepts: Istio, Linkerd \u2014 mTLS, traffic management, observability"
+              ]
+            }
+          ],
+          "projects": [
+            "Provision a production-grade AWS VPC with Terraform: public/private subnets across 3 AZs, NAT gateways",
+            "Deploy a microservices application to EKS with Helm, Ingress, HPA, and RBAC configured",
+            "Set up cluster autoscaler and verify pods trigger new node provisioning under load",
+            "Pass or thoroughly study for AWS Solutions Architect Associate exam"
+          ],
+          "outcomes": [
+            "Design and provision a complete AWS architecture for a production application",
+            "Deploy, scale, and debug applications on Kubernetes confidently",
+            "Explain Kubernetes networking and RBAC to a team",
+            "Senior DevOps Engineer \u2014 $125K to $155K",
+            "Cloud/Platform Engineer \u2014 $120K to $150K"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Observability, Security & SRE",
+          "subtitle": "Monitoring, Reliability & DevSecOps",
+          "duration": "Ongoing \u2014 this phase never ends",
+          "description": "Senior DevOps engineers and SREs don't just build systems \u2014 they ensure those systems stay reliable, observable, and secure. This phase covers the practices that separate engineers who build things from engineers who own them in production: monitoring, alerting, incident response, SLOs, and security hardening throughout the entire stack.",
+          "sections": [
+            {
+              "title": "Observability Stack",
+              "subtitle": "Metrics, Logs & Traces",
+              "topics": [
+                "The three pillars of observability: metrics (what is happening), logs (what happened), traces (why it happened)",
+                "Prometheus: metrics collection, PromQL, scrape configs, recording rules, alerting rules",
+                "Grafana: dashboards, panels, data sources, variables, alerting, provisioning as code",
+                "Grafana stack: Loki (logs), Tempo (traces), Mimir (long-term metrics) \u2014 the modern open-source stack",
+                "Node Exporter and cAdvisor: system-level and container metrics for Prometheus",
+                "kube-state-metrics: Kubernetes object metrics (deployment replicas, pod status)",
+                "AlertManager: routing alerts to Slack/PagerDuty, grouping, inhibition, silences",
+                "Distributed tracing: OpenTelemetry (the standard), Jaeger, Zipkin \u2014 trace IDs through services",
+                "Datadog: full-stack observability SaaS, APM, logs, synthetics, infrastructure maps",
+                "New Relic and Dynatrace: alternative enterprise observability platforms",
+                "AWS CloudWatch: log groups, metric filters, composite alarms, CloudWatch Insights",
+                "ELK Stack: Elasticsearch + Logstash + Kibana \u2014 centralized logging, index management",
+                "Structured logging: JSON logs vs plain text, correlation IDs, log levels",
+                "SLI/SLO/SLA: defining and measuring service reliability commitments",
+                "Error budgets: the concept that balances reliability with velocity"
+              ]
+            },
+            {
+              "title": "Incident Management",
+              "subtitle": "Responding to Production Issues",
+              "topics": [
+                "Incident severity levels: P1/P2/P3/P4 \u2014 definitions and response expectations",
+                "On-call rotation: PagerDuty, Opsgenie \u2014 escalation policies, schedules",
+                "Runbooks: documented step-by-step response procedures for known failure modes",
+                "Incident command structure: incident commander, communications lead, technical lead roles",
+                "Blameless post-mortems: 5 whys, timeline reconstruction, action items \u2014 the SRE culture",
+                "Chaos engineering: Chaos Monkey, Gremlin, Litmus \u2014 intentionally breaking things to find weaknesses",
+                "Game days: simulated incident exercises to train the team before real incidents",
+                "Communication during incidents: status pages (Statuspage.io), internal Slack bridges",
+                "Toil reduction: identifying repetitive manual work, automating it away",
+                "Change management: change freeze windows, deployment approval processes"
+              ]
+            },
+            {
+              "title": "DevSecOps",
+              "subtitle": "Security Baked Into Every Stage",
+              "topics": [
+                "Shift-left security: security checks in the IDE, pre-commit hooks, and CI pipeline \u2014 not just at the end",
+                "SAST (Static Application Security Testing): Semgrep, CodeQL, Bandit (Python) \u2014 scanning source code",
+                "DAST (Dynamic Application Security Testing): OWASP ZAP \u2014 testing running applications",
+                "SCA (Software Composition Analysis): Snyk, Dependabot, npm audit \u2014 vulnerable dependencies",
+                "Container image scanning: Trivy, Grype, Snyk \u2014 scanning images before push",
+                "Kubernetes security: kube-bench (CIS benchmarks), Falco (runtime threat detection), OPA/Gatekeeper (policy enforcement)",
+                "Secrets management: HashiCorp Vault (dynamic secrets, secret leasing), AWS Secrets Manager, External Secrets Operator",
+                "OWASP Top 10: injection, broken auth, XSS, IDOR, security misconfiguration \u2014 understand each",
+                "Network segmentation: VPC security groups, Kubernetes NetworkPolicies, zero-trust principles",
+                "SSL/TLS management: cert-manager on Kubernetes, Let's Encrypt automation, certificate rotation",
+                "IAM hardening: cross-account roles, SCPs, permission boundaries, access analyzer",
+                "Compliance as Code: InSpec, OpenSCAP \u2014 automated compliance checking",
+                "SBOM (Software Bill of Materials): generating and using dependency manifests",
+                "Cloud security posture: AWS Security Hub, GCP Security Command Center, Prisma Cloud"
+              ]
+            },
+            {
+              "title": "Platform Engineering",
+              "subtitle": "Building Developer Platforms",
+              "topics": [
+                "Internal Developer Platform (IDP): what it is, Backstage as the developer portal",
+                "Golden paths: opinionated, pre-paved workflows that guide developers without restricting them",
+                "Self-service infrastructure: developers provision environments without tickets to ops",
+                "GitOps maturity model: from manual \u2192 scripted \u2192 IaC \u2192 GitOps \u2192 full platform",
+                "ArgoCD ApplicationSets: templating many applications from a single definition",
+                "Crossplane: Kubernetes-native cloud resource provisioning for platform teams",
+                "Policy as Code: OPA/Rego, Kyverno \u2014 enforcing org standards at the Kubernetes admission layer",
+                "Cost optimization: Kubecost for K8s cost visibility, spot instances for non-critical workloads",
+                "Developer experience (DevEx): measuring and improving the developer productivity platform"
+              ]
+            },
+            {
+              "title": "SRE Practices",
+              "subtitle": "Site Reliability Engineering Principles",
+              "topics": [
+                "SRE vs DevOps: the Google SRE book concepts \u2014 eliminating toil, reliability engineering",
+                "Service Level Objectives (SLOs): defining 99.9% vs 99.99% availability and what it costs",
+                "Error budget policy: stopping feature development when error budget is exhausted",
+                "Capacity planning: traffic forecasting, load testing (k6, Locust, Gatling), headroom analysis",
+                "Load testing: k6 scripts, ramp-up patterns, threshold assertions, CI integration",
+                "Reliability patterns: circuit breakers, bulkheads, retry with exponential backoff, timeouts",
+                "Graceful degradation: feature flags to disable non-critical features under load",
+                "Multi-region architecture: active-active vs active-passive, data replication strategies",
+                "Disaster recovery: RTO and RPO definitions, backup testing, cross-region failover drills",
+                "Traffic management: Istio/Envoy for weighted routing, circuit breaking, retries at mesh layer"
+              ]
+            },
+            {
+              "title": "Advanced DevOps Topics",
+              "subtitle": "Staff-Level Knowledge",
+              "topics": [
+                "Service mesh deep dive: Istio architecture (control plane vs data plane), mTLS everywhere",
+                "eBPF: the technology powering next-gen observability (Cilium, Pixie, Tetragon)",
+                "WebAssembly (WASM) for server-side: emerging runtime for edge deployments",
+                "Kubernetes operators: extending Kubernetes with Custom Resource Definitions (CRDs)",
+                "Progressive delivery: feature flags + canary + A/B testing with Flagger or Argo Rollouts",
+                "Supply chain security: SLSA framework, Sigstore/cosign for image signing, provenance",
+                "FinOps: cloud cost culture, tagging strategy, showback vs chargeback, unit economics",
+                "Platform architecture decisions: when to build vs buy, managed services vs self-hosted tradeoffs"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a full observability stack: Prometheus + Grafana + Loki + AlertManager on Kubernetes with Helm",
+            "Write a complete blameless post-mortem for a simulated production incident",
+            "Implement a DevSecOps pipeline: SAST + container scanning + secrets detection as CI gates",
+            "Set up Vault for dynamic database credentials rotation in a Kubernetes application",
+            "Conduct a load test with k6, identify the bottleneck, and fix it"
+          ],
+          "outcomes": [
+            "Design and operate a complete observability stack for a production Kubernetes cluster",
+            "Write SLOs, define error budgets, and enforce reliability contracts across services",
+            "Implement a DevSecOps pipeline with security gates at every stage",
+            "Lead a production incident response and run a blameless post-mortem",
+            "Senior DevOps / SRE \u2014 $140K to $175K",
+            "Staff DevOps / Platform Engineer \u2014 $170K to $220K",
+            "Director of Infrastructure / VP Engineering (Infrastructure) \u2014 $190K+ with equity"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1-2",
+          "focus": "Linux, Networking & Bash Scripting",
+          "milestone": "Manage a Linux server entirely from CLI, write automation scripts"
+        },
+        {
+          "period": "Month 2-3",
+          "focus": "Git, GitHub & Team Workflows",
+          "milestone": "Implement trunk-based development with branch protection on a real repo"
+        },
+        {
+          "period": "Month 3-5",
+          "focus": "Docker & Containerization",
+          "milestone": "Containerize a full-stack app with production-grade Dockerfiles and Docker Compose"
+        },
+        {
+          "period": "Month 5-7",
+          "focus": "CI/CD Pipelines with GitHub Actions",
+          "milestone": "START applying for Junior DevOps roles \u2014 deploy pipeline live to a cloud environment"
+        },
+        {
+          "period": "Month 7-10",
+          "focus": "Terraform, Ansible & IaC",
+          "milestone": "Provision complete AWS infrastructure with Terraform modules, configure with Ansible"
+        },
+        {
+          "period": "Month 10-14",
+          "focus": "AWS + Kubernetes (EKS)",
+          "milestone": "Apply for DevOps Engineer roles ($100K+) \u2014 running production workloads on Kubernetes"
+        },
+        {
+          "period": "Month 14-20+",
+          "focus": "Observability, DevSecOps & SRE Practices",
+          "milestone": "Senior DevOps / SRE trajectory at $140K+ \u2014 owning reliability of production systems"
+        }
       ]
     }
   ]
