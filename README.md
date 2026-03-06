@@ -38,7 +38,7 @@ This web application provides:
 
 ### Core Features
 
-- **🗺️ Multiple Skill Roadmaps**: Comprehensive learning paths for 6-8 technical domains
+- **🗺️ Multiple Skill Roadmaps**: Comprehensive learning paths for 5 role-based technical career paths including Frontend Developer, Full Stack Developer, AI/ML Engineer, Data Scientist, and DevOps Engineer
 - **🎨 Interactive UI**: Clean, modern interface with smooth animations
 - **📂 Dynamic Content**: JSON-based data structure for easy updates
 - **🔎 Search & Filter**: Find skills quickly by name, category, or difficulty
@@ -135,9 +135,35 @@ This web application provides:
 
 ### For Developers
 
-1. **Adding New Roadmaps**: Edit `data/roadmaps.json` and add your roadmap following the existing structure
+1. **Adding New Roadmaps**: Edit `public/data/roadmaps-data.json` and add your roadmap following the existing structure
 2. **Customizing Styles**: Modify CSS files in the `css/` directory
 3. **Adding Features**: Extend JavaScript files in the `js/` directory
+
+### Available Roadmaps
+
+#### Role-Based Roadmaps
+
+| Roadmap | Phases | Duration | Technologies | Starting Salary |
+|---------|--------|----------|--------------|-----------------|
+| **Frontend Developer** | 3 | 6-9 Months | 25+ | $70K+ |
+| **Full Stack Developer** | 6 | 12-18 Months | 40+ | $80K+ |
+| **AI/ML Engineer** | 7 | 18-24 Months | 50+ | $110K+ |
+| **Data Scientist** | 7 | 14-20 Months | 45+ | $95K+ |
+| **DevOps Engineer** | 7 | 14-20 Months | 50+ | $100K+ |
+
+#### DevOps Engineer Roadmap (New)
+
+The DevOps Engineer roadmap includes 7 comprehensive phases:
+
+1. **Foundation** - Linux, Networking & Scripting Basics (6-8 weeks)
+2. **Version Control & Collaboration** - Git, GitHub & Team Workflows (2-3 weeks)
+3. **Containerization** - Docker & Container Fundamentals (6-8 weeks)
+4. **CI/CD Pipelines** - Continuous Integration & Delivery (6-8 weeks)
+5. **Infrastructure as Code** - Terraform, Ansible & Configuration Management (8-10 weeks)
+6. **Cloud Platforms & Kubernetes** - AWS/GCP/Azure & Container Orchestration (10-12 weeks)
+7. **Observability, Security & SRE** - Monitoring, Reliability & DevSecOps (Ongoing)
+
+Each phase includes detailed sections with topics, hands-on projects, and career outcome milestones.
 
 ---
 
@@ -187,11 +213,82 @@ Each roadmap follows this structure:
 
 ### Adding a New Roadmap
 
-1. Open `data/roadmaps.json`
+1. Open `public/data/roadmaps-data.json`
 2. Add your roadmap object to the `roadmaps` array
-3. Follow the structure above
-4. Add an icon to `assets/images/icons/`
-5. Test on the landing page
+3. Follow the structure documented below
+4. Add a Material Icon name to represent your roadmap
+5. Update `index.html` to include a new roadmap card in the appropriate section
+6. Test on the landing page
+
+### JSON Data Schema
+
+```json
+{
+  "roadmaps": [
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "subtitle": "CI/CD & Infrastructure",
+      "icon": "rocket_launch",
+      "stats": {
+        "phases": 7,
+        "duration": "14-20 Months to Job",
+        "technologies": "50+ Technologies",
+        "salary": "$100K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Foundation",
+          "subtitle": "Linux, Networking & Scripting Basics",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "Phase description...",
+          "sections": [
+            {
+              "title": "Linux Fundamentals",
+              "subtitle": "The Operating System of the Cloud",
+              "topics": [
+                "Linux distributions: Ubuntu, CentOS, RHEL...",
+                "Filesystem hierarchy: /, /etc, /var, /home..."
+              ]
+            }
+          ],
+          "projects": [
+            "Write a bash script that automates server setup..."
+          ],
+          "outcomes": [
+            "Navigate and manage any Linux server without a GUI",
+            "Write bash scripts to automate repetitive tasks..."
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1-2",
+          "focus": "Linux, Networking & Bash Scripting",
+          "milestone": "Manage a Linux server entirely from CLI..."
+        }
+      ]
+    }
+  ]
+}
+```
+
+**Key Schema Elements:**
+- `id`: Unique identifier for the roadmap (kebab-case)
+- `title`: Display title of the career path
+- `subtitle`: Brief description of the role focus
+- `icon`: Material Icons name (e.g., "rocket_launch", "computer", "psychology")
+- `stats`: Key metrics including phases count, duration, technologies, and salary
+- `phases`: Array of learning phases, each containing:
+  - `id`: Phase number
+  - `title` & `subtitle`: Phase identification
+  - `duration`: Time commitment estimate
+  - `description`: Detailed explanation of phase importance
+  - `sections`: Array of learning modules with topics
+  - `projects`: Hands-on project ideas
+  - `outcomes`: Skills and achievements gained
+- `timeline`: Month-by-month learning progression with milestones
 
 ### Code Style Guidelines
 
@@ -211,16 +308,17 @@ We welcome contributions! Here's how you can help:
 
 1. Fork the repository
 2. Create a new branch: `git checkout -b feature/new-roadmap`
-3. Add your roadmap to `data/roadmaps.json`
-4. Test thoroughly
-5. Submit a pull request
+3. Add your roadmap to `public/data/roadmaps-data.json`
+4. Update `index.html` to add a card linking to your new roadmap
+5. Test thoroughly by clicking the roadmap card and verifying all phases load correctly
+6. Submit a pull request with a description of the career path added
 
 ### Improving Existing Roadmaps
 
-1. Identify outdated or missing information
-2. Update the JSON file
-3. Add better resources
-4. Submit a pull request with description of changes
+1. Identify outdated or missing information in existing roadmaps
+2. Update `public/data/roadmaps-data.json` with corrections or additions
+3. Add better resources, projects, or outcomes as needed
+4. Submit a pull request with description of changes made
 
 ### Bug Reports
 
@@ -309,10 +407,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 | Week | Phase | Status |
 |------|-------|--------|
 | Week 1 | Synopsis Submission | ✅ Complete |
-| Week 2 | Design & Planning | 🚧 In Progress |
-| Week 3-4 | Implementation | ⏳ Upcoming |
-| Week 5 | Testing & Evaluation | ⏳ Upcoming |
-| Week 7 | Presentation & Viva | ⏳ Upcoming |
+| Week 2 | Design & Planning | ✅ Complete |
+| Week 3-4 | Implementation | ✅ Complete |
+| Week 5 | Testing & Evaluation | ✅ Complete |
+| Week 6 | DevOps Roadmap Addition | ✅ Complete |
+| Week 7 | Presentation & Viva | 🚧 In Progress |
 
 ---
 
@@ -333,7 +432,15 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Version History
 
-- **v1.0.0** (Current) - Initial release with core features
+- **v1.1.0** (Current) - Added comprehensive DevOps Engineer roadmap with 7 phases
+  - Foundation (Linux, Networking & Scripting)
+  - Version Control & Collaboration
+  - Containerization (Docker)
+  - CI/CD Pipelines (GitHub Actions, GitLab CI, Jenkins)
+  - Infrastructure as Code (Terraform, Ansible)
+  - Cloud Platforms & Kubernetes (AWS, EKS)
+  - Observability, Security & SRE
+- **v1.0.0** - Initial release with 4 role-based roadmaps
 - **v0.1.0** - Beta version for testing
 
 ---
@@ -379,4 +486,4 @@ Through this project, our team has gained:
 
 ---
 
-*Last Updated: February 2026*
+*Last Updated: March 2026*
