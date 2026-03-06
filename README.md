@@ -372,7 +372,6 @@ Through this project, our team has gained:
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Made with ❤️ by ITM University CSA Students**
 
 [Back to Top](#skill-roadmap-generator-website)
 
