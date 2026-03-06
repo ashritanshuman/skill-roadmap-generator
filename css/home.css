@@ -22,9 +22,9 @@
 }
 
 .hero-title {
-    font-size: var(--font-size-6xl);
+    font-size: clamp(3rem, 8vw, 7rem);
     font-weight: var(--font-weight-light);
-    line-height: 1.1;
+    line-height: 1.05;
     margin-bottom: var(--spacing-8);
     letter-spacing: -0.03em;
 }
@@ -378,4 +378,62 @@
 
 .cta-buttons .btn-primary {
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+/* ============================================
+   COMING SOON MODAL
+   ============================================ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: var(--spacing-6);
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-12);
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    animation: scaleIn 0.3s ease forwards;
+}
+
+@keyframes scaleIn {
+    to { transform: scale(1); }
+}
+
+.modal-icon {
+    font-size: 48px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-6);
+}
+
+.modal-content h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-4);
+}
+
+.modal-content p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    font-size: var(--font-size-base);
 }
