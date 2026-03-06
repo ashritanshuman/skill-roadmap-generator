@@ -1,4 +1,4 @@
-/* Responsive Styles */
+/* Responsive Styles - Glassmorphism Theme */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -7,7 +7,7 @@
     }
     
     .hero-title {
-        font-size: var(--font-size-4xl);
+        font-size: var(--font-size-5xl);
     }
     
     .roadmaps-grid {
@@ -16,31 +16,38 @@
     
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-8);
+        gap: var(--spacing-10);
     }
     
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-8);
+        gap: var(--spacing-10);
     }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
+    .navbar {
+        padding: var(--spacing-4);
+    }
+    
     .navbar .container {
-        height: 60px;
+        padding: var(--spacing-3) var(--spacing-5);
+        border-radius: var(--border-radius-xl);
     }
     
     .nav-menu {
         display: none;
         position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: var(--color-bg-secondary);
+        top: 80px;
+        left: var(--spacing-4);
+        right: var(--spacing-4);
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         padding: var(--spacing-6);
-        border-bottom: 1px solid var(--color-border);
+        border-radius: var(--border-radius-xl);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .nav-menu.active {
@@ -56,7 +63,7 @@
     }
     
     .hero {
-        padding: calc(60px + var(--spacing-12)) var(--spacing-5) var(--spacing-12);
+        padding: calc(80px + var(--spacing-16)) var(--spacing-5) var(--spacing-16);
     }
     
     .hero-title {
@@ -90,7 +97,7 @@
     
     .features-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-8);
+        gap: var(--spacing-10);
     }
     
     .cta-buttons {
@@ -98,9 +105,13 @@
         align-items: center;
     }
     
+    .cta-buttons .btn {
+        width: 100%;
+    }
+    
     .footer-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-8);
+        gap: var(--spacing-10);
     }
     
     .footer-bottom {
