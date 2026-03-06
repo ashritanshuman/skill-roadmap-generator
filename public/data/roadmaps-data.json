@@ -2853,6 +2853,2564 @@
           "milestone": "Senior DevOps / SRE trajectory at $140K+ \u2014 owning reliability of production systems"
         }
       ]
+    },
+    {
+      "id": "data-analyst",
+      "title": "Data Analyst",
+      "subtitle": "Data Analytics & Business Intelligence",
+      "icon": "pie-chart",
+      "stats": {
+        "phases": 7,
+        "duration": "10-16 Months to Job",
+        "technologies": "35+ Technologies",
+        "salary": "$70K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Foundation",
+          "subtitle": "Excel, Statistics & Analytical Thinking",
+          "duration": "4-6 weeks | 2 hrs/day",
+          "description": "Every great data analyst starts with the same three tools: Excel for quick data work, statistics for reasoning about numbers, and a structured thinking process for turning raw data into decisions. These are not beginner skills you discard later \u2014 senior analysts use all three every single day.",
+          "sections": [
+            {
+              "title": "Excel & Google Sheets",
+              "subtitle": "The Analyst's First Weapon",
+              "topics": [
+                "Spreadsheet navigation: keyboard shortcuts, cell references (relative, absolute, mixed)",
+                "Core functions: SUM, AVERAGE, COUNT, COUNTA, MIN, MAX, IF, IFS, SUMIF, COUNTIF, AVERAGEIF",
+                "Lookup functions: VLOOKUP, HLOOKUP, INDEX-MATCH, XLOOKUP \u2014 when to use each",
+                "Text functions: LEFT, RIGHT, MID, LEN, TRIM, CONCATENATE, TEXT, SUBSTITUTE, FIND",
+                "Date functions: TODAY, NOW, DATE, YEAR, MONTH, DAY, DATEDIF, NETWORKDAYS, EOMONTH",
+                "Logical functions: AND, OR, NOT, nested IFs, IFERROR, IFNA",
+                "Array formulas: SUMPRODUCT, multi-condition aggregations without helper columns",
+                "Data validation: dropdown lists, input restrictions, error messages for clean data entry",
+                "Conditional formatting: color scales, data bars, icon sets, custom rules",
+                "Named ranges: defining and using named ranges for readable formulas",
+                "Data cleaning in Excel: Remove Duplicates, Text to Columns, Flash Fill, Find & Replace",
+                "Sorting and filtering: multi-level sort, custom sort, advanced filter, filter by color"
+              ]
+            },
+            {
+              "title": "Pivot Tables & Charts",
+              "subtitle": "Summarizing Data at Speed",
+              "topics": [
+                "Pivot table fundamentals: rows, columns, values, filters \u2014 the four areas",
+                "Aggregation options: sum, count, average, max, min, % of total, running total",
+                "Grouping: grouping dates by month/quarter/year, grouping numbers into bins",
+                "Calculated fields and calculated items in pivot tables",
+                "Slicers and timelines: interactive filtering across multiple pivot tables",
+                "Pivot charts: linking charts to pivot tables, chart types for different data",
+                "Power Query (Get & Transform): importing, cleaning, and transforming data without formulas",
+                "Power Pivot: data model, relationships between tables, DAX basics",
+                "Chart fundamentals: bar, column, line, pie, scatter, combo \u2014 choosing correctly",
+                "Chart formatting: titles, axis labels, data labels, gridlines, color principles",
+                "Sparklines: in-cell mini charts for trend visualization in tables"
+              ]
+            },
+            {
+              "title": "Statistics for Analysts",
+              "subtitle": "The Numbers Behind the Numbers",
+              "topics": [
+                "Descriptive statistics: mean, median, mode \u2014 when each is the right measure",
+                "Spread: variance, standard deviation, range, IQR \u2014 measuring data variability",
+                "Percentiles and quartiles: understanding distributions, finding outliers with IQR",
+                "Normal distribution: bell curve, 68-95-99.7 rule, z-scores",
+                "Skewness and kurtosis: identifying non-normal distributions visually",
+                "Correlation: Pearson r, positive/negative/zero correlation, correlation matrix",
+                "Correlation vs causation: the most critical distinction for any analyst",
+                "Basic probability: independent events, conditional probability, Bayes' theorem intuition",
+                "Sampling: random sampling, sample size, sampling bias \u2014 why your survey data lies",
+                "Introduction to hypothesis testing: null hypothesis, p-value intuition (no math yet)",
+                "Simpson's paradox: why aggregated data can completely reverse a trend \u2014 real examples"
+              ]
+            },
+            {
+              "title": "Analytical Thinking",
+              "subtitle": "Structuring Problems Before Touching Data",
+              "topics": [
+                "The analytics process: question \u2192 data \u2192 analysis \u2192 insight \u2192 recommendation \u2192 decision",
+                "Defining the right question: SMART criteria, avoiding the XY problem in analytics",
+                "Metric decomposition: breaking a business metric into its constituent drivers",
+                "Issue trees and MECE thinking: Mutually Exclusive, Collectively Exhaustive frameworks",
+                "Hypothesis-driven analysis: forming a hypothesis before exploring data",
+                "Sanity checking results: does this answer make real-world sense?",
+                "Distinguishing signal from noise: statistical vs practical significance",
+                "Data literacy: understanding what data can and cannot tell you",
+                "Communicating uncertainty: how to present findings without overclaiming",
+                "Stakeholder question translation: turning a vague business ask into an analytical task"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a personal finance tracker in Excel with pivot tables, charts, and a dashboard tab",
+            "Analyze a public dataset (sports, movies, e-commerce) in Excel \u2014 find 3 insights and present them",
+            "Create an Excel sales dashboard with slicers, dynamic charts, and KPI summary cards",
+            "Clean a deliberately messy dataset using only Excel Power Query \u2014 document every step"
+          ],
+          "outcomes": [
+            "Build any Excel report or dashboard a manager requests without Googling",
+            "Explain the difference between correlation and causation with a real example",
+            "Identify when a pivot table result is misleading due to aggregation issues",
+            "Translate a vague business question into a specific, answerable analytical question"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "SQL & Database Querying",
+          "subtitle": "The Core Language of Data",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "SQL is the single most important technical skill for a data analyst. Every company stores data in a database, and SQL is how you get it out. Master it completely \u2014 not just SELECT statements, but window functions, CTEs, and query optimization. This skill alone gets analysts hired.",
+          "sections": [
+            {
+              "title": "SQL Fundamentals",
+              "subtitle": "Querying Data from Day One",
+              "topics": [
+                "Database concepts: tables, rows, columns, primary keys, foreign keys, schema",
+                "SELECT statement: selecting columns, aliasing with AS, SELECT DISTINCT",
+                "FROM and WHERE: filtering rows, comparison operators (=, !=, >, <, >=, <=)",
+                "Logical operators: AND, OR, NOT \u2014 operator precedence with parentheses",
+                "NULL handling: IS NULL, IS NOT NULL, COALESCE, NULLIF \u2014 why NULL is not zero",
+                "BETWEEN, IN, LIKE: range filters, list filters, pattern matching with wildcards",
+                "ORDER BY: ascending/descending, multi-column sorting, NULL ordering",
+                "LIMIT and OFFSET: pagination, sampling top N rows",
+                "Arithmetic in SELECT: calculated columns, integer vs float division",
+                "String functions: UPPER, LOWER, LENGTH, TRIM, REPLACE, SUBSTRING, CONCAT, LIKE patterns",
+                "Date functions: CURRENT_DATE, EXTRACT, DATE_TRUNC, DATE_ADD, DATEDIFF \u2014 per database dialect",
+                "CASE WHEN: conditional logic in SQL, CASE as a bucketing tool"
+              ]
+            },
+            {
+              "title": "Aggregation & Grouping",
+              "subtitle": "Summarizing Millions of Rows",
+              "topics": [
+                "Aggregate functions: COUNT(*), COUNT(column), SUM, AVG, MIN, MAX",
+                "GROUP BY: grouping by one or multiple columns, grouping by expressions",
+                "HAVING: filtering after aggregation \u2014 the difference between WHERE and HAVING",
+                "COUNT(*) vs COUNT(column) vs COUNT(DISTINCT column): knowing which to use",
+                "Conditional aggregation: SUM(CASE WHEN ...), COUNT(CASE WHEN ...) \u2014 pivoting in SQL",
+                "GROUP BY with ROLLUP and CUBE: subtotals and grand totals",
+                "GROUPING SETS: multiple grouping levels in a single query",
+                "Filtering aggregated results: combining WHERE and HAVING in the same query",
+                "Rounding and formatting: ROUND, CEIL, FLOOR, CAST, FORMAT for clean output"
+              ]
+            },
+            {
+              "title": "Joins & Relationships",
+              "subtitle": "Combining Data Across Tables",
+              "topics": [
+                "INNER JOIN: only matching rows from both tables \u2014 the most common join",
+                "LEFT JOIN: all rows from left table, NULLs where no match on right",
+                "RIGHT JOIN: all rows from right table (use LEFT JOIN with tables swapped instead)",
+                "FULL OUTER JOIN: all rows from both tables, NULLs where no match on either side",
+                "CROSS JOIN: Cartesian product \u2014 every row meets every row, rare but useful",
+                "SELF JOIN: joining a table to itself for hierarchical or comparison queries",
+                "Join conditions: ON clause, joining on multiple columns, non-equi joins",
+                "Joining more than 2 tables: chain joins, intermediate result sets",
+                "Anti-join pattern: LEFT JOIN ... WHERE right.id IS NULL \u2014 finding unmatched rows",
+                "Duplicate rows from joins: when and why joins multiply rows, using DISTINCT",
+                "Performance of joins: indexes on join columns, join order in query planner"
+              ]
+            },
+            {
+              "title": "Advanced SQL",
+              "subtitle": "Window Functions, CTEs & Optimization",
+              "topics": [
+                "Subqueries: scalar subqueries, correlated subqueries, subqueries in FROM and WHERE",
+                "CTEs (Common Table Expressions): WITH clause, chaining multiple CTEs, readability",
+                "Recursive CTEs: hierarchical data (org charts, category trees) \u2014 understand conceptually",
+                "UNION and UNION ALL: stacking result sets vertically, eliminating vs keeping duplicates",
+                "INTERSECT and EXCEPT: set operations for finding overlap and differences",
+                "Window functions overview: OVER() clause, PARTITION BY, ORDER BY within window",
+                "Ranking functions: ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE(n)",
+                "Offset functions: LAG(), LEAD() \u2014 comparing a row to the previous or next row",
+                "Aggregate window functions: SUM() OVER, AVG() OVER, COUNT() OVER, running totals",
+                "FIRST_VALUE() and LAST_VALUE(): accessing boundary values within a partition",
+                "Frame clauses: ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",
+                "Query execution order: FROM \u2192 WHERE \u2192 GROUP BY \u2192 HAVING \u2192 SELECT \u2192 ORDER BY \u2192 LIMIT",
+                "Query optimization: EXPLAIN / EXPLAIN ANALYZE, index usage, avoiding SELECT *",
+                "Indexes: what they are, B-tree index, when they help and when they hurt writes",
+                "Common performance pitfalls: functions on indexed columns, wildcard at start of LIKE"
+              ]
+            },
+            {
+              "title": "SQL in the Real World",
+              "subtitle": "Cloud Databases & Analytical Warehouses",
+              "topics": [
+                "PostgreSQL: setup, psql CLI, pgAdmin \u2014 the standard open-source relational DB",
+                "MySQL / MariaDB: differences from PostgreSQL, common in web apps",
+                "Google BigQuery: serverless analytics warehouse, partitioned tables, clustering, cost control",
+                "Amazon Redshift: MPP warehouse, distribution keys, sort keys, VACUUM",
+                "Snowflake: virtual warehouses, time travel, zero-copy cloning, share data",
+                "DuckDB: in-process analytics on local files \u2014 great for learning and prototyping",
+                "SQL dialect differences: date functions, string functions, window frame defaults per DB",
+                "Writing maintainable SQL: formatting conventions, commenting, aliases, CTE naming",
+                "Version controlling SQL: storing queries in Git, dbt for production SQL workflows"
+              ]
+            }
+          ],
+          "projects": [
+            "Analyze the full Northwind or AdventureWorks database \u2014 answer 20 business questions with SQL",
+            "Solve 50+ LeetCode/StrataScratch SQL problems (focus on window functions and CTEs)",
+            "Write a cohort retention analysis entirely in SQL using window functions and CTEs",
+            "Build a customer segmentation query using RFM (Recency, Frequency, Monetary) scoring in SQL"
+          ],
+          "outcomes": [
+            "Write any SQL query including complex window functions and multi-CTE pipelines",
+            "Optimize a slow query by reading EXPLAIN output and adding the right index",
+            "Answer any business question against a relational database in under 10 minutes",
+            "Pass SQL interview rounds at top tech companies (StrataScratch Hard difficulty)"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Data Visualization & BI Tools",
+          "subtitle": "Tableau, Power BI & Storytelling with Data",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "Data only creates value when decision-makers understand it. Visualization is how you make that happen. Tableau and Power BI are the two dominant BI tools in the industry \u2014 mastering one deeply and understanding the other broadly is what transforms you from someone who analyzes data to someone who influences decisions.",
+          "sections": [
+            {
+              "title": "Data Visualization Principles",
+              "subtitle": "Design Before Software",
+              "topics": [
+                "Why most charts lie: truncated axes, cherry-picked time ranges, misleading scales",
+                "Chart selection framework: comparisons \u2192 bar/column, trends \u2192 line, part-to-whole \u2192 stacked bar or treemap, distribution \u2192 histogram/box, relationship \u2192 scatter",
+                "When NOT to use pie charts: more than 4 slices, similar-sized slices, always have an alternative",
+                "Pre-attentive attributes: color, size, position, shape \u2014 what the eye sees instantly",
+                "Color principles: sequential palettes for ordered data, diverging for above/below average, qualitative for categories, colorblind-safe palettes",
+                "Data-ink ratio: Edward Tufte's principle \u2014 remove every element that doesn't carry information",
+                "Chartjunk: 3D charts, unnecessary gridlines, decorative images \u2014 what to always avoid",
+                "The dashboard design hierarchy: most important metric first, supporting context second, detail last",
+                "Gestalt principles: proximity, similarity, enclosure, continuity \u2014 grouping visual elements",
+                "Annotation: titles that state the insight (not just the topic), callout boxes, reference lines"
+              ]
+            },
+            {
+              "title": "Tableau",
+              "subtitle": "The Industry Standard BI Platform",
+              "topics": [
+                "Tableau ecosystem: Tableau Desktop, Tableau Public, Tableau Server, Tableau Cloud",
+                "Connecting to data: live vs extract connections, data source filters, custom SQL",
+                "Dimensions vs measures: the blue/green distinction, discrete vs continuous",
+                "Marks card: color, size, label, detail, tooltip \u2014 building any chart from first principles",
+                "Basic charts: bar, line, scatter, map, pie, area \u2014 building each from scratch",
+                "Sorting: manual sort, sort by field, sort by nested calculation",
+                "Filtering: dimension filters, measure filters, context filters, data source filters \u2014 filter order",
+                "Calculated fields: basic arithmetic, string functions, date calculations, logical IF/CASE",
+                "Table calculations: running total, percent of total, rank, moving average \u2014 scope and direction",
+                "Level of Detail (LOD) expressions: FIXED, INCLUDE, EXCLUDE \u2014 the most powerful Tableau feature",
+                "Parameters: dynamic user inputs, parameter actions for interactivity",
+                "Sets: custom subsets of dimension members, set actions",
+                "Dual axis charts: combining two measures on the same view, synchronized axes",
+                "Reference lines and bands: average lines, confidence bands, distribution marks",
+                "Dashboard design: layout containers (horizontal/vertical), fixed vs automatic sizing",
+                "Dashboard actions: filter actions, highlight actions, URL actions, set actions",
+                "Maps: geographic roles, filled maps, symbol maps, density maps, custom territories",
+                "Forecasting and trend lines: built-in statistical models, confidence intervals",
+                "Tableau Public: publishing and embedding dashboards, portfolio building"
+              ]
+            },
+            {
+              "title": "Power BI",
+              "subtitle": "Microsoft's Enterprise Analytics Platform",
+              "topics": [
+                "Power BI ecosystem: Power BI Desktop, Power BI Service, Power BI Mobile, Power BI Embedded",
+                "Power Query Editor: importing data, applied steps, M language basics, merging queries",
+                "Data model: fact tables, dimension tables, star schema vs snowflake schema",
+                "Relationships: cardinality (1:1, 1:many, many:many), cross-filter direction, active vs inactive",
+                "DAX fundamentals: calculated columns vs measures \u2014 the most important distinction",
+                "DAX basics: SUM, AVERAGE, COUNT, DISTINCTCOUNT, DIVIDE (safe division)",
+                "DAX filter context: how measures evaluate, why the same formula returns different values",
+                "DAX CALCULATE: the most important DAX function \u2014 modifying filter context",
+                "Time intelligence: TOTALYTD, SAMEPERIODLASTYEAR, DATEADD, DATESYTD",
+                "Iterator functions: SUMX, AVERAGEX, RANKX \u2014 row-by-row evaluation",
+                "Variables in DAX: VAR ... RETURN for readable, performant measures",
+                "Visualization types: bar, line, card, KPI, matrix, slicer, decomposition tree, key influencers",
+                "Report design: themes, custom visuals (AppSource), bookmarks for guided navigation",
+                "Row-Level Security (RLS): restricting data access by user role",
+                "Power BI Service: workspaces, datasets, reports, dashboards, scheduled refresh",
+                "Power BI vs Tableau: when each wins, enterprise considerations, licensing"
+              ]
+            },
+            {
+              "title": "Storytelling with Data",
+              "subtitle": "Turning Analysis into Action",
+              "topics": [
+                "The analyst's communication goal: drive a specific decision, not just show data",
+                "The SCR framework: Situation \u2192 Complication \u2192 Resolution \u2014 structuring any data story",
+                "Leading with the insight: state the finding first, then show the evidence (pyramid principle)",
+                "Designing for your audience: executive summary vs analyst deep-dive vs operational report",
+                "The one-slide rule: if you can't fit the key insight on one slide, you haven't found it yet",
+                "Annotation strategy: titles that contain the conclusion, callouts for anomalies",
+                "Presenting uncertainty: confidence intervals, sample sizes, caveats \u2014 being honest without burying the lead",
+                "Handling pushback: when stakeholders disagree with the data, how to respond",
+                "Dashboard vs report vs presentation: choosing the right format for the right situation",
+                "Self-service analytics: designing dashboards that non-analysts can use without help"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a Tableau sales performance dashboard with LOD calculations, parameter controls, and dashboard actions",
+            "Recreate the same dashboard in Power BI using DAX measures and a proper star schema data model",
+            "Create a 3-slide executive presentation from a raw dataset \u2014 lead with insight, not with data",
+            "Publish 3 dashboards to Tableau Public as your public portfolio"
+          ],
+          "outcomes": [
+            "Build any business dashboard in Tableau or Power BI from a raw data source",
+            "Write LOD expressions in Tableau and CALCULATE measures in Power BI",
+            "Choose the right chart type for any analytical question without hesitation",
+            "Present a data finding to a non-technical audience and drive a decision"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Python for Data Analysis",
+          "subtitle": "Pandas, Visualization & Automation",
+          "duration": "8-10 weeks | 2-3 hrs/day",
+          "description": "Python is what separates data analysts who hit a ceiling from those who grow into senior roles. It lets you automate repetitive Excel work, analyze datasets too large for spreadsheets, build custom visualizations, and eventually move toward data science. Learn it practically \u2014 every concept applied to real analytical problems.",
+          "sections": [
+            {
+              "title": "Python Fundamentals for Analysts",
+              "subtitle": "Programming Without the Computer Science Detour",
+              "topics": [
+                "Python setup: Anaconda distribution, Jupyter Notebook, JupyterLab, VS Code with Jupyter",
+                "Variables and data types: int, float, str, bool, None",
+                "String operations: indexing, slicing, f-strings, .format(), common string methods",
+                "Lists: indexing, slicing, append, extend, remove, list comprehensions",
+                "Dictionaries: key-value pairs, nested dicts, .get(), .items(), .keys(), .values()",
+                "Tuples and sets: immutability, deduplication with sets",
+                "Control flow: if/elif/else, for loops, while loops, break/continue",
+                "Functions: def, parameters, return values, default arguments, *args, **kwargs",
+                "File I/O: reading and writing CSV, JSON, Excel files with built-in Python",
+                "Error handling: try/except/finally, common exceptions (ValueError, KeyError, FileNotFoundError)",
+                "Importing libraries: import, from...import, pip install, requirements.txt"
+              ]
+            },
+            {
+              "title": "NumPy & Pandas",
+              "subtitle": "The Analytical Powerhouse",
+              "topics": [
+                "NumPy arrays: creation, shape, dtype, indexing, slicing, broadcasting, vectorized operations",
+                "Pandas Series: creation, indexing, filtering, operations, value_counts, string accessor",
+                "Pandas DataFrame: creation from CSV/Excel/dict/SQL, info(), describe(), head(), tail()",
+                "Indexing and selection: .loc (label-based), .iloc (position-based), boolean indexing",
+                "Handling missing data: isnull(), notnull(), fillna(), dropna(), interpolate()",
+                "Data type conversion: astype(), pd.to_numeric(), pd.to_datetime(), errors='coerce'",
+                "String operations: .str accessor \u2014 contains, replace, split, strip, lower, upper, extract",
+                "DateTime operations: .dt accessor \u2014 year, month, day, dayofweek, to_period, resample",
+                "Sorting: sort_values(), sort_index(), ascending/descending, na_position",
+                "Filtering and querying: boolean masks, .query() method, multiple conditions",
+                "Creating new columns: direct assignment, apply(), map(), np.where()",
+                "GroupBy: groupby(), agg(), transform(), apply() \u2014 the split-apply-combine pattern",
+                "Aggregation: sum, mean, count, nunique, min, max, first, last, custom functions",
+                "Merging: merge() with how parameter (inner/left/right/outer), on/left_on/right_on",
+                "Concatenation: concat() for stacking DataFrames vertically and horizontally",
+                "Reshaping: pivot_table(), melt(), stack(), unstack(), crosstab()",
+                "Window functions: rolling(), expanding(), ewm() for time series analytics",
+                "Performance: vectorized operations vs apply() vs loops \u2014 always prefer vectorized"
+              ]
+            },
+            {
+              "title": "Data Visualization with Python",
+              "subtitle": "Matplotlib, Seaborn & Plotly",
+              "topics": [
+                "Matplotlib fundamentals: Figure, Axes, pyplot interface, object-oriented interface",
+                "Basic plots: line, bar, horizontal bar, scatter, histogram, pie",
+                "Customization: titles, labels, legends, colors, markers, linestyles, figure size, DPI",
+                "Subplots: plt.subplots(nrows, ncols), sharing axes, tight_layout, constrained_layout",
+                "Seaborn: statistical visualization library, themes, color palettes",
+                "Seaborn chart types: histplot, boxplot, violinplot, scatterplot, lineplot, heatmap, pairplot",
+                "Seaborn FacetGrid: small multiples \u2014 same chart across subgroups",
+                "Plotly Express: interactive charts in one line, hover data, animation_frame",
+                "Plotly Graph Objects: full control, building custom interactive charts",
+                "Plotly subplots: make_subplots(), shared axes, secondary y-axis",
+                "Exporting: saving figures as PNG/SVG/PDF, Plotly HTML exports for sharing"
+              ]
+            },
+            {
+              "title": "Analytics Automation with Python",
+              "subtitle": "Eliminating Repetitive Work",
+              "topics": [
+                "Reading and writing Excel with openpyxl and xlsxwriter: formatting, multiple sheets, charts",
+                "Automating Excel reports: generating styled Excel files programmatically from data",
+                "PDF report generation: ReportLab, pdfplumber for extracting data from PDFs",
+                "Web scraping basics: requests + BeautifulSoup for extracting public data tables",
+                "API data extraction: requests library, JSON parsing, pagination, authentication headers",
+                "Scheduling automation: cron (Linux/Mac), Task Scheduler (Windows), scheduling Python scripts",
+                "Email automation: smtplib \u2014 sending automated report emails with attachments",
+                "Google Sheets API: reading and writing Google Sheets with gspread",
+                "Parameterized notebooks: Papermill \u2014 running the same notebook with different inputs",
+                "Streamlit: turning a Python analysis into an interactive web app in under an hour"
+              ]
+            }
+          ],
+          "projects": [
+            "Automate a monthly Excel report: Python script reads raw data, cleans it, outputs a formatted Excel file with charts",
+            "Scrape a public data source (job postings, product prices, sports stats) and analyze trends",
+            "Build a Streamlit app that lets a user upload a CSV and get instant summary statistics and charts",
+            "Replicate a full SQL cohort analysis in Pandas on a 1M+ row dataset"
+          ],
+          "outcomes": [
+            "Automate any repetitive Excel or reporting task with Python",
+            "Analyze a dataset with millions of rows that Excel cannot handle",
+            "Build an interactive web app to share analysis with non-technical stakeholders",
+            "Connect to any REST API and pull data for analysis"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Business Analytics & Metrics",
+          "subtitle": "Product, Marketing & Financial Analytics",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "Knowing SQL and Tableau is not enough to be a great analyst \u2014 you need to understand the business. This phase covers the analytical frameworks, metrics, and domain knowledge that make analysts indispensable to product, marketing, and finance teams. This is what gets you promoted.",
+          "sections": [
+            {
+              "title": "Product Analytics",
+              "subtitle": "Measuring What Users Actually Do",
+              "topics": [
+                "DAU / MAU / WAU: daily, monthly, weekly active users \u2014 definition and measurement nuances",
+                "Stickiness ratio: DAU/MAU \u2014 what a good ratio looks like per product category",
+                "Retention rate: Day 1, Day 7, Day 30 retention \u2014 the most important product metric",
+                "Churn rate: monthly/annual churn, voluntary vs involuntary, leading indicators of churn",
+                "Cohort analysis: grouping users by acquisition date, building retention curves in SQL and Python",
+                "Funnel analysis: conversion rates at each stage, drop-off identification, funnel visualization",
+                "Session analytics: session length, pages per session, bounce rate, scroll depth",
+                "Feature adoption: % of users using a feature, adoption curve, power users vs casual users",
+                "North Star Metric: the single metric that best captures the product's value delivery",
+                "Engagement metrics: L28 (days active in last 28), product habits, notification opt-in rates",
+                "User journey mapping: understanding the sequence of actions leading to conversion or churn",
+                "Segmentation: analyzing metrics by cohort, geography, device, plan tier, acquisition source"
+              ]
+            },
+            {
+              "title": "A/B Testing & Experimentation",
+              "subtitle": "Making Data-Driven Decisions Rigorously",
+              "topics": [
+                "Why A/B testing: removing opinion from product decisions, the cost of shipping the wrong thing",
+                "Experiment design: control group, treatment group, randomization unit (user vs session vs device)",
+                "Sample size calculation: statistical power (80%), significance level (5%), minimum detectable effect",
+                "Online calculators and Python: scipy.stats for sample size, statsmodels for power analysis",
+                "Running the experiment: holdout period, no peeking rule, guardrail metrics",
+                "Statistical significance: p-value interpretation, confidence intervals, not just p < 0.05",
+                "Practical significance: a 0.1% lift may be statistically significant but not worth shipping",
+                "Type I error (false positive): incorrectly declaring a winner \u2014 inflated by peeking",
+                "Type II error (false negative): missing a real effect due to insufficient sample size",
+                "Multiple testing correction: Bonferroni correction, FDR \u2014 when running many variants",
+                "Novelty effect: users behaving differently because something is new, not because it's better",
+                "Network effects in experiments: when user A's treatment affects user B's behavior (spillover)",
+                "Bayesian A/B testing: posterior distributions, probability of being best, no fixed sample size",
+                "Post-experiment analysis: segmenting results, heterogeneous treatment effects, long-term impact"
+              ]
+            },
+            {
+              "title": "Marketing Analytics",
+              "subtitle": "Measuring the Impact of Growth",
+              "topics": [
+                "Marketing funnel: awareness \u2192 consideration \u2192 acquisition \u2192 activation \u2192 retention \u2192 revenue \u2192 referral",
+                "Customer Acquisition Cost (CAC): total marketing spend / new customers acquired",
+                "Customer Lifetime Value (CLV/LTV): average revenue per user \u00d7 average customer lifespan",
+                "LTV:CAC ratio: the fundamental SaaS health metric \u2014 3:1 is the target",
+                "Payback period: months to recover CAC from customer revenue",
+                "Attribution modeling: first-touch, last-touch, linear, time-decay, data-driven attribution",
+                "UTM parameters: source, medium, campaign, content, term \u2014 tracking marketing channels",
+                "Campaign performance: CTR (click-through rate), CPC (cost per click), CPM, ROAS, CPA",
+                "Email marketing metrics: open rate, click rate, unsubscribe rate, list hygiene",
+                "SEO analytics: organic traffic, keyword rankings, bounce rate, Core Web Vitals",
+                "Paid acquisition analytics: Google Ads, Meta Ads \u2014 connecting spend to pipeline",
+                "Marketing mix modeling (MMM): attributing revenue to marketing channels at aggregate level",
+                "Google Analytics 4: events, conversions, funnels, audiences, BigQuery export"
+              ]
+            },
+            {
+              "title": "Financial Analytics",
+              "subtitle": "Understanding the Business Numbers",
+              "topics": [
+                "Revenue metrics: MRR (Monthly Recurring Revenue), ARR, expansion MRR, contraction MRR, churned MRR",
+                "MRR movements: new MRR + expansion MRR - contraction MRR - churned MRR = net new MRR",
+                "Gross margin and gross profit: revenue - COGS, why it matters for SaaS vs services",
+                "Burn rate and runway: monthly cash burn, months of runway = cash / burn rate",
+                "Unit economics: contribution margin per customer, break-even analysis",
+                "Cohort revenue analysis: tracking revenue per cohort over time, expansion revenue curves",
+                "P&L understanding: income statement, reading a basic P&L, what analysts need to know",
+                "Budget vs actuals: variance analysis, explaining over/under performance",
+                "Financial forecasting basics: linear regression for simple forecasting, seasonality adjustment",
+                "KPI dashboards for finance: building CFO-facing dashboards in Tableau or Power BI"
+              ]
+            },
+            {
+              "title": "Operational Analytics",
+              "subtitle": "Measuring How the Business Runs",
+              "topics": [
+                "Supply chain metrics: inventory turnover, stockout rate, days of supply, fill rate",
+                "Customer support metrics: ticket volume, first response time, resolution time, CSAT, NPS",
+                "Sales analytics: pipeline metrics, win rate, average deal size, sales cycle length, quota attainment",
+                "HR analytics: headcount, attrition rate, time-to-hire, offer acceptance rate, eNPS",
+                "Defining KPIs: lagging vs leading indicators, vanity metrics vs actionable metrics",
+                "OKR analysis: Objectives and Key Results \u2014 tracking progress, scoring, retrospective",
+                "Benchmarking: comparing metrics against industry standards and historical performance"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a complete product analytics dashboard: DAU/MAU, retention curves, funnel analysis, cohort heatmap",
+            "Design and analyze a full A/B test: hypothesis, sample size calculation, results analysis, decision recommendation",
+            "Create a marketing attribution report comparing first-touch vs last-touch vs linear attribution",
+            "Build a monthly business review (MBR) dashboard covering revenue, product, and customer metrics"
+          ],
+          "outcomes": [
+            "Define and track the right metrics for any product, marketing, or finance team",
+            "Design a statistically valid A/B test from scratch and present results to stakeholders",
+            "Diagnose why a key business metric went up or down using decomposition",
+            "Data Analyst \u2014 $75K to $95K",
+            "Product Analyst \u2014 $80K to $100K"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Advanced Analytics & Data Engineering Basics",
+          "subtitle": "Statistical Analysis, Pipelines & the Modern Data Stack",
+          "duration": "6-8 weeks | 2-3 hrs/day",
+          "description": "Senior analysts close the gap between analysis and engineering. They understand the data stack that feeds their dashboards, they can build and own data pipelines, and they apply statistical rigor that goes beyond counting rows. This phase unlocks senior analyst and analytics engineer roles.",
+          "sections": [
+            {
+              "title": "Statistical Analysis for Analysts",
+              "subtitle": "Rigorous Decision Making",
+              "topics": [
+                "Hypothesis testing deep dive: t-tests (one-sample, two-sample, paired), assumptions, violations",
+                "Chi-squared test: testing independence between categorical variables, goodness of fit",
+                "ANOVA: comparing means across 3+ groups, post-hoc tests (Tukey HSD)",
+                "Confidence intervals: constructing and interpreting 95% CIs, margin of error",
+                "Non-parametric tests: Mann-Whitney U, Kruskal-Wallis \u2014 when parametric assumptions fail",
+                "Regression analysis: simple linear regression, multiple regression, interpreting coefficients",
+                "Logistic regression: binary outcomes, interpreting odds ratios \u2014 churn prediction basics",
+                "Correlation analysis: Pearson vs Spearman, correlation matrices, heatmap visualization",
+                "Time series decomposition: trend, seasonality, residuals using statsmodels",
+                "Forecasting: ARIMA basics, Facebook Prophet for business forecasting with seasonality",
+                "Outlier detection: IQR method, z-score, isolation forest \u2014 flagging anomalies in metrics",
+                "statsmodels and scipy.stats: running statistical tests in Python with proper output"
+              ]
+            },
+            {
+              "title": "dbt (Data Build Tool)",
+              "subtitle": "SQL Analytics Engineering",
+              "topics": [
+                "What dbt is: transforming data inside the warehouse using SQL + software engineering practices",
+                "dbt project structure: models/, tests/, macros/, seeds/, snapshots/, analyses/",
+                "dbt models: SELECT-only SQL files, materializations (view, table, incremental, ephemeral)",
+                "ref() function: referencing other models, building a DAG of transformations",
+                "source() function: declaring raw data sources, source freshness checks",
+                "dbt tests: built-in tests (unique, not_null, accepted_values, relationships)",
+                "Custom generic tests and singular tests: writing your own data quality checks",
+                "dbt documentation: model descriptions, column descriptions, auto-generated data catalog",
+                "Jinja templating in dbt: variables, macros, for loops, if statements in SQL",
+                "Incremental models: only processing new data, unique_key for upserts",
+                "dbt seeds: loading CSV reference data into the warehouse",
+                "dbt snapshots: tracking slowly changing dimensions (SCD Type 2)",
+                "dbt Cloud vs dbt Core: scheduling, IDE, CI/CD integration in dbt Cloud",
+                "The analytics engineering workflow: raw \u2192 staging \u2192 intermediate \u2192 mart layers"
+              ]
+            },
+            {
+              "title": "Data Pipeline Basics",
+              "subtitle": "Where the Data Comes From",
+              "topics": [
+                "The modern data stack: source systems \u2192 ingestion \u2192 warehouse \u2192 transformation \u2192 BI",
+                "ELT vs ETL: why modern stacks do Extract-Load first, then Transform inside the warehouse",
+                "Data ingestion tools: Fivetran, Airbyte, Stitch \u2014 connectors, sync frequency, cost model",
+                "Data warehouses: BigQuery (GCP), Snowflake, Redshift (AWS), Databricks \u2014 positioning each",
+                "Data lakes vs data warehouses: unstructured vs structured, when each is appropriate",
+                "Medallion architecture: Bronze (raw) \u2192 Silver (cleaned) \u2192 Gold (business-ready) layers",
+                "Partitioning and clustering: why tables are partitioned by date, clustering for query performance",
+                "Data freshness: near-real-time vs daily batch, understanding latency tradeoffs",
+                "Apache Airflow basics: DAGs, operators, scheduling \u2014 knowing what orchestration is",
+                "Data catalog concepts: metadata management, data lineage, business glossary"
+              ]
+            },
+            {
+              "title": "Analytics Engineering",
+              "subtitle": "Building the Layer Between Data and Decisions",
+              "topics": [
+                "Analytics engineering role: between data engineering and data analysis, owning the transformation layer",
+                "Dimensional modeling: fact tables, dimension tables, star schema design for analytics",
+                "Slowly Changing Dimensions (SCD): Type 1 (overwrite), Type 2 (history), Type 3 (previous value)",
+                "Surrogate keys vs natural keys: why warehouses use generated keys",
+                "Metrics layer: defining business metrics once, reusing across all BI tools (dbt Metrics, Cube.dev)",
+                "Data quality framework: expectations, monitoring, alerting on data quality issues",
+                "Great Expectations: profiling data, creating expectation suites, running checkpoints",
+                "Data observability: Monte Carlo, Soda \u2014 automated anomaly detection on pipeline outputs",
+                "Git workflow for analytics: version controlling SQL and dbt models, PR reviews for data changes",
+                "CI/CD for analytics: dbt test on PR, slim CI \u2014 only testing changed models"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a complete dbt project on BigQuery or Snowflake: staging \u2192 intermediate \u2192 mart models for an e-commerce dataset",
+            "Set up Fivetran or Airbyte to sync a data source into a warehouse and transform it with dbt",
+            "Write a regression analysis in Python predicting customer churn with statsmodels \u2014 interpret every coefficient",
+            "Create a Prophet forecasting model for monthly revenue \u2014 include confidence intervals in the output dashboard"
+          ],
+          "outcomes": [
+            "Build and own a dbt project with proper testing, documentation, and CI integration",
+            "Design a dimensional model (star schema) for a business domain from scratch",
+            "Run statistical tests in Python and correctly interpret and communicate the results",
+            "Senior Data Analyst \u2014 $95K to $120K",
+            "Analytics Engineer \u2014 $110K to $135K"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Advanced / Leadership",
+          "subtitle": "Strategy, Influence & Specialization",
+          "duration": "Ongoing \u2014 this phase never ends",
+          "description": "Senior and principal analysts don't just answer questions \u2014 they define what questions get asked, build the systems that answer them at scale, and mentor teams. This phase covers the advanced skills, domain specializations, and soft skills that determine who reaches lead analyst, analytics manager, and director levels.",
+          "sections": [
+            {
+              "title": "Advanced SQL & Performance",
+              "subtitle": "Expert-Level Query Engineering",
+              "topics": [
+                "Query optimization deep dive: query planner, execution plans, statistics, cardinality estimates",
+                "Partitioning strategies: range, list, hash partitioning \u2014 designing for query patterns",
+                "Materialized views: pre-computing expensive aggregations, refresh strategies",
+                "Indexing advanced: composite indexes, covering indexes, partial indexes, index-only scans",
+                "BigQuery optimization: partition pruning, clustering, slot usage, BI Engine, materialized views",
+                "Snowflake optimization: virtual warehouse sizing, query profile, result caching, search optimization",
+                "SQL anti-patterns: implicit type conversions, correlated subqueries in SELECT, unnecessary DISTINCT",
+                "Approximate algorithms: HyperLogLog for COUNT DISTINCT at scale (APPROX_COUNT_DISTINCT)",
+                "Geospatial SQL: ST_DISTANCE, ST_CONTAINS, geographic joins in BigQuery/PostGIS",
+                "JSON/semi-structured data: querying nested JSON columns in BigQuery, Snowflake VARIANT"
+              ]
+            },
+            {
+              "title": "Machine Learning for Analysts",
+              "subtitle": "Predictive Analytics Without Becoming a Data Scientist",
+              "topics": [
+                "When to use ML vs statistics: prediction vs inference, the analyst's perspective",
+                "Scikit-learn fundamentals: fit/predict/transform pattern, pipelines",
+                "Regression models: linear regression, ridge, lasso \u2014 predicting continuous outcomes",
+                "Classification models: logistic regression, decision trees, random forest \u2014 predicting categories",
+                "Clustering: K-Means for customer segmentation, choosing k with elbow method",
+                "Feature engineering for analysts: encoding categoricals, handling dates, interaction terms",
+                "Model evaluation: RMSE for regression, AUC-ROC and confusion matrix for classification",
+                "XGBoost basics: gradient boosting for tabular data, feature importance for insight",
+                "Interpreting models: SHAP values for feature importance \u2014 explaining predictions to stakeholders",
+                "Propensity scoring: building a likelihood-to-convert or likelihood-to-churn score",
+                "AutoML tools: BigQuery ML, DataRobot, H2O \u2014 training models with SQL or minimal code"
+              ]
+            },
+            {
+              "title": "Advanced Visualization & Reporting",
+              "subtitle": "Executive Communication at Scale",
+              "topics": [
+                "Executive dashboards: designing for CEOs and VPs \u2014 one number, one insight, no noise",
+                "D3.js basics: custom interactive visualizations when Tableau/Power BI are not enough",
+                "Observable notebooks: interactive data journalism, public analytical storytelling",
+                "Hex and Deepnote: collaborative notebook environments with BI-like sharing",
+                "Looker and LookML: metric-layer BI tool, LookML models, explores, dashboards",
+                "Embedded analytics: embedding Tableau/Power BI/Looker into product UIs for customers",
+                "Data journalism: visualization techniques from NYT, The Economist, FiveThirtyEight",
+                "Scrollytelling: narrative-driven data visualization with scrolling interactivity",
+                "Presentation design: slide structure, font hierarchy, color discipline, less is more"
+              ]
+            },
+            {
+              "title": "Data Governance & Quality",
+              "subtitle": "Making Data Trustworthy at Scale",
+              "topics": [
+                "Data governance: ownership, stewardship, access control, retention policies",
+                "Data catalog: Alation, Atlan, DataHub \u2014 documenting datasets for organizational discovery",
+                "Data lineage: tracking data from source system to final dashboard cell",
+                "Data quality dimensions: accuracy, completeness, consistency, timeliness, uniqueness",
+                "SLA for data: defining freshness SLAs, alerting on late or missing data",
+                "PII and data privacy: GDPR, CCPA \u2014 what analysts need to know about data compliance",
+                "Data access management: column-level security, row-level security, masking sensitive fields",
+                "Master data management: handling duplicate customers, product hierarchies, entity resolution"
+              ]
+            },
+            {
+              "title": "Leadership & Influence",
+              "subtitle": "From Individual Contributor to Analytical Leader",
+              "topics": [
+                "Stakeholder management: understanding stakeholder motivations, managing up, saying no politely",
+                "Analytical roadmap: prioritizing analytics projects by business impact \u00d7 feasibility",
+                "Self-service analytics enablement: training business users, creating documentation, office hours",
+                "Mentoring junior analysts: code review for SQL and Python, analytical thinking coaching",
+                "Data team structure: centralized vs embedded vs federated analytics models",
+                "Hiring analytics talent: what great analyst candidates look like, technical interview design",
+                "Building a data culture: evangelizing evidence-based decisions, fighting HiPPO decisions",
+                "Communicating impact: quantifying the value of analytics work in business terms",
+                "Analytics project management: scoping, estimation, delivery, stakeholder updates",
+                "Writing: technical documentation, analysis memos, decision documents \u2014 the senior analyst's currency"
+              ]
+            },
+            {
+              "title": "Specialization Paths",
+              "subtitle": "Going Deep in a Domain",
+              "topics": [
+                "Product analytics specialization: Mixpanel, Amplitude, Heap \u2014 event-based analytics platforms",
+                "Growth analytics: acquisition funnels, referral loops, growth accounting (new + resurrected - churned)",
+                "Risk analytics: credit risk, fraud detection, compliance analytics \u2014 heavily regulated domain",
+                "Healthcare analytics: clinical outcomes, population health, HIPAA considerations",
+                "Supply chain analytics: demand forecasting, inventory optimization, logistics analytics",
+                "Sports analytics: player performance modeling, team strategy, Moneyball-style analytics",
+                "Social media analytics: engagement modeling, content performance, influencer ROI",
+                "Climate and sustainability analytics: ESG metrics, carbon accounting, energy analytics"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a complete self-service analytics platform: dbt for transformation + Tableau/Power BI for dashboards + documentation",
+            "Train a customer churn prediction model with scikit-learn, deploy predictions as a dashboard with SHAP explanations",
+            "Build an executive-level company health dashboard covering all business units: product, revenue, marketing, ops",
+            "Publish 3 public data analyses with full narrative storytelling on Tableau Public or a personal blog"
+          ],
+          "outcomes": [
+            "Design and own the full analytics stack for a business domain end-to-end",
+            "Train and interpret a predictive model and communicate its findings to non-technical stakeholders",
+            "Build and lead an analytics team or function",
+            "Senior Data Analyst \u2014 $100K to $130K",
+            "Analytics Engineer \u2014 $115K to $145K",
+            "Analytics Manager \u2014 $130K to $160K",
+            "Director of Analytics \u2014 $160K to $200K+ with equity"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1-2",
+          "focus": "Excel, Google Sheets & Statistics Foundations",
+          "milestone": "Build a complete Excel dashboard with pivot tables, slicers, and dynamic charts"
+        },
+        {
+          "period": "Month 2-4",
+          "focus": "SQL \u2014 Fundamentals through Window Functions",
+          "milestone": "Solve 50 SQL problems on StrataScratch, pass SQL rounds in data analyst interviews"
+        },
+        {
+          "period": "Month 4-6",
+          "focus": "Tableau or Power BI + Data Storytelling",
+          "milestone": "Publish 3 dashboards to Tableau Public \u2014 START applying for junior analyst roles"
+        },
+        {
+          "period": "Month 6-8",
+          "focus": "Python for Data Analysis (Pandas + Visualization)",
+          "milestone": "Automate a full reporting workflow that previously took hours in Excel"
+        },
+        {
+          "period": "Month 8-11",
+          "focus": "Business Analytics, Metrics & A/B Testing",
+          "milestone": "Apply for Data Analyst and Product Analyst roles ($75K-$95K range)"
+        },
+        {
+          "period": "Month 11-14",
+          "focus": "dbt, Modern Data Stack & Statistical Analysis",
+          "milestone": "Apply for Senior Analyst and Analytics Engineer roles ($100K+ range)"
+        },
+        {
+          "period": "Month 14-16+",
+          "focus": "ML for Analysts, Governance, Leadership & Specialization",
+          "milestone": "Analytics Manager / Director trajectory at $130K+"
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "subtitle": "Frontend Library",
+      "icon": "code",
+      "stats": {
+        "phases": 4,
+        "duration": "3-4 Months",
+        "technologies": "15+ Technologies",
+        "salary": "$80K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "React Fundamentals",
+          "subtitle": "Components, JSX & Props",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "React is the most popular frontend library for building user interfaces. Start with the core concepts: components, JSX syntax, and props for passing data. These fundamentals are the foundation of every React application.",
+          "sections": [
+            {
+              "title": "React Basics",
+              "subtitle": "Getting Started",
+              "topics": [
+                "What is React and why use it",
+                "Create React App and Vite setup",
+                "JSX syntax and rules",
+                "Components: functional vs class",
+                "Props: passing data to components",
+                "Component composition",
+                "React Developer Tools browser extension"
+              ]
+            },
+            {
+              "title": "JSX Deep Dive",
+              "subtitle": "JavaScript XML",
+              "topics": [
+                "JSX expressions with curly braces",
+                "Conditional rendering with && and ternary",
+                "Rendering lists with map()",
+                "Keys in React lists",
+                "JSX fragments",
+                "Styling in JSX: inline styles and className"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a static portfolio page with React components",
+            "Create a todo list UI without functionality",
+            "Build a card component library"
+          ],
+          "outcomes": [
+            "Create React components from scratch",
+            "Understand JSX syntax and expressions",
+            "Pass data between components with props",
+            "Render lists and conditional content"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "State & Hooks",
+          "subtitle": "useState, useEffect & Events",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "State management is what makes React interactive. Learn useState for component state, useEffect for side effects, and how to handle user events. Hooks transformed React - master them completely.",
+          "sections": [
+            {
+              "title": "useState Hook",
+              "subtitle": "Component State",
+              "topics": [
+                "What is state in React",
+                "useState syntax and destructuring",
+                "Updating state: never mutate directly",
+                "State with arrays and objects",
+                "Lifting state up to parent components",
+                "State vs props: the key difference"
+              ]
+            },
+            {
+              "title": "Events & Forms",
+              "subtitle": "User Interactions",
+              "topics": [
+                "onClick, onChange, onSubmit handlers",
+                "Event object and preventDefault",
+                "Controlled components pattern",
+                "Form inputs: text, checkbox, select",
+                "Form validation basics",
+                "Handling multiple inputs"
+              ]
+            },
+            {
+              "title": "useEffect Hook",
+              "subtitle": "Side Effects",
+              "topics": [
+                "What are side effects in React",
+                "useEffect syntax and dependency array",
+                "Fetching data with useEffect",
+                "Cleanup functions and memory leaks",
+                "useEffect runs after render",
+                "Common useEffect patterns"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a fully functional todo app with add/delete/complete",
+            "Create a weather app fetching real API data",
+            "Build a form with validation and submission"
+          ],
+          "outcomes": [
+            "Manage component state with useState",
+            "Handle user events and form inputs",
+            "Fetch and display API data",
+            "Understand useEffect lifecycle"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Advanced React",
+          "subtitle": "Context, Custom Hooks & Performance",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Take your React skills to the next level. Learn Context API for global state, build custom hooks for reusable logic, and understand performance optimization. This is senior React developer territory.",
+          "sections": [
+            {
+              "title": "Context API",
+              "subtitle": "Global State Without Redux",
+              "topics": [
+                "Prop drilling problem",
+                "createContext and Provider",
+                "useContext hook",
+                "Context with state and reducers",
+                "When to use Context vs props",
+                "Multiple contexts pattern"
+              ]
+            },
+            {
+              "title": "Custom Hooks",
+              "subtitle": "Reusable Logic",
+              "topics": [
+                "What are custom hooks",
+                "useLocalStorage hook",
+                "useFetch hook for API calls",
+                "useForm hook for form handling",
+                "Rules of hooks",
+                "Sharing hooks across components"
+              ]
+            },
+            {
+              "title": "Performance",
+              "subtitle": "Optimization Techniques",
+              "topics": [
+                "React.memo for component memoization",
+                "useMemo for expensive calculations",
+                "useCallback for function memoization",
+                "Code splitting with React.lazy",
+                "Suspense and fallback UI",
+                "Virtualization for long lists"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a shopping cart with Context API",
+            "Create custom hooks library (useFetch, useLocalStorage, useForm)",
+            "Optimize a slow React app with memoization"
+          ],
+          "outcomes": [
+            "Manage global state with Context API",
+            "Build and use custom hooks",
+            "Optimize React app performance",
+            "Understand advanced React patterns"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "React Ecosystem",
+          "subtitle": "Router, State Management & Testing",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Production React apps use a rich ecosystem. Learn React Router for navigation, Redux or Zustand for state management, and testing with Jest. This completes your React mastery.",
+          "sections": [
+            {
+              "title": "React Router",
+              "subtitle": "Client-Side Navigation",
+              "topics": [
+                "Single Page Application routing",
+                "BrowserRouter and Routes",
+                "Route, Link, NavLink components",
+                "Dynamic routes with useParams",
+                "Programmatic navigation with useNavigate",
+                "Nested routes and outlets"
+              ]
+            },
+            {
+              "title": "State Management",
+              "subtitle": "Redux & Zustand",
+              "topics": [
+                "When to use external state management",
+                "Redux basics: store, actions, reducers",
+                "Redux Toolkit for modern Redux",
+                "Zustand: lightweight alternative",
+                "Async state with thunks or RTK Query",
+                "Comparing Redux, Zustand, Context"
+              ]
+            },
+            {
+              "title": "Testing",
+              "subtitle": "Jest & React Testing Library",
+              "topics": [
+                "Why test React components",
+                "Jest testing framework",
+                "React Testing Library philosophy",
+                "Testing components with render and screen",
+                "User events and interactions",
+                "Mocking API calls in tests"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a multi-page app with React Router",
+            "Create an e-commerce app with Redux or Zustand",
+            "Write tests for all components in a project"
+          ],
+          "outcomes": [
+            "Implement client-side routing",
+            "Manage complex state with Redux/Zustand",
+            "Write unit and integration tests",
+            "React Developer \u2014 $80K to $110K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "React Fundamentals & JSX",
+          "milestone": "Build static component-based UIs"
+        },
+        {
+          "period": "Month 2",
+          "focus": "State, Hooks & Events",
+          "milestone": "Create interactive apps with state"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Advanced React & Context",
+          "milestone": "Build apps with global state"
+        },
+        {
+          "period": "Month 4",
+          "focus": "Router, Redux & Testing",
+          "milestone": "Production-ready React developer"
+        }
+      ]
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js",
+      "subtitle": "Runtime Environment",
+      "icon": "terminal",
+      "stats": {
+        "phases": 4,
+        "duration": "3-4 Months",
+        "technologies": "12+ Technologies",
+        "salary": "$85K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Node.js Basics",
+          "subtitle": "JavaScript on the Server",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "Node.js lets you run JavaScript outside the browser. Learn the runtime environment, modules, and core concepts. This is your entry into backend development with JavaScript.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "Node.js Fundamentals",
+              "topics": [
+                "What is Node.js and the V8 engine",
+                "Installing Node.js and npm",
+                "package.json and project setup",
+                "CommonJS vs ES Modules",
+                "Running JavaScript files with node",
+                "REPL (Read-Eval-Print Loop)"
+              ]
+            },
+            {
+              "title": "Core Modules",
+              "subtitle": "Built-in Functionality",
+              "topics": [
+                "fs module: file system operations",
+                "path module: working with file paths",
+                "os module: operating system info",
+                "process object and environment variables",
+                "Buffer for binary data",
+                "URL and query string parsing"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a CLI tool that reads and writes files",
+            "Create a script that processes CSV data",
+            "Build a simple HTTP server from scratch"
+          ],
+          "outcomes": [
+            "Understand Node.js runtime",
+            "Use core modules for file operations",
+            "Work with npm and packages",
+            "Create basic CLI tools"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Express.js",
+          "subtitle": "Web Framework for Node.js",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Express is the most popular Node.js web framework. Learn to build APIs, handle requests and responses, and structure backend applications. This is essential for any Node.js developer.",
+          "sections": [
+            {
+              "title": "Express Basics",
+              "subtitle": "Building APIs",
+              "topics": [
+                "Setting up Express server",
+                "Routing: GET, POST, PUT, DELETE",
+                "Request and response objects",
+                "Route parameters and query strings",
+                "Middleware concept and usage",
+                "Static file serving"
+              ]
+            },
+            {
+              "title": "API Development",
+              "subtitle": "RESTful APIs",
+              "topics": [
+                "REST API design principles",
+                "JSON parsing with express.json()",
+                "URL-encoded data handling",
+                "Error handling middleware",
+                "API versioning strategies",
+                "Postman for API testing"
+              ]
+            },
+            {
+              "title": "Authentication",
+              "subtitle": "Security Basics",
+              "topics": [
+                "Password hashing with bcrypt",
+                "JWT (JSON Web Tokens) for auth",
+                "Cookie-based sessions",
+                "Protected routes middleware",
+                "CORS configuration",
+                "Helmet.js for security headers"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a REST API for a blog with CRUD operations",
+            "Create authentication system with JWT",
+            "Build a file upload API with multer"
+          ],
+          "outcomes": [
+            "Build REST APIs with Express",
+            "Implement authentication and security",
+            "Use middleware effectively",
+            "Test APIs with Postman"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Databases",
+          "subtitle": "MongoDB & SQL with Node.js",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Every backend needs a database. Learn MongoDB for NoSQL and PostgreSQL for SQL. Understand how to model data, perform CRUD operations, and design database schemas with Node.js.",
+          "sections": [
+            {
+              "title": "MongoDB",
+              "subtitle": "NoSQL Database",
+              "topics": [
+                "MongoDB basics and documents",
+                "Mongoose ODM setup",
+                "Schemas and models",
+                "CRUD operations with Mongoose",
+                "Relationships: embedding vs referencing",
+                "Aggregation pipeline basics"
+              ]
+            },
+            {
+              "title": "SQL Databases",
+              "subtitle": "PostgreSQL with Node.js",
+              "topics": [
+                "SQL basics refresher",
+                "pg driver for PostgreSQL",
+                "Connection pooling",
+                "Parameterized queries",
+                "Knex.js or Sequelize ORM",
+                "Migrations and seeding"
+              ]
+            },
+            {
+              "title": "Database Design",
+              "subtitle": "Modeling Data",
+              "topics": [
+                "Schema design principles",
+                "One-to-one, one-to-many, many-to-many",
+                "Indexing for performance",
+                "Transactions with Node.js",
+                "Database normalization basics",
+                "Choosing SQL vs NoSQL"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a complete API with MongoDB and Mongoose",
+            "Create a PostgreSQL-backed application",
+            "Design schema for e-commerce with relationships"
+          ],
+          "outcomes": [
+            "Work with MongoDB and Mongoose",
+            "Use PostgreSQL with Node.js",
+            "Design database schemas",
+            "Implement CRUD with databases"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Advanced Node.js",
+          "subtitle": "Production & Deployment",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Production Node.js apps require advanced skills. Learn about the event loop, streams, testing, and deployment. Complete your journey to becoming a professional Node.js developer.",
+          "sections": [
+            {
+              "title": "Event Loop & Async",
+              "subtitle": "Deep Dive",
+              "topics": [
+                "How the event loop works",
+                "setTimeout, setImmediate, process.nextTick",
+                "Blocking vs non-blocking code",
+                "Worker threads for CPU-intensive tasks",
+                "Cluster module for scaling",
+                "PM2 process manager"
+              ]
+            },
+            {
+              "title": "Streams & Buffers",
+              "subtitle": "Handling Data",
+              "topics": [
+                "Readable and writable streams",
+                "Piping streams together",
+                "Handling large files efficiently",
+                "Transform streams",
+                "Backpressure handling",
+                "Stream events and error handling"
+              ]
+            },
+            {
+              "title": "Testing & Deployment",
+              "subtitle": "Production Ready",
+              "topics": [
+                "Unit testing with Jest or Mocha",
+                "Integration testing for APIs",
+                "Environment variables and dotenv",
+                "Docker for Node.js apps",
+                "Deploying to Heroku, Railway, or Render",
+                "Logging with Winston or Pino"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a real-time chat app with Socket.io",
+            "Create a file processing service with streams",
+            "Deploy a full-stack app with Docker"
+          ],
+          "outcomes": [
+            "Understand Node.js internals",
+            "Work with streams efficiently",
+            "Write tests for backend code",
+            "Deploy Node.js applications",
+            "Backend Developer \u2014 $85K to $115K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "Node.js Basics & Core Modules",
+          "milestone": "Build CLI tools and simple servers"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Express.js & REST APIs",
+          "milestone": "Create APIs with authentication"
+        },
+        {
+          "period": "Month 3",
+          "focus": "MongoDB & PostgreSQL",
+          "milestone": "Full CRUD apps with databases"
+        },
+        {
+          "period": "Month 4",
+          "focus": "Advanced Concepts & Deployment",
+          "milestone": "Production-ready Node.js developer"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Python",
+      "subtitle": "Programming Language",
+      "icon": "psychology",
+      "stats": {
+        "phases": 4,
+        "duration": "3-4 Months",
+        "technologies": "10+ Technologies",
+        "salary": "$75K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Python Basics",
+          "subtitle": "Syntax, Data Types & Control Flow",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "Python is the most versatile programming language. Start with fundamentals: variables, data types, control flow, and functions. Python's readable syntax makes it perfect for beginners and powerful for experts.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "Python Fundamentals",
+              "topics": [
+                "Installing Python and VS Code",
+                "Python interpreter and running scripts",
+                "Variables and naming conventions",
+                "Data types: int, float, str, bool",
+                "Type conversion and casting",
+                "Comments and docstrings",
+                "PEP 8 style guide basics"
+              ]
+            },
+            {
+              "title": "Control Flow",
+              "subtitle": "Logic and Loops",
+              "topics": [
+                "if, elif, else statements",
+                "Comparison operators",
+                "Logical operators: and, or, not",
+                "for loops and range()",
+                "while loops",
+                "break, continue, pass",
+                "List comprehensions"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a calculator with user input",
+            "Create a number guessing game",
+            "Write a text-based adventure game"
+          ],
+          "outcomes": [
+            "Write Python scripts from scratch",
+            "Understand Python syntax and style",
+            "Use control flow effectively",
+            "Work with basic data types"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Data Structures",
+          "subtitle": "Lists, Dictionaries & More",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Python's built-in data structures are powerful and flexible. Master lists, dictionaries, tuples, and sets. Learn to manipulate data efficiently - this is where Python shines.",
+          "sections": [
+            {
+              "title": "Lists & Tuples",
+              "subtitle": "Sequential Collections",
+              "topics": [
+                "Creating and accessing lists",
+                "List methods: append, extend, insert, remove",
+                "Slicing lists",
+                "Sorting and reversing",
+                "Tuples: immutable sequences",
+                "Tuple unpacking",
+                "When to use list vs tuple"
+              ]
+            },
+            {
+              "title": "Dictionaries & Sets",
+              "subtitle": "Mappings and Uniques",
+              "topics": [
+                "Dictionary syntax and creation",
+                "Accessing and modifying values",
+                "Dictionary methods: keys, values, items",
+                "Nested dictionaries",
+                "Sets: unique collections",
+                "Set operations: union, intersection",
+                "Dictionary and set comprehensions"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a contact manager with dictionaries",
+            "Create a word frequency counter",
+            "Implement a shopping cart system"
+          ],
+          "outcomes": [
+            "Use lists, dictionaries, tuples, sets",
+            "Choose right data structure for task",
+            "Manipulate collections efficiently",
+            "Understand mutability"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Functions & Modules",
+          "subtitle": "Code Organization",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Functions make code reusable and organized. Learn to define functions, work with arguments, and organize code into modules. Then dive into OOP - classes, objects, and inheritance.",
+          "sections": [
+            {
+              "title": "Functions",
+              "subtitle": "Reusable Code Blocks",
+              "topics": [
+                "Defining functions with def",
+                "Parameters and arguments",
+                "Return statements",
+                "Default parameter values",
+                "*args and **kwargs",
+                "Lambda functions",
+                "Scope: local vs global"
+              ]
+            },
+            {
+              "title": "Modules & Packages",
+              "subtitle": "Code Organization",
+              "topics": [
+                "Importing modules",
+                "Creating custom modules",
+                "Python Standard Library overview",
+                "pip and PyPI",
+                "Virtual environments with venv",
+                "requirements.txt",
+                "Package structure"
+              ]
+            },
+            {
+              "title": "OOP Basics",
+              "subtitle": "Object-Oriented Programming",
+              "topics": [
+                "Classes and objects",
+                "__init__ constructor",
+                "Instance variables and methods",
+                "Class variables",
+                "Inheritance and super()",
+                "Encapsulation principles",
+                "Magic methods: __str__, __repr__"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a library management system with OOP",
+            "Create a bank account class hierarchy",
+            "Package your code as reusable module"
+          ],
+          "outcomes": [
+            "Write reusable functions",
+            "Organize code into modules",
+            "Create classes and objects",
+            "Understand OOP principles"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Python Ecosystem",
+          "subtitle": "Libraries & Applications",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Python's power comes from its vast ecosystem. Learn essential libraries for web development, data analysis, and automation. This opens doors to web dev, data science, scripting, and more.",
+          "sections": [
+            {
+              "title": "File Handling",
+              "subtitle": "Working with Files",
+              "topics": [
+                "Reading files with open()",
+                "Writing to files",
+                "Context managers (with statement)",
+                "CSV files with csv module",
+                "JSON handling",
+                "Working with paths using pathlib"
+              ]
+            },
+            {
+              "title": "Web Development",
+              "subtitle": "Flask & FastAPI",
+              "topics": [
+                "Flask basics: routes and views",
+                "Request and response handling",
+                "Templates with Jinja2",
+                "Forms and user input",
+                "FastAPI for modern APIs",
+                "Pydantic models for validation"
+              ]
+            },
+            {
+              "title": "Data & Automation",
+              "subtitle": "Practical Applications",
+              "topics": [
+                "Requests library for HTTP",
+                "BeautifulSoup for web scraping",
+                "Pandas basics for data analysis",
+                "Automating Excel with openpyxl",
+                "Sending emails with smtplib",
+                "Scheduling tasks with schedule"
+              ]
+            }
+          ],
+          "projects": [
+            "Build a REST API with Flask or FastAPI",
+            "Create a web scraper for data collection",
+            "Automate a boring task with Python script"
+          ],
+          "outcomes": [
+            "Build web applications with Flask",
+            "Scrape and process web data",
+            "Automate repetitive tasks",
+            "Python Developer \u2014 $75K to $105K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "Python Basics & Control Flow",
+          "milestone": "Write Python scripts confidently"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Data Structures",
+          "milestone": "Manipulate complex data collections"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Functions, Modules & OOP",
+          "milestone": "Build organized, reusable code"
+        },
+        {
+          "period": "Month 4",
+          "focus": "Web Dev, Data & Automation",
+          "milestone": "Production Python developer"
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "title": "Docker",
+      "subtitle": "Containerization",
+      "icon": "inventory_2",
+      "stats": {
+        "phases": 3,
+        "duration": "2-3 Months",
+        "technologies": "8+ Technologies",
+        "salary": "$90K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Docker Fundamentals",
+          "subtitle": "Containers & Images",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "Docker revolutionized how we deploy applications. Learn what containers are, how to build images, and run containers. This is essential knowledge for modern DevOps and development.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "Docker Basics",
+              "topics": [
+                "What is Docker and containerization",
+                "Installing Docker Desktop",
+                "Docker architecture: daemon, client, registry",
+                "Images vs containers",
+                "Docker Hub and registries",
+                "Basic Docker CLI commands"
+              ]
+            },
+            {
+              "title": "Working with Containers",
+              "subtitle": "Running Applications",
+              "topics": [
+                "docker run command options",
+                "Container lifecycle: run, stop, start, rm",
+                "Port mapping (-p flag)",
+                "Environment variables (-e flag)",
+                "Volume mounting for persistence",
+                "Container logs and exec",
+                "Resource limits"
+              ]
+            }
+          ],
+          "projects": [
+            "Run your first container (hello-world)",
+            "Containerize a simple web app",
+            "Set up a database container with volumes"
+          ],
+          "outcomes": [
+            "Understand container concepts",
+            "Run and manage containers",
+            "Use volumes for persistence",
+            "Work with Docker CLI"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Docker Images",
+          "subtitle": "Building & Optimizing",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Building efficient Docker images is an art. Learn Dockerfile syntax, optimization techniques, and best practices. Create production-ready images that are small and secure.",
+          "sections": [
+            {
+              "title": "Dockerfile",
+              "subtitle": "Image Building",
+              "topics": [
+                "Dockerfile structure and syntax",
+                "FROM: choosing base images",
+                "RUN: executing commands",
+                "COPY vs ADD",
+                "WORKDIR and USER",
+                "EXPOSE and ports",
+                "CMD vs ENTRYPOINT"
+              ]
+            },
+            {
+              "title": "Optimization",
+              "subtitle": "Efficient Images",
+              "topics": [
+                "Layer caching and build order",
+                "Multi-stage builds",
+                "Alpine and distroless images",
+                "Reducing image size",
+                "BuildKit features",
+                ".dockerignore file",
+                "Image scanning for vulnerabilities"
+              ]
+            }
+          ],
+          "projects": [
+            "Write Dockerfile for Node.js app",
+            "Create multi-stage build for Go app",
+            "Optimize an image to under 50MB"
+          ],
+          "outcomes": [
+            "Write efficient Dockerfiles",
+            "Optimize image size",
+            "Use multi-stage builds",
+            "Scan images for security"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Docker Compose & Orchestration",
+          "subtitle": "Multi-Container Apps",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Real applications need multiple containers. Docker Compose simplifies this. Learn to define, run, and scale multi-container applications. Then explore basic orchestration concepts.",
+          "sections": [
+            {
+              "title": "Docker Compose",
+              "subtitle": "Multi-Container Management",
+              "topics": [
+                "docker-compose.yml structure",
+                "Services, networks, volumes",
+                "docker-compose up and down",
+                "Environment variables",
+                "Service dependencies",
+                "Health checks",
+                "Compose for development vs production"
+              ]
+            },
+            {
+              "title": "Networking & Storage",
+              "subtitle": "Container Communication",
+              "topics": [
+                "Docker networks: bridge, host, overlay",
+                "Service discovery in Compose",
+                "Named volumes vs bind mounts",
+                "Volume drivers",
+                "Database containers with persistence",
+                "Backup and restore strategies"
+              ]
+            },
+            {
+              "title": "Production & CI/CD",
+              "subtitle": "Real-World Usage",
+              "topics": [
+                "Docker in CI/CD pipelines",
+                "Building images in GitHub Actions",
+                "Pushing to Docker Hub or ECR",
+                "Container security best practices",
+                "Docker Swarm basics",
+                "Monitoring containers"
+              ]
+            }
+          ],
+          "projects": [
+            "Build full-stack app with Compose (frontend + backend + db)",
+            "Set up CI/CD pipeline building Docker images",
+            "Deploy containerized app to cloud"
+          ],
+          "outcomes": [
+            "Orchestrate multi-container apps",
+            "Use Docker in CI/CD",
+            "Deploy containers to production",
+            "Container Security Best Practices",
+            "DevOps Engineer \u2014 $90K to $120K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "Docker Fundamentals",
+          "milestone": "Run and manage containers"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Building Images",
+          "milestone": "Create optimized Dockerfiles"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Compose & Production",
+          "milestone": "Deploy multi-container apps"
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes",
+      "subtitle": "Container Orchestration",
+      "icon": "view_in_ar",
+      "stats": {
+        "phases": 4,
+        "duration": "4-5 Months",
+        "technologies": "15+ Technologies",
+        "salary": "$110K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "Kubernetes Fundamentals",
+          "subtitle": "Architecture & Core Concepts",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Kubernetes is the standard for container orchestration. Learn the architecture, core components, and basic objects. This is essential for anyone working with cloud-native applications.",
+          "sections": [
+            {
+              "title": "Introduction",
+              "subtitle": "What is Kubernetes",
+              "topics": [
+                "Why Kubernetes: from Docker to orchestration",
+                "Kubernetes architecture: control plane and nodes",
+                "Master components: API server, etcd, scheduler, controller-manager",
+                "Node components: kubelet, kube-proxy, container runtime",
+                "kubectl CLI basics",
+                "Minikube and kind for local clusters"
+              ]
+            },
+            {
+              "title": "Core Objects",
+              "subtitle": "Building Blocks",
+              "topics": [
+                "Pods: the smallest deployable unit",
+                "Deployments: managing replica sets",
+                "Services: ClusterIP, NodePort, LoadBalancer",
+                "Namespaces for isolation",
+                "Labels and selectors",
+                "ConfigMaps for configuration"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up local Kubernetes cluster",
+            "Deploy first pod and expose it",
+            "Create deployment with multiple replicas"
+          ],
+          "outcomes": [
+            "Understand K8s architecture",
+            "Use kubectl effectively",
+            "Create pods and deployments",
+            "Expose applications with services"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Application Deployment",
+          "subtitle": "Real-World Patterns",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Deploy real applications to Kubernetes. Learn about storage, configuration, secrets, and application lifecycle management. Master the patterns used in production.",
+          "sections": [
+            {
+              "title": "Storage",
+              "subtitle": "Persistent Data",
+              "topics": [
+                "Volumes and PersistentVolumes",
+                "PersistentVolumeClaims",
+                "StorageClasses",
+                "EmptyDir and HostPath",
+                "Configuring databases in K8s",
+                "StatefulSets for stateful apps"
+              ]
+            },
+            {
+              "title": "Configuration",
+              "subtitle": "Secrets and Config",
+              "topics": [
+                "ConfigMaps deep dive",
+                "Secrets for sensitive data",
+                "Environment variables",
+                "Mounting configs as files",
+                "Secret management best practices",
+                "External Secrets Operator"
+              ]
+            },
+            {
+              "title": "Application Lifecycle",
+              "subtitle": "Deployment Strategies",
+              "topics": [
+                "Rolling updates",
+                "Blue-green deployments",
+                "Canary deployments",
+                "Rollback strategies",
+                "Health checks: liveness and readiness",
+                "Init containers"
+              ]
+            }
+          ],
+          "projects": [
+            "Deploy database with persistent storage",
+            "Create ConfigMap and Secret for app config",
+            "Implement rolling update with zero downtime"
+          ],
+          "outcomes": [
+            "Manage persistent storage",
+            "Handle configuration and secrets",
+            "Implement deployment strategies",
+            "Configure health checks"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Networking & Security",
+          "subtitle": "Service Mesh & Policies",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Kubernetes networking is powerful but complex. Learn about ingress, network policies, and service mesh. Security is critical - understand RBAC, pod security, and best practices.",
+          "sections": [
+            {
+              "title": "Networking",
+              "subtitle": "Service Discovery",
+              "topics": [
+                "Cluster DNS and service discovery",
+                "Ingress controllers (nginx, traefik)",
+                "Ingress resources and rules",
+                "TLS termination",
+                "Network policies",
+                "CNI plugins overview"
+              ]
+            },
+            {
+              "title": "Security",
+              "subtitle": "Securing Clusters",
+              "topics": [
+                "RBAC: Roles and RoleBindings",
+                "Service accounts",
+                "Pod Security Standards",
+                "Network policies for isolation",
+                "Security contexts",
+                "Pod Security Admission"
+              ]
+            },
+            {
+              "title": "Service Mesh",
+              "subtitle": "Istio Basics",
+              "topics": [
+                "What is a service mesh",
+                "Istio architecture",
+                "Sidecar injection",
+                "Traffic management",
+                "mTLS encryption",
+                "Observability with Istio"
+              ]
+            }
+          ],
+          "projects": [
+            "Configure ingress with TLS",
+            "Set up RBAC for team access",
+            "Implement network policies"
+          ],
+          "outcomes": [
+            "Configure ingress and routing",
+            "Implement security policies",
+            "Understand service mesh",
+            "Secure cluster access"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Production Kubernetes",
+          "subtitle": "Monitoring, Scaling & Cloud",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Run Kubernetes in production. Learn monitoring, logging, autoscaling, and cloud integration. This is what separates junior from senior DevOps engineers.",
+          "sections": [
+            {
+              "title": "Observability",
+              "subtitle": "Monitoring and Logging",
+              "topics": [
+                "Prometheus for metrics",
+                "Grafana dashboards",
+                "AlertManager for alerts",
+                "ELK stack for logging",
+                "Loki for log aggregation",
+                "Distributed tracing with Jaeger"
+              ]
+            },
+            {
+              "title": "Scaling",
+              "subtitle": "Handling Load",
+              "topics": [
+                "Horizontal Pod Autoscaler (HPA)",
+                "Vertical Pod Autoscaler (VPA)",
+                "Cluster Autoscaler",
+                "Resource requests and limits",
+                "Quality of Service classes",
+                "Pod Disruption Budgets"
+              ]
+            },
+            {
+              "title": "Cloud & Tools",
+              "subtitle": "Managed Kubernetes",
+              "topics": [
+                "EKS (AWS), GKE (GCP), AKS (Azure)",
+                "Helm package manager",
+                "Kustomize for config",
+                "ArgoCD for GitOps",
+                "kubectl plugins",
+                "Lens and other GUIs"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up Prometheus and Grafana",
+            "Configure HPA for auto-scaling",
+            "Deploy to managed K8s on cloud"
+          ],
+          "outcomes": [
+            "Monitor K8s clusters",
+            "Implement autoscaling",
+            "Use Helm and GitOps",
+            "Deploy to cloud K8s",
+            "Kubernetes Engineer \u2014 $110K to $150K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "K8s Fundamentals",
+          "milestone": "Deploy apps to local cluster"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Storage, Config & Lifecycle",
+          "milestone": "Production deployment patterns"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Networking & Security",
+          "milestone": "Secure cluster setup"
+        },
+        {
+          "period": "Month 4-5",
+          "focus": "Monitoring & Cloud",
+          "milestone": "Cloud K8s engineer"
+        }
+      ]
+    },
+    {
+      "id": "aws",
+      "title": "AWS",
+      "subtitle": "Cloud Platform",
+      "icon": "cloud",
+      "stats": {
+        "phases": 4,
+        "duration": "4-5 Months",
+        "technologies": "20+ Technologies",
+        "salary": "$100K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "AWS Fundamentals",
+          "subtitle": "Core Services & Concepts",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "AWS is the leading cloud platform. Start with core concepts, IAM, and essential services. This foundation is required for any cloud role.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "AWS Basics",
+              "topics": [
+                "AWS global infrastructure: regions, AZs, edge locations",
+                "AWS Free Tier and billing",
+                "AWS Management Console",
+                "AWS CLI setup and configuration",
+                "IAM: users, groups, roles, policies",
+                "Security best practices"
+              ]
+            },
+            {
+              "title": "Core Services",
+              "subtitle": "Essential Building Blocks",
+              "topics": [
+                "EC2: virtual servers",
+                "S3: object storage",
+                "VPC: networking",
+                "RDS: managed databases",
+                "Route 53: DNS",
+                "CloudWatch: monitoring"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up AWS account with MFA",
+            "Launch first EC2 instance",
+            "Create S3 bucket and host static website"
+          ],
+          "outcomes": [
+            "Navigate AWS console",
+            "Use IAM securely",
+            "Launch EC2 instances",
+            "Work with S3 and VPC"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Compute & Storage",
+          "subtitle": "EC2, Lambda & EBS",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Deep dive into AWS compute and storage. Learn EC2 in detail, serverless with Lambda, and various storage options. This is where most applications run.",
+          "sections": [
+            {
+              "title": "EC2 Deep Dive",
+              "subtitle": "Virtual Servers",
+              "topics": [
+                "Instance types and families",
+                "AMIs and snapshots",
+                "EBS volumes and types",
+                "Security groups deep dive",
+                "Key pairs and SSH access",
+                "User data and bootstrapping",
+                "Auto Scaling Groups"
+              ]
+            },
+            {
+              "title": "Serverless",
+              "subtitle": "Lambda & API Gateway",
+              "topics": [
+                "Lambda functions",
+                "Triggers and event sources",
+                "Lambda layers",
+                "API Gateway for REST APIs",
+                "Lambda@Edge",
+                "Cold starts and optimization"
+              ]
+            },
+            {
+              "title": "Storage Options",
+              "subtitle": "Choosing Right Storage",
+              "topics": [
+                "S3 storage classes",
+                "S3 lifecycle policies",
+                "EFS: managed NFS",
+                "FSx for various workloads",
+                "Storage Gateway",
+                "Data transfer options"
+              ]
+            }
+          ],
+          "projects": [
+            "Build auto-scaling web app",
+            "Create serverless API with Lambda",
+            "Set up multi-tier storage with S3"
+          ],
+          "outcomes": [
+            "Master EC2 and EBS",
+            "Build serverless applications",
+            "Choose right storage",
+            "Implement auto-scaling"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Databases & Networking",
+          "subtitle": "RDS, DynamoDB & VPC",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Data is at the heart of applications. Learn managed databases, NoSQL with DynamoDB, and advanced networking. These are critical production skills.",
+          "sections": [
+            {
+              "title": "RDS",
+              "subtitle": "Managed Relational DBs",
+              "topics": [
+                "RDS database engines",
+                "Multi-AZ deployments",
+                "Read replicas",
+                "Backup and restore",
+                "Parameter groups",
+                "RDS Proxy for connection pooling"
+              ]
+            },
+            {
+              "title": "NoSQL",
+              "subtitle": "DynamoDB",
+              "topics": [
+                "DynamoDB tables and items",
+                "Partition and sort keys",
+                "Secondary indexes",
+                "DAX for caching",
+                "Streams and triggers",
+                "Best practices and patterns"
+              ]
+            },
+            {
+              "title": "Advanced Networking",
+              "subtitle": "VPC Deep Dive",
+              "topics": [
+                "VPC peering",
+                "Transit Gateway",
+                "Direct Connect",
+                "VPN connections",
+                "PrivateLink",
+                "Network Firewall"
+              ]
+            }
+          ],
+          "projects": [
+            "Deploy multi-AZ database",
+            "Build DynamoDB-powered app",
+            "Design VPC with peering"
+          ],
+          "outcomes": [
+            "Use RDS effectively",
+            "Design DynamoDB tables",
+            "Implement advanced networking",
+            "Connect VPCs securely"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "DevOps & Security",
+          "subtitle": "CI/CD, IaC & Best Practices",
+          "duration": "5-6 weeks | 2-3 hrs/day",
+          "description": "Production AWS requires DevOps practices. Learn Infrastructure as Code, CI/CD, security services, and cost optimization. Complete your AWS expertise.",
+          "sections": [
+            {
+              "title": "Infrastructure as Code",
+              "subtitle": "CloudFormation & Terraform",
+              "topics": [
+                "CloudFormation templates",
+                "Stacks and change sets",
+                "Terraform with AWS provider",
+                "State management",
+                "AWS CDK basics",
+                "SAM for serverless"
+              ]
+            },
+            {
+              "title": "CI/CD",
+              "subtitle": "CodePipeline & Tools",
+              "topics": [
+                "CodeCommit for source control",
+                "CodeBuild for builds",
+                "CodeDeploy for deployment",
+                "CodePipeline orchestration",
+                "Integrating with GitHub",
+                "Blue-green deployments"
+              ]
+            },
+            {
+              "title": "Security & Operations",
+              "subtitle": "Production Ready",
+              "topics": [
+                "KMS for encryption",
+                "Secrets Manager",
+                "Certificate Manager",
+                "WAF and Shield",
+                "GuardDuty for threat detection",
+                "Cost optimization strategies"
+              ]
+            }
+          ],
+          "projects": [
+            "Build CI/CD pipeline for app",
+            "Implement IaC with Terraform",
+            "Set up comprehensive monitoring"
+          ],
+          "outcomes": [
+            "Use Infrastructure as Code",
+            "Build CI/CD pipelines",
+            "Implement security best practices",
+            "Optimize AWS costs",
+            "Cloud Engineer \u2014 $100K to $140K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "AWS Fundamentals",
+          "milestone": "Launch first EC2 instance"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Compute & Serverless",
+          "milestone": "Build serverless application"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Databases & Networking",
+          "milestone": "Production database setup"
+        },
+        {
+          "period": "Month 4-5",
+          "focus": "DevOps & Security",
+          "milestone": "AWS Solutions Architect ready"
+        }
+      ]
+    },
+    {
+      "id": "postgresql",
+      "title": "PostgreSQL",
+      "subtitle": "Database",
+      "icon": "database",
+      "stats": {
+        "phases": 3,
+        "duration": "2-3 Months",
+        "technologies": "8+ Technologies",
+        "salary": "$85K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "PostgreSQL Basics",
+          "subtitle": "SQL & Database Fundamentals",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "PostgreSQL is the world's most advanced open-source relational database. Learn SQL fundamentals, data types, and basic operations. This is essential for any backend developer.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "Setup and Basics",
+              "topics": [
+                "Installing PostgreSQL",
+                "psql command line tool",
+                "Creating databases and users",
+                "Basic SQL: SELECT, INSERT, UPDATE, DELETE",
+                "Data types in PostgreSQL",
+                "Constraints: NOT NULL, UNIQUE, PRIMARY KEY"
+              ]
+            },
+            {
+              "title": "Table Design",
+              "subtitle": "Schema and Relationships",
+              "topics": [
+                "Creating tables",
+                "Foreign keys and references",
+                "One-to-many relationships",
+                "Many-to-many with junction tables",
+                "Indexes for performance",
+                "Schema design best practices"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up PostgreSQL locally",
+            "Create database for blog application",
+            "Design schema for e-commerce"
+          ],
+          "outcomes": [
+            "Install and configure PostgreSQL",
+            "Write basic SQL queries",
+            "Design table schemas",
+            "Create relationships"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Advanced SQL",
+          "subtitle": "Queries, Functions & Performance",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Master advanced PostgreSQL features. Learn complex queries, window functions, stored procedures, and optimization. This is what separates junior from senior developers.",
+          "sections": [
+            {
+              "title": "Advanced Queries",
+              "subtitle": "Complex SQL",
+              "topics": [
+                "Subqueries and CTEs",
+                "Window functions: ROW_NUMBER, RANK, LAG, LEAD",
+                "Common Table Expressions (WITH)",
+                "Recursive queries",
+                "Pivoting data",
+                "Full-text search"
+              ]
+            },
+            {
+              "title": "Functions & Triggers",
+              "subtitle": "Server-Side Logic",
+              "topics": [
+                "User-defined functions",
+                "PL/pgSQL basics",
+                "Stored procedures",
+                "Triggers for automation",
+                "Views and materialized views",
+                "Custom data types"
+              ]
+            },
+            {
+              "title": "Performance",
+              "subtitle": "Optimization",
+              "topics": [
+                "Query planning with EXPLAIN",
+                "Index types: B-tree, Hash, GiST, GIN",
+                "Partial and expression indexes",
+                "VACUUM and maintenance",
+                "Partitioning large tables",
+                "Connection pooling with PgBouncer"
+              ]
+            }
+          ],
+          "projects": [
+            "Write complex reporting queries",
+            "Create triggers for audit logging",
+            "Optimize slow queries"
+          ],
+          "outcomes": [
+            "Write advanced SQL",
+            "Use window functions",
+            "Create functions and triggers",
+            "Optimize query performance"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Production PostgreSQL",
+          "subtitle": "Administration & Scaling",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Run PostgreSQL in production. Learn backup strategies, replication, high availability, and cloud managed services. Essential for database administrators and DevOps.",
+          "sections": [
+            {
+              "title": "Administration",
+              "subtitle": "DBA Tasks",
+              "topics": [
+                "User and permission management",
+                "Backup strategies: pg_dump, pg_basebackup",
+                "Point-in-time recovery",
+                "Monitoring with pg_stat views",
+                "Log analysis",
+                "Configuration tuning"
+              ]
+            },
+            {
+              "title": "Replication",
+              "subtitle": "High Availability",
+              "topics": [
+                "Streaming replication",
+                "Logical replication",
+                "Failover and switchover",
+                "Patroni for HA",
+                "Read replicas for scaling",
+                "Replication lag monitoring"
+              ]
+            },
+            {
+              "title": "Cloud & Extensions",
+              "subtitle": "Modern PostgreSQL",
+              "topics": [
+                "RDS PostgreSQL",
+                "Cloud SQL",
+                "PostGIS for geospatial",
+                "JSON and JSONB",
+                "TimescaleDB for time series",
+                "Extensions ecosystem"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up replication with failover",
+            "Configure automated backups",
+            "Deploy to managed PostgreSQL"
+          ],
+          "outcomes": [
+            "Administer PostgreSQL",
+            "Set up replication",
+            "Configure high availability",
+            "Use cloud managed services",
+            "Database Administrator \u2014 $85K to $120K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "PostgreSQL Basics",
+          "milestone": "Design and query databases"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Advanced SQL",
+          "milestone": "Complex queries and optimization"
+        },
+        {
+          "period": "Month 3",
+          "focus": "Production & Scaling",
+          "milestone": "Production DBA skills"
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "subtitle": "Typed JavaScript",
+      "icon": "data_object",
+      "stats": {
+        "phases": 3,
+        "duration": "2-3 Months",
+        "technologies": "6+ Technologies",
+        "salary": "$90K+ Starting Salary"
+      },
+      "phases": [
+        {
+          "id": 1,
+          "title": "TypeScript Fundamentals",
+          "subtitle": "Types & Basic Features",
+          "duration": "3-4 weeks | 2-3 hrs/day",
+          "description": "TypeScript adds type safety to JavaScript. Learn the type system, basic syntax, and how it compiles to JavaScript. This is now standard for professional JavaScript development.",
+          "sections": [
+            {
+              "title": "Getting Started",
+              "subtitle": "TypeScript Basics",
+              "topics": [
+                "Why TypeScript: benefits and tradeoffs",
+                "Installing TypeScript",
+                "tsconfig.json configuration",
+                "TypeScript compiler (tsc)",
+                "Basic type annotations",
+                "Type inference"
+              ]
+            },
+            {
+              "title": "Core Types",
+              "subtitle": "Type System",
+              "topics": [
+                "Primitive types: string, number, boolean",
+                "Arrays and tuples",
+                "Objects and interfaces",
+                "Enums",
+                "Any and unknown",
+                "Void, null, undefined",
+                "Type aliases"
+              ]
+            }
+          ],
+          "projects": [
+            "Set up TypeScript project",
+            "Type a simple data structure",
+            "Convert JS file to TS"
+          ],
+          "outcomes": [
+            "Understand TypeScript benefits",
+            "Configure TypeScript compiler",
+            "Use basic type annotations",
+            "Understand type inference"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Advanced Types",
+          "subtitle": "Generics, Unions & More",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Master TypeScript's advanced type system. Learn generics for reusable code, union types, type guards, and utility types. This enables building flexible, type-safe applications.",
+          "sections": [
+            {
+              "title": "Advanced Features",
+              "subtitle": "Powerful Type System",
+              "topics": [
+                "Union and intersection types",
+                "Type guards and narrowing",
+                "Generics with constraints",
+                "Generic functions and classes",
+                "Conditional types",
+                "Mapped types",
+                "Template literal types"
+              ]
+            },
+            {
+              "title": "Interfaces & Classes",
+              "subtitle": "OOP in TypeScript",
+              "topics": [
+                "Interface vs type alias",
+                "Optional and readonly properties",
+                "Extending interfaces",
+                "Classes with TypeScript",
+                "Access modifiers: public, private, protected",
+                "Abstract classes",
+                "Implementing interfaces"
+              ]
+            },
+            {
+              "title": "Utility Types",
+              "subtitle": "Built-in Helpers",
+              "topics": [
+                "Partial and Required",
+                "Pick and Omit",
+                "Record and ReturnType",
+                "Parameters and ThisParameterType",
+                "Readonly and Mutable",
+                "Creating custom utility types"
+              ]
+            }
+          ],
+          "projects": [
+            "Build generic data structure",
+            "Create type-safe API client",
+            "Implement complex type transformations"
+          ],
+          "outcomes": [
+            "Use generics effectively",
+            "Create flexible type definitions",
+            "Implement type guards",
+            "Master utility types"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "TypeScript in Practice",
+          "subtitle": "React, Node & Tools",
+          "duration": "4-5 weeks | 2-3 hrs/day",
+          "description": "Apply TypeScript to real projects. Learn React with TypeScript, Node.js backend typing, and development tooling. This completes your TypeScript mastery.",
+          "sections": [
+            {
+              "title": "React with TypeScript",
+              "subtitle": "Frontend Typing",
+              "topics": [
+                "Typing component props",
+                "useState and useEffect types",
+                "Event handling types",
+                "Ref types",
+                "Context API with TypeScript",
+                "Generic components",
+                "Third-party library types"
+              ]
+            },
+            {
+              "title": "Backend TypeScript",
+              "subtitle": "Node.js & APIs",
+              "topics": [
+                "Express with TypeScript",
+                "Typing request and response",
+                "Middleware types",
+                "Database model types",
+                "API contract types",
+                "Error handling types"
+              ]
+            },
+            {
+              "title": "Tooling",
+              "subtitle": "Development Experience",
+              "topics": [
+                "ESLint with TypeScript",
+                "Prettier configuration",
+                "VS Code extensions",
+                "Debugging TypeScript",
+                "Declaration files (.d.ts)",
+                "Publishing typed packages"
+              ]
+            }
+          ],
+          "projects": [
+            "Build React app with TypeScript",
+            "Create Express API with full typing",
+            "Publish typed npm package"
+          ],
+          "outcomes": [
+            "Use TypeScript with React",
+            "Type Node.js applications",
+            "Configure development tools",
+            "Publish typed libraries",
+            "TypeScript Developer \u2014 $90K to $120K"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1",
+          "focus": "TypeScript Fundamentals",
+          "milestone": "Type basic JavaScript code"
+        },
+        {
+          "period": "Month 2",
+          "focus": "Advanced Types",
+          "milestone": "Build flexible type systems"
+        },
+        {
+          "period": "Month 3",
+          "focus": "React, Node & Tools",
+          "milestone": "Full-stack TypeScript developer"
+        }
+      ]
     }
   ]
 }
