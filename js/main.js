@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize search functionality
   initSearch();
+  
+  // Initialize roadmap card clicks
+  initRoadmapCards();
 });
 
 // ============================================
@@ -112,4 +115,64 @@ function initSearch() {
       }
     });
   });
+}
+
+// ============================================
+// ROADMAP CARDS CLICK HANDLER
+// ============================================
+function initRoadmapCards() {
+  const roadmapCards = document.querySelectorAll('.roadmap-item[data-roadmap-id]');
+  
+  roadmapCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const roadmapId = card.dataset.roadmapId;
+      
+      if (roadmapId === 'coming-soon') {
+        showComingSoonModal();
+      } else if (roadmapId) {
+        window.location.href = `roadmap-detail.html?id=${roadmapId}`;
+      }
+    });
+  });
+}
+
+// ============================================
+// COMING SOON MODAL
+// ============================================
+function showComingSoonModal() {
+  // Create modal if it doesn't exist
+  let modal = document.getElementById('coming-soon-modal');
+  
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'coming-soon-modal';
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="material-symbols-outlined modal-icon">construction</span>
+        <h2>Coming Soon</h2>
+        <p>This roadmap is currently under development. Check back soon for a comprehensive learning path.</p>
+        <button class="btn btn-primary" onclick="closeComingSoonModal()">Got it</button>
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    // Close on overlay click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeComingSoonModal();
+      }
+    });
+  }
+  
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeComingSoonModal() {
+  const modal = document.getElementById('coming-soon-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
 }
