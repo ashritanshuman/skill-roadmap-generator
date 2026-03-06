@@ -10,7 +10,7 @@
         font-size: var(--font-size-4xl);
     }
     
-    .paths-grid {
+    .roadmaps-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -84,7 +84,7 @@
         gap: var(--spacing-4);
     }
     
-    .paths-grid {
+    .roadmaps-grid {
         grid-template-columns: 1fr;
     }
     

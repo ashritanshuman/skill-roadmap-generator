@@ -156,103 +156,66 @@
 }
 
 /* ============================================
-   ARCHITECTURAL PATHS SECTION
+   ROADMAPS CATEGORY SECTIONS (Skill & Role Based)
    ============================================ */
-.paths-section {
-    padding: var(--spacing-24) 0;
+.roadmaps-category-section {
+    padding: var(--spacing-20) 0;
     background: var(--color-bg-primary);
 }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: var(--spacing-10);
+.roadmaps-category-section.alt-bg {
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.section-title-wrapper h2 {
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-medium);
-    margin-bottom: var(--spacing-2);
+.roadmaps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-4);
 }
 
-.section-subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-}
-
-.view-all-link {
-    font-size: var(--font-size-xs);
-    color: var(--color-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.roadmap-item {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2);
-}
-
-.view-all-link:hover {
-    color: var(--color-primary-light);
-}
-
-/* Cards Grid */
-.paths-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-5);
-}
-
-.path-card {
+    gap: var(--spacing-4);
+    padding: var(--spacing-5);
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
-    padding: var(--spacing-6);
     transition: all var(--transition-base);
     cursor: pointer;
 }
 
-.path-card:hover {
+.roadmap-item:hover {
     border-color: var(--color-border-light);
-    transform: translateY(-4px);
+    background: var(--color-bg-elevated);
+    transform: translateY(-2px);
 }
 
-.path-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--spacing-5);
-}
-
-.path-icon {
-    width: 40px;
-    height: 40px;
+.roadmap-icon {
+    width: 44px;
+    height: 44px;
     background: var(--color-bg-elevated);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
+    flex-shrink: 0;
 }
 
-.path-duration {
+.roadmap-info h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-1);
+}
+
+.roadmap-meta {
     font-size: var(--font-size-xs);
     color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.path-title {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
-    margin-bottom: var(--spacing-3);
-    color: var(--color-text-primary);
-}
-
-.path-description {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    line-height: 1.6;
 }
 
 /* ============================================
