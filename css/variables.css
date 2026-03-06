@@ -1,54 +1,53 @@
 :root {
-    /* Light Mode (Default) - Clean Single-Color Palette */
+    /* Dark Theme - Modern Tech Aesthetic */
     
     /* Primary Color - Blue */
-    --color-primary: #2563EB;
-    --color-primary-dark: #1D4ED8;
-    --color-primary-light: #3B82F6;
-    --color-primary-subtle: #EFF6FF;
+    --color-primary: #3B82F6;
+    --color-primary-dark: #2563EB;
+    --color-primary-light: #60A5FA;
+    --color-primary-subtle: rgba(59, 130, 246, 0.15);
     
     /* Background Colors */
-    --color-bg-primary: #FFFFFF;
-    --color-bg-secondary: #F8FAFC;
-    --color-bg-tertiary: #F1F5F9;
-    --color-bg-elevated: #FFFFFF;
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #111111;
+    --color-bg-tertiary: #1a1a1a;
+    --color-bg-elevated: #1c1c1c;
+    --color-bg-card: #141414;
     
     /* Text Colors */
-    --color-text-primary: #0F172A;
-    --color-text-secondary: #475569;
-    --color-text-muted: #94A3B8;
-    --color-text-light: #CBD5E1;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a1a1aa;
+    --color-text-muted: #71717a;
+    --color-text-light: #52525b;
     
     /* Border Colors */
-    --color-border: #E2E8F0;
-    --color-border-light: #F1F5F9;
+    --color-border: #27272a;
+    --color-border-light: #3f3f46;
     
-    /* Difficulty Colors */
-    --color-easy: #10B981;
-    --color-easy-bg: #ECFDF5;
-    --color-medium: #F59E0B;
-    --color-medium-bg: #FFFBEB;
-    --color-hard: #EF4444;
-    --color-hard-bg: #FEF2F2;
+    /* Accent Colors */
+    --color-accent-blue: #3B82F6;
+    --color-accent-purple: #8B5CF6;
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
     
     /* Typography */
     --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     
     /* Font Sizes */
-    --font-size-xs: 12px;
-    --font-size-sm: 14px;
-    --font-size-base: 16px;
-    --font-size-md: 18px;
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-base: 15px;
+    --font-size-md: 17px;
     --font-size-lg: 20px;
     --font-size-xl: 24px;
     --font-size-2xl: 32px;
-    --font-size-3xl: 40px;
-    --font-size-4xl: 48px;
+    --font-size-3xl: 42px;
+    --font-size-4xl: 56px;
+    --font-size-5xl: 72px;
     
     /* Font Weights */
     --font-weight-normal: 400;
@@ -68,14 +67,7 @@
     --spacing-12: 48px;
     --spacing-16: 64px;
     --spacing-20: 80px;
-    
-    /* Legacy aliases */
-    --spacing-xs: var(--spacing-2);
-    --spacing-sm: var(--spacing-4);
-    --spacing-md: var(--spacing-6);
-    --spacing-lg: var(--spacing-8);
-    --spacing-xl: var(--spacing-12);
-    --spacing-xxl: var(--spacing-16);
+    --spacing-24: 96px;
     
     /* Layout */
     --container-max-width: 1200px;
@@ -83,9 +75,9 @@
     
     /* Border Radius */
     --border-radius-sm: 6px;
-    --border-radius-md: 8px;
-    --border-radius-lg: 12px;
-    --border-radius-xl: 16px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 14px;
+    --border-radius-xl: 20px;
     --border-radius-full: 9999px;
     
     /* Transitions */
@@ -94,40 +86,15 @@
     --transition-slow: 350ms ease;
 }
 
-/* Dark Mode */
-[data-theme="dark"] {
-    /* Primary stays the same for brand consistency */
-    --color-primary: #3B82F6;
-    --color-primary-dark: #60A5FA;
-    --color-primary-light: #60A5FA;
-    --color-primary-subtle: rgba(59, 130, 246, 0.15);
-    
-    /* Background Colors - Dark Blue Gray #222831 */
-    --color-bg-primary: #222831;
-    --color-bg-secondary: #2D343F;
-    --color-bg-tertiary: #38404D;
-    --color-bg-elevated: #2D343F;
-    
-    /* Text Colors - Light */
-    --color-text-primary: #EEEEEE;
-    --color-text-secondary: #B0B8C4;
-    --color-text-muted: #6B7280;
-    --color-text-light: #4A5568;
-    
-    /* Border Colors - Dark */
-    --color-border: #38404D;
-    --color-border-light: #2D343F;
-    
-    /* Difficulty Colors - Dark Mode Adjustments */
-    --color-easy: #34D399;
-    --color-easy-bg: rgba(16, 185, 129, 0.15);
-    --color-medium: #FBBF24;
-    --color-medium-bg: rgba(245, 158, 11, 0.15);
-    --color-hard: #F87171;
-    --color-hard-bg: rgba(239, 68, 68, 0.15);
-    
-    /* Shadows - Dark */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+/* Light Mode (optional - for toggle) */
+[data-theme="light"] {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc;
+    --color-bg-tertiary: #f1f5f9;
+    --color-bg-card: #ffffff;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94a3b8;
+    --color-border: #e2e8f0;
+    --color-border-light: #cbd5e1;
 }

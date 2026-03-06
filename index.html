@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PathGen</title>
+    <title>PathGen - Engineering Your Future Mastery</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +23,17 @@
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">
-                <span class="nav-brand-icon">🗺️</span> PathGen
+                <span class="nav-brand-icon">P</span> PathGen
             </a>
             
-            <!-- Desktop Menu -->
             <div class="nav-menu">
                 <a href="#explore" class="nav-link">Explore</a>
-                <a href="how-it-works.html" class="nav-link">How it Works</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
             </div>
             
-            <!-- Action Buttons -->
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                    <span class="moon-icon">🌙</span>
-                    <span class="sun-icon">☀️</span>
-                </button>
-                <a href="#signin" class="nav-actions-text">Sign In.</a>
+                <a href="#signin" class="nav-actions-text">Sign In</a>
                 <a href="#getstarted" class="btn btn-primary">Get Started</a>
             </div>
         </div>
@@ -47,77 +41,107 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1 class="hero-title">Your Personalized Path to <span class="highlight">Tech Mastery</span></h1>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line-1">Engineering your</span>
+                <span class="line-2">future mastery</span>
+            </h1>
             <p class="hero-subtitle">
-                Stop wondering what to learn next. Generate a custom learning
-                roadmap tailored to your goals and current skill level.
+                Eliminate the noise. AI-driven personalized learning roadmaps tailored to your technical ambitions.
             </p>
             
             <div class="search-wrapper">
                 <div class="search-container">
-                    <div class="search-icon">🔍</div>
-                    <input type="text" id="search-input" class="search-input" placeholder="What do you want to learn? (e.g., React, Python, UI Design...)">
-                    <button class="btn btn-primary search-btn" id="search-button">Generate</button>
+                    <span class="search-icon">⌕</span>
+                    <input type="text" class="search-input" placeholder="Define your goal (e.g. Senior Frontend Architect)">
+                    <button class="btn btn-primary search-btn">Generate</button>
                 </div>
             </div>
             
-            <div class="popular-tags-container">
-                <span class="popular-tags-label">Popular:</span>
-                <div class="popular-tags">
-                    <span class="pill popular-tag">Fullstack Development</span>
-                    <span class="pill popular-tag">ML Engineer</span>
-                    <span class="pill popular-tag">Cloud Architect</span>
+            <div class="trending-container">
+                <span class="trending-label">Trending:</span>
+                <div class="trending-tags">
+                    <span class="trending-tag">LLM Operations</span>
+                    <span class="trending-tag">Rust Systems</span>
+                    <span class="trending-tag">Distributed Networks</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Popular Paths Section -->
-    <section id="explore" class="popular-paths">
+    <!-- Architectural Paths Section -->
+    <section id="explore" class="paths-section">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-title">
-                    <h2>Explore Popular Paths</h2>
-                    <p class="section-subtitle">Hand-crafted roadmaps by industry experts.</p>
+            <div class="section-header">
+                <div class="section-title-wrapper">
+                    <h2>Architectural Paths</h2>
+                    <p class="section-subtitle">Industry-standard curriculum structures designed for speed.</p>
                 </div>
-                <a href="#all-paths" class="view-all-link">View all paths →</a>
+                <a href="#" class="view-all-link">View Repository →</a>
             </div>
             
-            <!-- Cards will be populated here by JS -->
-            <div class="roadmap-grid stagger-children" id="roadmap-grid">
-                <!-- Fallback loading state or empty div -->
+            <div class="paths-grid">
+                <div class="path-card">
+                    <div class="path-card-header">
+                        <div class="path-icon">◧</div>
+                        <span class="path-duration">12 Weeks</span>
+                    </div>
+                    <h3 class="path-title">Web Architecture</h3>
+                    <p class="path-description">Modern frontend ecosystems, scalable backend microservices, and state-of-the-art deployment pipelines.</p>
+                </div>
+                
+                <div class="path-card">
+                    <div class="path-card-header">
+                        <div class="path-icon">◈</div>
+                        <span class="path-duration">24 Weeks</span>
+                    </div>
+                    <h3 class="path-title">Intelligence Systems</h3>
+                    <p class="path-description">Neural networks, probabilistic modeling, and data engineering at petabyte scale for real-world applications.</p>
+                </div>
+                
+                <div class="path-card">
+                    <div class="path-card-header">
+                        <div class="path-icon">◉</div>
+                        <span class="path-duration">16 Weeks</span>
+                    </div>
+                    <h3 class="path-title">Cloud Security</h3>
+                    <p class="path-description">Zero-trust architecture, automated threat detection, and advanced cryptographic implementations.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
+    <!-- Precision Engineering Section -->
+    <section id="how-it-works" class="features-section">
         <div class="container">
-            <div class="section-header reveal text-center">
-                <h2>Why Choose PathGen?</h2>
-                <p class="section-subtitle">Everything you need to accelerate your learning journey</p>
+            <div class="features-header">
+                <h2>Precision Engineering</h2>
+                <p class="subtitle">The PathGen Methodology</p>
             </div>
-            <div class="features-grid stagger-children">
-                <div class="feature-card reveal">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Curated Paths</h3>
-                    <p class="feature-description">Expert-crafted roadmaps that take you from beginner to professional</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">◿</div>
+                    <h4 class="feature-title">Adaptive Flow</h4>
+                    <p class="feature-description">Dynamic roadmap adjustment based on real-time performance metrics.</p>
                 </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon">⏱️</div>
-                    <h3 class="feature-title">Time Estimates</h3>
-                    <p class="feature-description">Realistic timelines to help you plan your learning schedule</p>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">◈</div>
+                    <h4 class="feature-title">Tiered Learning</h4>
+                    <p class="feature-description">Progressive difficulty scaling to maintain optimal cognitive load.</p>
                 </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Track Progress</h3>
-                    <p class="feature-description">Visual progress tracking to keep you motivated</p>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">◴</div>
+                    <h4 class="feature-title">Velocity Tracking</h4>
+                    <p class="feature-description">Precise time-to-mastery estimates for every technical module.</p>
                 </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon">🔗</div>
-                    <h3 class="feature-title">Best Resources</h3>
-                    <p class="feature-description">Hand-picked tutorials, docs, and courses from top platforms</p>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">✦</div>
+                    <h4 class="feature-title">Resource Node</h4>
+                    <p class="feature-description">Direct integration with documentation, repos, and cloud sandboxes.</p>
                 </div>
             </div>
         </div>
@@ -126,11 +150,11 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2 class="cta-title reveal">Ready to Start Your Journey?</h2>
-            <p class="cta-subtitle reveal">Join thousands of learners who have accelerated their careers with PathGen</p>
-            <div class="cta-buttons reveal">
+            <h2 class="cta-title">Ready to deploy your<br>knowledge base?</h2>
+            <p class="cta-subtitle">Join thousands of engineers accelerating their technical careers.</p>
+            <div class="cta-buttons">
                 <a href="#explore" class="btn btn-primary btn-lg">Explore Roadmaps</a>
-                <a href="how-it-works.html" class="btn btn-secondary btn-lg">How It Works</a>
+                <a href="#" class="btn btn-secondary btn-lg">Technical Overview</a>
             </div>
         </div>
     </section>
@@ -139,55 +163,48 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Branding Column -->
                 <div class="footer-column">
                     <a href="index.html" class="nav-brand footer-brand">
-                        <span class="nav-brand-icon">🗺️</span> PathGen
+                        <span class="nav-brand-icon">P</span> PathGen
                     </a>
-                    <p class="footer-tagline">
-                        Your personalized guide to navigating the complex world of technology.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="GitHub">💻</a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn">🔗</a>
-                    </div>
+                    <p class="footer-tagline">The intelligence layer for your technical career progression.</p>
                 </div>
                 
-                <!-- Links Columns -->
                 <div class="footer-column">
-                    <h4>PRODUCT</h4>
+                    <h4>Core</h4>
                     <div class="footer-link-list">
-                        <a href="#explore" class="footer-link">Roadmaps</a>
-                        <a href="#" class="footer-link">Assessment</a>
+                        <a href="#" class="footer-link">Roadmaps</a>
+                        <a href="#" class="footer-link">Validation</a>
                         <a href="#" class="footer-link">Pricing</a>
-                        <a href="#" class="footer-link">Success Stories</a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
-                    <h4>RESOURCES</h4>
+                    <h4>Docs</h4>
                     <div class="footer-link-list">
-                        <a href="#" class="footer-link">Blog</a>
-                        <a href="#" class="footer-link">Documentation</a>
-                        <a href="#" class="footer-link">Community</a>
-                        <a href="#" class="footer-link">Guides</a>
+                        <a href="#" class="footer-link">Guide</a>
+                        <a href="#" class="footer-link">API</a>
+                        <a href="#" class="footer-link">Status</a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
-                    <h4>COMPANY</h4>
+                    <h4>Entity</h4>
                     <div class="footer-link-list">
-                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">About</a>
                         <a href="#" class="footer-link">Careers</a>
-                        <a href="#" class="footer-link">Contact</a>
-                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Legal</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                &copy; 2026 PathGen - All rights reserved.
+                <span>© 2024 PathGen Intelligence. All systems operational.</span>
+                <div>
+                    <a href="#" class="footer-link">Terms</a>
+                    <span style="margin: 0 8px;">·</span>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
             </div>
         </div>
     </footer>
