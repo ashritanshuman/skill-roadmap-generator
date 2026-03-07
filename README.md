@@ -127,7 +127,7 @@ This web application provides:
 ```
 skill-roadmap-generator/
 │
-├── index.html                 # Home page (landing page)
+├── index.html                # Home page (landing page)
 ├── roadmaps.html             # Explore all roadmaps page
 ├── roadmap-detail.html       # Individual roadmap detail page
 ├── PRD.md                    # Product Requirements Document
