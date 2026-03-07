@@ -122,6 +122,57 @@ This web application provides:
 
 ---
 
+## 📁 Project Structure
+
+```
+skill-roadmap-generator/
+│
+├── index.html                 # Home page (landing page)
+├── roadmaps.html             # Explore all roadmaps page
+├── roadmap-detail.html       # Individual roadmap detail page
+├── PRD.md                    # Product Requirements Document
+├── README.md                 # Project documentation
+│
+├── css/                      # Stylesheets
+│   ├── reset.css             # CSS reset/normalize
+│   ├── variables.css         # CSS custom properties (colors, spacing, etc.)
+│   ├── global.css            # Global styles and utilities
+│   ├── components.css        # Reusable UI components (buttons, cards, nav)
+│   ├── home.css              # Home page specific styles
+│   ├── roadmaps.css          # Roadmaps listing page styles
+│   ├── roadmap-detail.css    # Roadmap detail page styles
+│   └── responsive.css        # Media queries and responsive adjustments
+│
+├── js/                       # JavaScript files
+│   ├── main.js               # Core functionality (theme toggle, navigation, etc.)
+│   ├── roadmaps.js           # Roadmaps listing page logic
+│   └── roadmap-detail.js     # Roadmap detail page logic
+│
+├── data/                     # Data documentation
+│   └── roadmaps-data.md      # Roadmap data structure documentation
+│
+├── public/                   # Public assets and data
+│   └── data/
+│       └── roadmaps-data.json # All roadmap data (JSON)
+│
+├── assets/                   # Static assets
+│   ├── icons/                # Icon files
+│   └── images/               # Image files
+│
+├── ui/                       # UI/UX design files
+│   ├── v1.0/                 # Version 1.0 designs
+│   │   ├── home-page.png
+│   │   └── skill-page.png
+│   └── v2.0/                 # Version 2.0 designs
+│       └── screen.png
+│
+├── .github/                  # GitHub templates and workflows
+├── .vscode/                  # VSCode settings
+└── .qoder/                   # Qoder configuration
+```
+
+---
+
 ## 💡 Usage
 
 ### For Users
@@ -421,7 +472,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 - [ ] **User Authentication**: Save progress and bookmarks
 - [ ] **Progress Tracker**: Visual representation of completed topics
-- [ ] **Dark Mode**: Toggle between light and dark themes
+- [x] **Dark Mode**: Toggle between light and dark themes ✅ Implemented
 - [ ] **AI Recommendations**: Personalized roadmap suggestions
 - [ ] **Community Features**: Discussion forums and mentor connections
 - [ ] **Export to PDF**: Download roadmaps for offline viewing
@@ -432,7 +483,14 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Version History
 
-- **v1.1.0** (Current) - Added comprehensive DevOps Engineer roadmap with 7 phases
+- **v1.2.0** (Current) - Added Dark/Light Theme Toggle & UI Improvements
+  - Theme toggle button in navigation bar
+  - Dark theme (default): Modern dark tech aesthetic
+  - Light theme: Warm cream (#f4f3ee) background with brown/orange accents
+  - Theme preference saved to localStorage
+  - Bold typography for all roadmap content
+  - Improved mobile responsive hero text
+- **v1.1.0** - Added comprehensive DevOps Engineer roadmap with 7 phases
   - Foundation (Linux, Networking & Scripting)
   - Version Control & Collaboration
   - Containerization (Docker)
@@ -486,4 +544,4 @@ Through this project, our team has gained:
 
 ---
 
-*Last Updated: March 2026*
+*Last Updated: March 7, 2026*
