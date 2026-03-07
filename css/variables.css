@@ -106,15 +106,45 @@
     --transition-slow: 500ms ease;
 }
 
-/* Light Mode (optional - for toggle) */
+/* Light Mode - Complete Theme Override */
 [data-theme="light"] {
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f8fafc;
-    --color-bg-tertiary: #f1f5f9;
-    --color-bg-card: #ffffff;
-    --color-text-primary: #0f172a;
-    --color-text-secondary: #475569;
-    --color-text-muted: #94a3b8;
-    --color-border: #e2e8f0;
-    --color-border-light: #cbd5e1;
+    /* Primary Color - Brown/Orange from PRD */
+    --color-primary: #B8622F;
+    --color-primary-dark: #9c4f24;
+    --color-primary-light: #d47a45;
+    --color-primary-subtle: rgba(184, 98, 47, 0.1);
+    
+    /* Background Colors - Warm Cream #f4f3ee */
+    --color-bg-primary: #f4f3ee;
+    --color-bg-secondary: #e8e6e1;
+    --color-bg-tertiary: #dddad4;
+    --color-bg-elevated: #ffffff;
+    --color-bg-card: rgba(0, 0, 0, 0.03);
+    --color-bg-card-hover: rgba(0, 0, 0, 0.05);
+    
+    /* Glassmorphism - warm cream tinted */
+    --glass-bg: rgba(244, 243, 238, 0.85);
+    --glass-bg-hover: rgba(255, 255, 255, 0.95);
+    --glass-border: rgba(44, 24, 16, 0.1);
+    --glass-border-hover: rgba(184, 98, 47, 0.4);
+    
+    /* Text Colors - Dark brown/charcoal for warm cream background */
+    --color-text-primary: #2C1810;
+    --color-text-secondary: #5c4a42;
+    --color-text-muted: #8b7d74;
+    --color-text-light: #a89a90;
+    --color-silver: #8b7d74;
+    --color-silver-muted: rgba(139, 125, 116, 0.4);
+    
+    /* Border Colors - Warm brown tones */
+    --color-border: rgba(44, 24, 16, 0.1);
+    --color-border-light: rgba(44, 24, 16, 0.15);
+    --color-border-subtle: rgba(44, 24, 16, 0.05);
+    
+    /* Shadows - warm brown tint */
+    --shadow-sm: 0 1px 2px rgba(44, 24, 16, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(44, 24, 16, 0.08);
+    --shadow-lg: 0 10px 15px -3px rgba(44, 24, 16, 0.1);
+    --shadow-glow: 0 0 20px rgba(184, 98, 47, 0.2);
+    --shadow-glow-strong: 0 0 30px rgba(184, 98, 47, 0.3);
 }

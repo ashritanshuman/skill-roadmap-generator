@@ -37,7 +37,7 @@
 .hero-title .line-2 {
     display: block;
     font-style: italic;
-    background: linear-gradient(to right, #ffffff, var(--color-primary));
+    background: linear-gradient(to right, var(--color-text-primary), var(--color-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
