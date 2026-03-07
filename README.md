@@ -202,18 +202,6 @@ skill-roadmap-generator/
 | **Data Scientist** | 7 | 14-20 Months | 45+ | $95K+ |
 | **DevOps Engineer** | 7 | 14-20 Months | 50+ | $100K+ |
 
-#### DevOps Engineer Roadmap (New)
-
-The DevOps Engineer roadmap includes 7 comprehensive phases:
-
-1. **Foundation** - Linux, Networking & Scripting Basics (6-8 weeks)
-2. **Version Control & Collaboration** - Git, GitHub & Team Workflows (2-3 weeks)
-3. **Containerization** - Docker & Container Fundamentals (6-8 weeks)
-4. **CI/CD Pipelines** - Continuous Integration & Delivery (6-8 weeks)
-5. **Infrastructure as Code** - Terraform, Ansible & Configuration Management (8-10 weeks)
-6. **Cloud Platforms & Kubernetes** - AWS/GCP/Azure & Container Orchestration (10-12 weeks)
-7. **Observability, Security & SRE** - Monitoring, Reliability & DevSecOps (Ongoing)
-
 Each phase includes detailed sections with topics, hands-on projects, and career outcome milestones.
 
 ---
