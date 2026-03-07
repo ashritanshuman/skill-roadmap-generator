@@ -210,43 +210,124 @@ Each phase includes detailed sections with topics, hands-on projects, and career
 
 ### JSON Data Structure
 
-Each roadmap follows this structure:
+The roadmap data is stored in `public/data/roadmaps-data.json`. Each roadmap follows this comprehensive structure:
 
 ```json
 {
-  "id": "web-development",
-  "title": "Web Development",
-  "description": "Complete path to becoming a full-stack web developer",
-  "category": "Development",
-  "difficulty": "Beginner to Advanced",
-  "totalDuration": "6-9 months",
-  "icon": "assets/images/icons/web-dev.svg",
-  "phases": [
+  "roadmaps": [
     {
-      "phaseId": 1,
-      "level": "Beginner",
-      "title": "Frontend Fundamentals",
-      "duration": "2-3 months",
-      "topics": [
+      "id": "frontend-developer",
+      "title": "Frontend Developer",
+      "subtitle": "UI/UX Implementation",
+      "icon": "computer",
+      "stats": {
+        "phases": 3,
+        "duration": "6-9 Months to Job",
+        "technologies": "25+ Technologies",
+        "salary": "$70K+ Starting Salary"
+      },
+      "phases": [
         {
-          "topicId": 1,
-          "name": "HTML5 Fundamentals",
-          "duration": "2 weeks",
-          "difficulty": "Easy",
-          "prerequisites": [],
-          "skills": ["Semantic HTML", "Forms", "Accessibility"],
-          "resources": [
+          "id": 1,
+          "title": "Foundation",
+          "subtitle": "HTML & CSS — The Web's Skeleton",
+          "duration": "4-6 weeks | 2 hrs/day",
+          "description": "Everything on the web is HTML and CSS...",
+          "sections": [
             {
-              "title": "MDN HTML Guide",
-              "url": "https://developer.mozilla.org/",
-              "type": "documentation"
+              "title": "HTML Fundamentals",
+              "subtitle": "Structure & Semantics",
+              "topics": [
+                "DOCTYPE, head, body, meta tags",
+                "Semantic elements: header, nav, main, section, article, footer",
+                "Forms: input, textarea, select, button, label"
+              ]
             }
           ],
-          "practiceProjects": ["Portfolio page", "Blog layout"]
+          "projects": [
+            "Build a complete portfolio landing page from scratch",
+            "Clone any popular website homepage pixel-perfect"
+          ],
+          "outcomes": [
+            "Build any layout from a Figma design without help",
+            "Make any layout work on mobile without Googling"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Month 1-2",
+          "focus": "HTML, CSS & Responsive Design",
+          "milestone": "Deploy a portfolio site to Netlify or Vercel"
         }
       ]
     }
   ]
+}
+```
+
+### Complete JSON Schema Reference
+
+**Root Object:**
+```json
+{
+  "roadmaps": []  // Array of roadmap objects
+}
+```
+
+**Roadmap Object:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique identifier (kebab-case, e.g., "frontend-developer") |
+| `title` | string | Display title of the career path |
+| `subtitle` | string | Brief description of the role focus |
+| `icon` | string | Material Icons name (e.g., "computer", "psychology", "rocket_launch") |
+| `stats` | object | Key metrics for the roadmap |
+| `phases` | array | Learning phases (3-7 phases per roadmap) |
+| `timeline` | array | Month-by-month learning progression |
+
+**Stats Object:**
+```json
+{
+  "phases": 3,                           // Number of phases (integer)
+  "duration": "6-9 Months to Job",       // Total duration estimate
+  "technologies": "25+ Technologies",    // Technology count
+  "salary": "$70K+ Starting Salary"     // Starting salary range
+}
+```
+
+**Phase Object:**
+```json
+{
+  "id": 1,                                    // Phase number (integer)
+  "title": "Foundation",                      // Phase title
+  "subtitle": "HTML & CSS",                   // Phase subtitle
+  "duration": "4-6 weeks | 2 hrs/day",        // Time commitment
+  "description": "Detailed phase description...", // Phase importance
+  "sections": [],                             // Array of section objects
+  "projects": [],                             // Array of project strings
+  "outcomes": []                              // Array of outcome strings
+}
+```
+
+**Section Object:**
+```json
+{
+  "title": "HTML Fundamentals",           // Section title
+  "subtitle": "Structure & Semantics",    // Section subtitle
+  "topics": [                             // Array of topic strings
+    "Semantic elements: header, nav, main",
+    "Forms: input, textarea, select"
+  ]
+}
+```
+
+**Timeline Object:**
+```json
+{
+  "period": "Month 1-2",                                    // Time period
+  "focus": "HTML, CSS & Responsive Design",                   // Learning focus
+  "milestone": "Deploy a portfolio site to Netlify"         // Achievement goal
 }
 ```
 
@@ -254,80 +335,30 @@ Each roadmap follows this structure:
 
 1. Open `public/data/roadmaps-data.json`
 2. Add your roadmap object to the `roadmaps` array
-3. Follow the structure documented below
+3. Follow the structure documented above
 4. Add a Material Icon name to represent your roadmap
 5. Update `index.html` to include a new roadmap card in the appropriate section
 6. Test on the landing page
 
-### JSON Data Schema
+### Available Roadmap IDs
 
-```json
-{
-  "roadmaps": [
-    {
-      "id": "devops-engineer",
-      "title": "DevOps Engineer",
-      "subtitle": "CI/CD & Infrastructure",
-      "icon": "rocket_launch",
-      "stats": {
-        "phases": 7,
-        "duration": "14-20 Months to Job",
-        "technologies": "50+ Technologies",
-        "salary": "$100K+ Starting Salary"
-      },
-      "phases": [
-        {
-          "id": 1,
-          "title": "Foundation",
-          "subtitle": "Linux, Networking & Scripting Basics",
-          "duration": "6-8 weeks | 2-3 hrs/day",
-          "description": "Phase description...",
-          "sections": [
-            {
-              "title": "Linux Fundamentals",
-              "subtitle": "The Operating System of the Cloud",
-              "topics": [
-                "Linux distributions: Ubuntu, CentOS, RHEL...",
-                "Filesystem hierarchy: /, /etc, /var, /home..."
-              ]
-            }
-          ],
-          "projects": [
-            "Write a bash script that automates server setup..."
-          ],
-          "outcomes": [
-            "Navigate and manage any Linux server without a GUI",
-            "Write bash scripts to automate repetitive tasks..."
-          ]
-        }
-      ],
-      "timeline": [
-        {
-          "period": "Month 1-2",
-          "focus": "Linux, Networking & Bash Scripting",
-          "milestone": "Manage a Linux server entirely from CLI..."
-        }
-      ]
-    }
-  ]
-}
-```
+**Role-Based Roadmaps:**
+- `frontend-developer` - Frontend Developer (3 phases)
+- `web-developer` - Full Stack Developer (6 phases)
+- `aiml-engineer` - AI/ML Engineer (7 phases)
+- `data-scientist` - Data Scientist (7 phases)
+- `devops-engineer` - DevOps Engineer (7 phases)
+- `data-analyst` - Data Analyst (phases defined in explore page)
 
-**Key Schema Elements:**
-- `id`: Unique identifier for the roadmap (kebab-case)
-- `title`: Display title of the career path
-- `subtitle`: Brief description of the role focus
-- `icon`: Material Icons name (e.g., "rocket_launch", "computer", "psychology")
-- `stats`: Key metrics including phases count, duration, technologies, and salary
-- `phases`: Array of learning phases, each containing:
-  - `id`: Phase number
-  - `title` & `subtitle`: Phase identification
-  - `duration`: Time commitment estimate
-  - `description`: Detailed explanation of phase importance
-  - `sections`: Array of learning modules with topics
-  - `projects`: Hands-on project ideas
-  - `outcomes`: Skills and achievements gained
-- `timeline`: Month-by-month learning progression with milestones
+**Skill-Based Roadmaps:**
+- `react` - React Frontend Library
+- `nodejs` - Node.js Runtime
+- `python` - Python Programming
+- `kubernetes` - Kubernetes Orchestration
+- `docker` - Docker Containerization
+- `aws` - AWS Cloud Platform
+- `postgresql` - PostgreSQL Database
+- `typescript` - TypeScript Language
 
 ### Code Style Guidelines
 
