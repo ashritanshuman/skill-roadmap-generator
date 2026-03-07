@@ -67,7 +67,12 @@
     }
     
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-4xl);
+    }
+    
+    .hero-title .line-1,
+    .hero-title .line-2 {
+        font-size: inherit;
     }
     
     .search-container {
@@ -124,7 +129,12 @@
 /* Small Mobile */
 @media (max-width: 480px) {
     .hero-title {
-        font-size: var(--font-size-2xl);
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-title .line-1,
+    .hero-title .line-2 {
+        font-size: inherit;
     }
     
     .section-title-wrapper h2,
