@@ -460,15 +460,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Issues & Questions
 
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/skill-roadmap-generator/issues)
-- **Email**: [your-email@example.com]
-- **Project Website**: [Link to deployed site]
-
-### Social Media
-
-- **LinkedIn**: [Your LinkedIn]
-- **Twitter**: [@yourhandle]
-- **Portfolio**: [yourportfolio.com]
+- **GitHub Issues**: [Create an issue](https://github.com/ashritanshuman/skill-roadmap-generator/issues)
+- **Email**: [ashrit39@gmail.com]
+- **Project Website**: [[Link to deployed site](https://ashritanshuman.github.io/skill-roadmap-generator/index.html)]
 
 ---
 
@@ -489,9 +483,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Planned Features
 
+- [x] **Dark Mode**: Toggle between light and dark themes ✅ Implemented
 - [ ] **User Authentication**: Save progress and bookmarks
 - [ ] **Progress Tracker**: Visual representation of completed topics
-- [x] **Dark Mode**: Toggle between light and dark themes ✅ Implemented
 - [ ] **AI Recommendations**: Personalized roadmap suggestions
 - [ ] **Community Features**: Discussion forums and mentor connections
 - [ ] **Export to PDF**: Download roadmaps for offline viewing
