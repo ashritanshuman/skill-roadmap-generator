@@ -1,7 +1,27 @@
 // PathGen - Main JavaScript
 
+// ============================================
+// THEME TOGGLE - Dark/Light Mode
+// ============================================
+// Initialize theme before DOM loads to prevent flash
+(function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  // Default to dark if no saved preference
+  if (savedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    // Default is dark (no attribute needed, but set explicitly)
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize theme toggle
+  initThemeToggle();
+  
   // Initialize mobile menu
   initMobileMenu();
   
@@ -14,6 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize roadmap card clicks
   initRoadmapCards();
 });
+
+// Theme toggle functionality
+function initThemeToggle() {
+  const themeToggle = document.getElementById('theme-toggle');
+  if (!themeToggle) return;
+  
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+}
 
 // ============================================
 // MOBILE MENU
