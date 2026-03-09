@@ -62,7 +62,7 @@ This web application provides:
 
 ### Live Demo
 
-🔗 [View Live Demo](https://pathgen-srg.vercel.app/)
+🔗 [View Live Demo](https://ashritanshuman.github.io/skill-roadmap-generator/)
 
 ---
 
