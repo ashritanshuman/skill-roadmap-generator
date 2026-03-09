@@ -304,27 +304,48 @@ A career-oriented website that creates structured learning roadmaps for selected
 ```
 skill-roadmap-generator/
 │
-├── index.html                 # Home page
-├── roadmap.html              # Roadmap detail page
-├── how-it-works.html         # How it works page (optional)
+├── index.html                # Home page (landing page)
+├── roadmaps.html             # Explore all roadmaps page
+├── roadmap-detail.html       # Individual roadmap detail page
+├── PRD.md                    # Product Requirements Document
+├── README.md                 # Project documentation
 │
-├── css/
-│   ├── style.css             # Main styles
-│   ├── components.css        # Reusable components
-│   └── responsive.css        # Media queries
+├── css/                      # Stylesheets
+│   ├── reset.css             # CSS reset/normalize
+│   ├── variables.css         # CSS custom properties (colors, spacing, etc.)
+│   ├── global.css            # Global styles and utilities
+│   ├── components.css        # Reusable UI components (buttons, cards, nav)
+│   ├── home.css              # Home page specific styles
+│   ├── roadmaps.css          # Roadmaps listing page styles
+│   ├── roadmap-detail.css    # Roadmap detail page styles
+│   └── responsive.css        # Media queries and responsive adjustments
 │
-├── js/
-│   ├── main.js               # Core functionality
-│   └── roadmap.js            # Roadmap page logic
+├── js/                       # JavaScript files
+│   ├── main.js               # Core functionality (theme toggle, navigation, etc.)
+│   ├── roadmaps.js           # Roadmaps listing page logic
+│   └── roadmap-detail.js     # Roadmap detail page logic
 │
-├── data/
-│   └── roadmaps.json         # All roadmap data
+├── data/                     # Data documentation
+│   └── roadmaps-data.md      # Roadmap data structure documentation
 │
-├── assets/
-│   ├── images/               # Icons, logos
-│   └── icons/                # Skill icons
+├── public/                   # Public assets and data
+│   └── data/
+│       └── roadmaps-data.json # All roadmap data (JSON)
 │
-└── README.md                 # Project documentation
+├── assets/                   # Static assets
+│   ├── icons/                # Icon files
+│   └── images/               # Image files
+│
+├── ui/                       # UI/UX design files
+│   ├── v1.0/                 # Version 1.0 designs
+│   │   ├── home-page.png
+│   │   └── skill-page.png
+│   └── v2.0/                 # Version 2.0 designs
+│       └── screen.png
+│
+├── .github/                  # GitHub templates and workflows
+├── .vscode/                  # VSCode settings
+└── .qoder/                   # Qoder configuration
 ```
 
 ### 5.2 JavaScript Functionality (Minimal Usage)
