@@ -128,8 +128,8 @@ This web application provides:
 skill-roadmap-generator/
 │
 ├── index.html                # Home page (landing page)
-├── roadmaps.html             # Explore all roadmaps page
-├── roadmap-detail.html       # Individual roadmap detail page
+├── explore.html              # Explore all roadmaps page
+├── roadmap.html              # Individual roadmap detail page
 ├── PRD.md                    # Product Requirements Document
 ├── README.md                 # Project documentation
 │
@@ -139,17 +139,14 @@ skill-roadmap-generator/
 │   ├── global.css            # Global styles and utilities
 │   ├── components.css        # Reusable UI components (buttons, cards, nav)
 │   ├── home.css              # Home page specific styles
-│   ├── roadmaps.css          # Roadmaps listing page styles
-│   ├── roadmap-detail.css    # Roadmap detail page styles
+│   ├── explore.css           # Explore page styles
+│   ├── roadmap.css           # Roadmap detail page styles
 │   └── responsive.css        # Media queries and responsive adjustments
 │
 ├── js/                       # JavaScript files
 │   ├── main.js               # Core functionality (theme toggle, navigation, etc.)
-│   ├── roadmaps.js           # Roadmaps listing page logic
-│   └── roadmap-detail.js     # Roadmap detail page logic
-│
-├── data/                     # Data documentation
-│   └── roadmaps-data.md      # Roadmap data structure documentation
+│   ├── explore.js            # Explore page logic
+│   └── roadmap.js            # Roadmap detail page logic
 │
 ├── public/                   # Public assets and data
 │   └── data/
@@ -167,8 +164,7 @@ skill-roadmap-generator/
 │       └── screen.png
 │
 ├── .github/                  # GitHub templates and workflows
-├── .vscode/                  # VSCode settings
-└── .qoder/                   # Qoder configuration
+└── .vscode/                  # VSCode settings
 ```
 
 ---
@@ -177,12 +173,12 @@ skill-roadmap-generator/
 
 ### For Users
 
-1. **Browse Skills**: Visit the landing page to see all available skill categories
-2. **Search**: Use the search bar to find specific skills
-3. **Select a Roadmap**: Click on any skill card to view its learning path
-4. **Explore Phases**: See the progression from Beginner → Intermediate → Advanced
-5. **Expand Topics**: Click on any topic to see detailed information
-6. **Access Resources**: Click on resource links to start learning
+1. **Browse Skills**: Visit the landing page (`index.html`) to see featured skill and role roadmaps
+2. **Explore All**: Go to `explore.html` to browse all roadmaps with category filters
+3. **Select a Roadmap**: Click on any roadmap card to view its detailed learning path
+4. **View Details**: On `roadmap.html`, see phases, timeline, and learning objectives
+5. **Expand Topics**: Click on any phase to see detailed information, projects, and outcomes
+6. **Access Resources**: Follow the structured learning path to master the skill
 
 ### For Developers
 
@@ -379,8 +375,8 @@ We welcome contributions! Here's how you can help:
 1. Fork the repository
 2. Create a new branch: `git checkout -b feature/new-roadmap`
 3. Add your roadmap to `public/data/roadmaps-data.json`
-4. Update `index.html` to add a card linking to your new roadmap
-5. Test thoroughly by clicking the roadmap card and verifying all phases load correctly
+4. Update `index.html` or `explore.html` to add a card linking to your new roadmap
+5. Test thoroughly by clicking the roadmap card and verifying all phases load correctly on `roadmap.html`
 6. Submit a pull request with a description of the career path added
 
 ### Improving Existing Roadmaps
@@ -557,4 +553,4 @@ Through this project, our team has gained:
 
 ---
 
-*Last Updated: March 7, 2026*
+*Last Updated: March 10, 2026*
