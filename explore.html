@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathGen | All Roadmaps</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-icon">P</span> PathGen
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html#explore" class="nav-link">Explore</a>
+                <a href="index.html#how-it-works" class="nav-link">How it Works</a>
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-symbols-outlined theme-icon-light">light_mode</span>
+                    <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
+                </button>
+                <a href="#signin" class="nav-actions-text">Sign In</a>
+                <a href="#getstarted" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading State -->
+    <div id="loading-state" class="loading-container">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading roadmaps...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-state" class="error-container" style="display: none;">
+        <span class="material-symbols-outlined error-icon">error_outline</span>
+        <h2>Failed to Load Roadmaps</h2>
+        <p>We couldn't load the roadmap data. Please try again later.</p>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+
+    <!-- Main Content -->
+    <main id="roadmaps-content" class="roadmaps-page" style="display: none;">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span id="breadcrumb-category" class="breadcrumb-current">All Roadmaps</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Header Section -->
+        <header class="roadmaps-header">
+            <div class="container">
+                <h1 id="page-title">All Roadmaps</h1>
+                <p id="page-subtitle" class="roadmaps-subtitle">Explore comprehensive learning paths</p>
+            </div>
+        </header>
+
+        <!-- Category Tabs -->
+        <section class="category-tabs-section">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">All Roadmaps</button>
+                    <button class="category-tab" data-category="skill">Skill Based</button>
+                    <button class="category-tab" data-category="role">Role Based</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmaps Grid Section -->
+        <section class="all-roadmaps-section">
+            <div class="container">
+                <div id="roadmaps-grid" class="roadmaps-full-grid">
+                    <!-- Roadmaps will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="index.html" class="nav-brand footer-brand">
+                        <span class="nav-brand-icon">P</span> PathGen
+                    </a>
+                    <p class="footer-tagline">The intelligence layer for your technical career progression.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Website">
+                            <span class="material-symbols-outlined">language</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Code">
+                            <span class="material-symbols-outlined">code</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Contact">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Core</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">Roadmaps</a>
+                        <a href="#" class="footer-link">Validation</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Docs</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">Guide</a>
+                        <a href="#" class="footer-link">API</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Entity</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Legal</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>© 2026 PathGen Intelligence. All systems operational.</span>
+                <div>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/explore.js"></script>
+</body>
+</html>
