@@ -23,6 +23,26 @@
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-10);
     }
+    
+    /* Google-style search bar for tablet */
+    .search-wrapper {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+    
+    .search-container {
+        padding: 6px 14px;
+        min-height: 42px;
+    }
+    
+    .search-input {
+        font-size: 15px;
+    }
+    
+    .search-btn {
+        padding: 7px 16px;
+        font-size: 13px;
+    }
 }
 
 /* Mobile */
@@ -75,14 +95,38 @@
         font-size: inherit;
     }
     
+    .search-wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+        margin-bottom: var(--spacing-6);
+    }
+    
     .search-container {
-        flex-direction: column;
-        gap: var(--spacing-3);
-        padding: var(--spacing-4);
+        padding: 6px 12px;
+        min-height: 40px;
+        border-radius: 20px;
+    }
+    
+    .search-icon {
+        padding: 0 8px 0 2px;
+        font-size: 18px;
+    }
+    
+    .search-input {
+        padding: 2px 0;
+        font-size: 14px;
+        min-height: 32px;
+    }
+    
+    .search-input::placeholder {
+        font-size: 14px;
     }
     
     .search-btn {
-        width: 100%;
+        padding: 6px 14px;
+        font-size: 13px;
+        margin-left: 6px;
+        min-height: 32px;
     }
     
     .trending-container {
@@ -141,5 +185,70 @@
     .features-header h2,
     .cta-title {
         font-size: var(--font-size-xl);
+    }
+    
+    /* Google-style search bar for small screens */
+    .search-wrapper {
+        padding: 0 12px;
+    }
+    
+    .search-container {
+        padding: 4px 10px;
+        min-height: 36px;
+        border-radius: 18px;
+    }
+    
+    .search-icon {
+        padding: 0 6px 0 2px;
+        font-size: 16px;
+    }
+    
+    .search-input {
+        padding: 2px 0;
+        font-size: 13px;
+        min-height: 28px;
+    }
+    
+    .search-input::placeholder {
+        font-size: 13px;
+    }
+    
+    .search-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+        margin-left: 4px;
+        min-height: 28px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .search-wrapper {
+        padding: 0 10px;
+    }
+    
+    .search-container {
+        padding: 3px 8px;
+        min-height: 34px;
+        border-radius: 17px;
+    }
+    
+    .search-icon {
+        font-size: 14px;
+    }
+    
+    .search-input {
+        font-size: 12px;
+        min-height: 26px;
+    }
+    
+    .search-input::placeholder {
+        font-size: 12px;
+    }
+    
+    .search-btn {
+        padding: 3px 8px;
+        font-size: 11px;
+        min-height: 26px;
     }
 }
