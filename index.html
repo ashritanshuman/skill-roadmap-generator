@@ -28,9 +28,9 @@
             </a>
             
             <div class="nav-menu">
-                <a href="#explore" class="nav-link">Explore</a>
-                <a href="#how-it-works" class="nav-link">How it Works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="how-it-works.html" class="nav-link">How it Works</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
             
             <div class="nav-actions">
@@ -38,8 +38,7 @@
                     <span class="material-symbols-outlined theme-icon-light">light_mode</span>
                     <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
                 </button>
-                <a href="#signin" class="nav-actions-text">Sign In</a>
-                <a href="#getstarted" class="btn btn-primary">Get Started</a>
+                <a href="index.html" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -58,9 +57,10 @@
             <div class="search-wrapper">
                 <div class="search-container">
                     <span class="material-symbols-outlined search-icon">search</span>
-                    <input type="text" class="search-input" placeholder="Define your goal (e.g. Senior Frontend Architect)">
-                    <button class="btn btn-primary search-btn">Generate</button>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search for skills, roles, or technologies...">
+                    <button id="search-btn" class="btn btn-primary search-btn">Search</button>
                 </div>
+                <div id="search-results" class="search-results" style="display: none;"></div>
             </div>
             
             <div class="trending-container">
