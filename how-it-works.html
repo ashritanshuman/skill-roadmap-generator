@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathGen | How It Works</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-icon">PG</span> PathGen
+            </a>
+            
+            <div class="nav-menu">
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="how-it-works.html" class="nav-link active">How it Works</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-symbols-outlined theme-icon-light">light_mode</span>
+                    <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
+                </button>
+                <a href="index.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line-1">How PathGen</span>
+                <span class="line-2">Works</span>
+            </h1>
+            <p class="hero-subtitle">
+                Your personalized path to tech mastery in four simple steps
+            </p>
+        </div>
+    </header>
+
+    <!-- Steps Section -->
+    <section class="features-section" style="padding-top: var(--spacing-16);">
+        <div class="container">
+            <div class="features-grid" style="grid-template-columns: 1fr; gap: var(--spacing-12);">
+                
+                <!-- Step 1 -->
+                <div class="feature-item" style="display: flex; gap: var(--spacing-8); text-align: left; align-items: flex-start;">
+                    <div class="feature-icon" style="flex-shrink: 0; width: 80px; height: 80px; font-size: 32px;">
+                        <span class="material-symbols-outlined glow-icon">search</span>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-4); margin-bottom: var(--spacing-3);">
+                            <span style="background: var(--color-primary); color: white; padding: var(--spacing-1) var(--spacing-3); border-radius: var(--border-radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);">STEP 1</span>
+                            <h4 class="feature-title" style="margin: 0; font-size: var(--font-size-xl);">Discover Your Path</h4>
+                        </div>
+                        <p class="feature-description" style="font-size: var(--font-size-base); max-width: 600px;">
+                            Browse our comprehensive collection of skill and role-based roadmaps. Whether you want to master a specific technology like React or Kubernetes, or pursue a complete career path like Frontend Developer or AI/ML Engineer, we've got you covered.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="feature-item" style="display: flex; gap: var(--spacing-8); text-align: left; align-items: flex-start;">
+                    <div class="feature-icon" style="flex-shrink: 0; width: 80px; height: 80px; font-size: 32px;">
+                        <span class="material-symbols-outlined glow-icon">map</span>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-4); margin-bottom: var(--spacing-3);">
+                            <span style="background: var(--color-primary); color: white; padding: var(--spacing-1) var(--spacing-3); border-radius: var(--border-radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);">STEP 2</span>
+                            <h4 class="feature-title" style="margin: 0; font-size: var(--font-size-xl);">Explore the Roadmap</h4>
+                        </div>
+                        <p class="feature-description" style="font-size: var(--font-size-base); max-width: 600px;">
+                            Each roadmap is broken down into clear phases with detailed sections, topics, hands-on projects, and expected outcomes. Click on any phase to expand and see the complete learning path with time estimates and difficulty levels.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="feature-item" style="display: flex; gap: var(--spacing-8); text-align: left; align-items: flex-start;">
+                    <div class="feature-icon" style="flex-shrink: 0; width: 80px; height: 80px; font-size: 32px;">
+                        <span class="material-symbols-outlined glow-icon">school</span>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-4); margin-bottom: var(--spacing-3);">
+                            <span style="background: var(--color-primary); color: white; padding: var(--spacing-1) var(--spacing-3); border-radius: var(--border-radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);">STEP 3</span>
+                            <h4 class="feature-title" style="margin: 0; font-size: var(--font-size-xl);">Learn & Build</h4>
+                        </div>
+                        <p class="feature-description" style="font-size: var(--font-size-base); max-width: 600px;">
+                            Follow the structured learning path at your own pace. Complete hands-on projects to reinforce your learning. Each phase includes practical projects that you can add to your portfolio and showcase to potential employers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="feature-item" style="display: flex; gap: var(--spacing-8); text-align: left; align-items: flex-start;">
+                    <div class="feature-icon" style="flex-shrink: 0; width: 80px; height: 80px; font-size: 32px;">
+                        <span class="material-symbols-outlined glow-icon">workspace_premium</span>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-4); margin-bottom: var(--spacing-3);">
+                            <span style="background: var(--color-primary); color: white; padding: var(--spacing-1) var(--spacing-3); border-radius: var(--border-radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);">STEP 4</span>
+                            <h4 class="feature-title" style="margin: 0; font-size: var(--font-size-xl);">Achieve Your Goals</h4>
+                        </div>
+                        <p class="feature-description" style="font-size: var(--font-size-base); max-width: 600px;">
+                            Track your progress through the timeline, complete all phases, and achieve the career outcomes. Each roadmap shows expected salary ranges and job titles you can target upon completion.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="features-section alt-bg" style="padding: var(--spacing-24) 0;">
+        <div class="container">
+            <div class="features-header" style="margin-bottom: var(--spacing-12);">
+                <h2>Why Choose PathGen?</h2>
+                <p class="subtitle">Features that make your learning journey effective</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">route</span>
+                    </div>
+                    <h4 class="feature-title">Structured Learning</h4>
+                    <p class="feature-description">No more guessing what to learn next. Our roadmaps provide a clear, step-by-step path from beginner to advanced.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">timer</span>
+                    </div>
+                    <h4 class="feature-title">Time Estimates</h4>
+                    <p class="feature-description">Realistic time commitments for each phase help you plan your learning schedule effectively.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">construction</span>
+                    </div>
+                    <h4 class="feature-title">Hands-on Projects</h4>
+                    <p class="feature-description">Build real projects that you can showcase in your portfolio and discuss in interviews.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">trending_up</span>
+                    </div>
+                    <h4 class="feature-title">Career Outcomes</h4>
+                    <p class="feature-description">Know exactly what job titles and salary ranges to expect after completing each roadmap.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">devices</span>
+                    </div>
+                    <h4 class="feature-title">Responsive Design</h4>
+                    <p class="feature-description">Access your roadmaps on any device - desktop, tablet, or mobile. Learn anywhere, anytime.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined glow-icon">update</span>
+                    </div>
+                    <h4 class="feature-title">Always Updated</h4>
+                    <p class="feature-description">Our roadmaps are regularly updated to reflect the latest industry trends and technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to start your journey?</h2>
+            <p class="cta-subtitle">Explore our roadmaps and find your perfect learning path today.</p>
+            <div class="cta-buttons">
+                <a href="explore.html" class="btn btn-primary btn-lg">Explore Roadmaps</a>
+                <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="index.html" class="nav-brand footer-brand">
+                        <span class="nav-brand-icon">PG</span> PathGen
+                    </a>
+                    <p class="footer-tagline">The intelligence layer for your technical career progression.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Website">
+                            <span class="material-symbols-outlined">language</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Code">
+                            <span class="material-symbols-outlined">code</span>
+                        </a>
+                        <a href="contact.html" class="social-icon" aria-label="Contact">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Core</h4>
+                    <div class="footer-link-list">
+                        <a href="explore.html" class="footer-link">Roadmaps</a>
+                        <a href="how-it-works.html" class="footer-link">How it Works</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">Documentation</a>
+                        <a href="#" class="footer-link">GitHub</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Entity</h4>
+                    <div class="footer-link-list">
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Legal</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>© 2026 PathGen Intelligence. All systems operational.</span>
+                <div>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
