@@ -130,6 +130,8 @@ skill-roadmap-generator/
 ├── index.html                # Home page (landing page)
 ├── explore.html              # Explore all roadmaps page
 ├── roadmap.html              # Individual roadmap detail page
+├── how-it-works.html         # How it Works page
+├── contact.html              # Contact page
 ├── PRD.md                    # Product Requirements Document
 ├── README.md                 # Project documentation
 │
@@ -144,7 +146,7 @@ skill-roadmap-generator/
 │   └── responsive.css        # Media queries and responsive adjustments
 │
 ├── js/                       # JavaScript files
-│   ├── main.js               # Core functionality (theme toggle, navigation, etc.)
+│   ├── main.js               # Core functionality (theme toggle, navigation, search, etc.)
 │   ├── explore.js            # Explore page logic
 │   └── roadmap.js            # Roadmap detail page logic
 │
