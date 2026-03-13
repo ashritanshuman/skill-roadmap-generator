@@ -116,39 +116,181 @@ function initSmoothScroll() {
 // ============================================
 // SEARCH FUNCTIONALITY
 // ============================================
+// Search data - all available roadmaps
+const searchData = [
+  // Skill Based Roadmaps
+  { id: 'react', title: 'React', subtitle: 'Frontend Library', type: 'skill', icon: 'code' },
+  { id: 'nodejs', title: 'Node.js', subtitle: 'Runtime Environment', type: 'skill', icon: 'terminal' },
+  { id: 'python', title: 'Python', subtitle: 'Programming Language', type: 'skill', icon: 'psychology' },
+  { id: 'kubernetes', title: 'Kubernetes', subtitle: 'Container Orchestration', type: 'skill', icon: 'view_in_ar' },
+  { id: 'docker', title: 'Docker', subtitle: 'Containerization', type: 'skill', icon: 'inventory_2' },
+  { id: 'aws', title: 'AWS', subtitle: 'Cloud Platform', type: 'skill', icon: 'cloud' },
+  { id: 'postgresql', title: 'PostgreSQL', subtitle: 'Database', type: 'skill', icon: 'database' },
+  { id: 'typescript', title: 'TypeScript', subtitle: 'Typed JavaScript', type: 'skill', icon: 'data_object' },
+  // Role Based Roadmaps
+  { id: 'frontend-developer', title: 'Frontend Developer', subtitle: 'UI/UX Implementation', type: 'role', icon: 'computer' },
+  { id: 'web-developer', title: 'Full Stack Developer', subtitle: 'Frontend + Backend + DevOps', type: 'role', icon: 'monitor' },
+  { id: 'devops-engineer', title: 'DevOps Engineer', subtitle: 'CI/CD & Infrastructure', type: 'role', icon: 'rocket_launch' },
+  { id: 'aiml-engineer', title: 'AI/ML Engineer', subtitle: 'Machine Learning', type: 'role', icon: 'psychology' },
+  { id: 'data-scientist', title: 'Data Scientist', subtitle: 'Analytics & Predictive Modeling', type: 'role', icon: 'analytics' }
+];
+
 function initSearch() {
-  const searchInput = document.querySelector('.search-input');
-  const searchBtn = document.querySelector('.search-btn');
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
+  const searchResults = document.getElementById('search-results');
   const trendingTags = document.querySelectorAll('.trending-tag');
   
-  if (searchInput && searchBtn) {
-    // Handle search button click
-    searchBtn.addEventListener('click', () => {
-      const query = searchInput.value.trim();
-      if (query) {
-        console.log('Search query:', query);
-        // Add your search logic here
-        alert(`Generating roadmap for: ${query}`);
-      }
-    });
+  if (!searchInput || !searchResults) return;
+  
+  let currentFocus = -1;
+  
+  // Handle input changes for live search
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
     
-    // Handle Enter key
-    searchInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        searchBtn.click();
+    if (query.length === 0) {
+      searchResults.style.display = 'none';
+      return;
+    }
+    
+    performSearch(query);
+  });
+  
+  // Handle search button click
+  searchBtn?.addEventListener('click', () => {
+    const query = searchInput.value.trim().toLowerCase();
+    if (query) {
+      performSearch(query);
+      searchResults.style.display = 'block';
+    }
+  });
+  
+  // Handle Enter key
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const visibleItems = searchResults.querySelectorAll('.search-result-item');
+      if (visibleItems.length > 0) {
+        visibleItems[0].click();
       }
-    });
-  }
+    }
+  });
+  
+  // Handle keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    const items = searchResults.querySelectorAll('.search-result-item');
+    
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      currentFocus++;
+      if (currentFocus >= items.length) currentFocus = 0;
+      addActive(items, currentFocus);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      currentFocus--;
+      if (currentFocus < 0) currentFocus = items.length - 1;
+      addActive(items, currentFocus);
+    } else if (e.key === 'Escape') {
+      searchResults.style.display = 'none';
+      currentFocus = -1;
+    }
+  });
+  
+  // Close search results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search-wrapper')) {
+      searchResults.style.display = 'none';
+      currentFocus = -1;
+    }
+  });
   
   // Handle trending tag clicks
   trendingTags.forEach(tag => {
     tag.addEventListener('click', () => {
-      if (searchInput) {
-        searchInput.value = tag.textContent;
-        searchInput.focus();
-      }
+      searchInput.value = tag.textContent;
+      searchInput.focus();
+      performSearch(tag.textContent.toLowerCase());
+      searchResults.style.display = 'block';
     });
   });
+  
+  function addActive(items, index) {
+    if (!items) return;
+    removeActive(items);
+    if (index >= 0 && index < items.length) {
+      items[index].classList.add('active');
+      items[index].scrollIntoView({ block: 'nearest' });
+    }
+  }
+  
+  function removeActive(items) {
+    items.forEach(item => item.classList.remove('active'));
+  }
+  
+  function performSearch(query) {
+    const results = searchData.filter(item =>
+      item.title.toLowerCase().includes(query) ||
+      item.subtitle.toLowerCase().includes(query) ||
+      item.id.toLowerCase().includes(query)
+    );
+    
+    displayResults(results, query);
+  }
+  
+  function displayResults(results, query) {
+    if (results.length === 0) {
+      searchResults.innerHTML = `
+        <div class="search-no-results">
+          <span class="material-symbols-outlined">search_off</span>
+          <p>No results found for "${escapeHtml(query)}"</p>
+          <p style="font-size: var(--font-size-xs); margin-top: var(--spacing-2);">Try searching for: React, Python, Frontend, etc.</p>
+        </div>
+      `;
+    } else {
+      searchResults.innerHTML = results.map(item => `
+        <div class="search-result-item" data-roadmap-id="${item.id}" data-type="${item.type}">
+          <div class="result-icon">
+            <span class="material-symbols-outlined">${item.icon}</span>
+          </div>
+          <div class="result-info">
+            <h4>${highlightMatch(item.title, query)}</h4>
+            <p>${item.subtitle}</p>
+          </div>
+          <span class="result-type">${item.type}</span>
+        </div>
+      `).join('');
+      
+      // Add click handlers to results
+      searchResults.querySelectorAll('.search-result-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const roadmapId = item.dataset.roadmapId;
+          if (roadmapId) {
+            window.location.href = `roadmap.html?id=${roadmapId}`;
+          }
+        });
+      });
+    }
+    
+    searchResults.style.display = 'block';
+    currentFocus = -1;
+  }
+  
+  function highlightMatch(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    return text.replace(regex, '<mark style="background: var(--color-primary-subtle); color: var(--color-primary); padding: 0 2px; border-radius: 2px;">$1</mark>');
+  }
+  
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  
+  function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
 }
 
 // ============================================
@@ -164,7 +306,7 @@ function initRoadmapCards() {
       if (roadmapId === 'coming-soon') {
         showComingSoonModal();
       } else if (roadmapId) {
-        window.location.href = `roadmap-detail.html?id=${roadmapId}`;
+        window.location.href = `roadmap.html?id=${roadmapId}`;
       }
     });
   });
