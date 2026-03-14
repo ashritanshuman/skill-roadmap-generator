@@ -1,6 +1,6 @@
 // Roadmaps Listing Page JavaScript
 
-// Define which roadmaps belong to which category
+// Define which roadmaps belong to which category - must match index.html
 const skillBasedIds = ['react', 'nodejs', 'python', 'kubernetes', 'docker', 'aws', 'postgresql', 'typescript'];
 const roleBasedIds = ['frontend-developer', 'web-developer', 'devops-engineer', 'aiml-engineer', 'data-scientist', 'data-analyst'];
 
@@ -137,7 +137,7 @@ function createRoadmapCard(roadmap) {
     const categoryLabel = isSkillBased ? 'Skill' : 'Role';
 
     return `
-        <a href="roadmap-detail.html?id=${roadmap.id}" class="roadmap-card">
+        <a href="roadmap.html?id=${roadmap.id}" class="roadmap-card">
             <div class="roadmap-card-header">
                 <div class="roadmap-card-icon">
                     <span class="material-symbols-outlined glow-icon">${roadmap.icon}</span>

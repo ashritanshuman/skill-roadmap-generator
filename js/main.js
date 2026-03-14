@@ -53,31 +53,34 @@ function initThemeToggle() {
 // MOBILE MENU
 // ============================================
 function initMobileMenu() {
-  const navbar = document.querySelector('.navbar .container');
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
   const navMenu = document.querySelector('.nav-menu');
   
-  if (!navbar || !navMenu) return;
+  if (!mobileToggle || !navMenu) return;
   
-  // Create mobile toggle button if it doesn't exist
-  if (!document.querySelector('.mobile-menu-toggle')) {
-    const mobileToggle = document.createElement('button');
-    mobileToggle.className = 'mobile-menu-toggle';
-    mobileToggle.setAttribute('aria-label', 'Toggle menu');
-    mobileToggle.innerHTML = '<span></span><span></span><span></span>';
-    
-    const navActions = document.querySelector('.nav-actions');
-    if (navActions) {
-      navbar.insertBefore(mobileToggle, navActions);
-    } else {
-      navbar.appendChild(mobileToggle);
-    }
-    
-    mobileToggle.addEventListener('click', () => {
-      mobileToggle.classList.toggle('active');
-      navMenu.classList.toggle('active');
-      document.body.classList.toggle('menu-open');
+  mobileToggle.addEventListener('click', () => {
+    mobileToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+  
+  // Close menu when clicking on a nav link
+  navMenu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
     });
-  }
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+      mobileToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+  });
 }
 
 // ============================================
