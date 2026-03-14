@@ -1,299 +1,399 @@
 # Product Requirements Document (PRD)
 
-## PBL-3: Skill Roadmap Generator Website
+## PBL-3: Skill Roadmap Generator Website - PathGen
 
-**Course:** Web Technology (CSP0203[P]) - B.Tech CS/IT | II Semester  
-**Project Type:** Project Based Learning (PBL)  
-**Total Marks:** 20  
-**Team Size:** Maximum 4 students  
+**Course:** Web Technology (CSP0203[P]) - B.Tech CS/IT | II Semester
+**Project Type:** Project Based Learning (PBL)
+**Total Marks:** 20
+**Team Size:** Maximum 4 students
+**Project Name:** PathGen - AI-Driven Learning Roadmaps
 
 ---
 
 ## 1. PROJECT OVERVIEW
 
 ### 1.1 Description
-A career-oriented website that creates structured learning roadmaps for selected technical skills. The platform helps students and learners discover personalized learning paths tailored to their goals and current skill level.
+PathGen is a career-oriented website that creates structured, AI-driven personalized learning roadmaps for technical skills. The platform features a modern dark tech aesthetic with glassmorphism design, helping students and learners discover comprehensive learning paths tailored to their goals. The website includes detailed phase-based roadmaps with projects, outcomes, and timeline views.
 
 ### 1.2 Core Technologies
 - **HTML5** - Semantic structure and layout
-- **CSS3** - Styling, animations, and responsive design
-- **JavaScript (Minimal)** - Basic interactivity and DOM manipulation
-- **JSON** - Roadmap data storage and retrieval
+- **CSS3** - Glassmorphism styling, animations, and responsive design
+- **JavaScript (ES6+)** - Dynamic content loading, search, theme toggle, mobile menu
+- **JSON** - Comprehensive roadmap data storage with phases, modules, and topics
 
 ### 1.3 Tools
 - VSCode (Development)
 - Web Browser (Chrome/Firefox for testing)
-- Git/GitHub (Version control - optional)
+- Git/GitHub (Version control)
+- Material Symbols (Google Icons)
+
+### 1.4 Key Features Implemented
+- Dark/Light theme toggle with warm cream light mode
+- Glassmorphism design with backdrop filters
+- Dynamic roadmap loading from JSON
+- Search functionality with dropdown results
+- Mobile-responsive hamburger menu
+- Expandable phase cards on roadmap detail page
+- Timeline view for learning progression
 
 ---
 
 ## 2. FUNCTIONAL REQUIREMENTS
 
-### 2.1 Home Page (Landing Page)
+### 2.1 Home Page (index.html)
 
 #### Features:
 1. **Hero Section**
-   - Large heading: "Your Personalized Path to Tech Mastery"
-   - Subheading explaining the value proposition
-   - Search bar with placeholder: "What do you want to learn? (e.g., React, Python, UI Design...)"
-   - "Generate" button (primary CTA)
+   - Large animated heading: "Engineering your future mastery"
+   - Gradient text effect on second line
+   - Subheading: "Eliminate the noise. AI-driven personalized learning roadmaps tailored to your technical ambitions."
+   - Google-style search bar with real-time search results dropdown
+   - "Search" button (primary CTA)
+   - Trending tags: LLM Operations, Rust Systems, Distributed Networks
 
-2. **Popular Skills Section**
-   - Display 6 pre-defined popular roadmaps as cards
-   - Each card contains:
-     - Icon/emoji representing the skill
-     - Skill title (e.g., "Web Development", "Data Science")
-     - Duration estimate (e.g., "12 Weeks")
-     - Brief description (2-3 lines)
-     - "Start Learning" button
+2. **Skill Based Roadmaps Section**
+   - Display 8 skill roadmaps in 4-column grid:
+     - React (Frontend Library)
+     - Node.js (Runtime Environment)
+     - Python (Programming Language)
+     - Kubernetes (Container Orchestration)
+     - Docker (Containerization)
+     - AWS (Cloud Platform)
+     - PostgreSQL (Database)
+     - TypeScript (Typed JavaScript)
+   - Each card has icon, title, and category meta
+   - "Explore All" link to explore page
 
-3. **Suggested Popular Paths**
-   - Chips/badges showing: "Fullstack Dev", "ML Engineer", "Cloud Architect"
-   - Clicking these auto-fills the search
+3. **Role Based Roadmaps Section**
+   - Display 6 role roadmaps in 4-column grid:
+     - Frontend Developer (UI/UX Implementation)
+     - Web Developer (UI/UX Implementation)
+     - DevOps Engineer (CI/CD & Infrastructure)
+     - AI/ML Engineer (Machine Learning)
+     - Data Scientist (Analytics & Predictive Modeling)
+     - Data Analyst (Data Analytics & Business Intelligence)
+   - Alternate background styling
 
-4. **Navigation Bar**
-   - Logo/Brand name
-   - Menu items: Explore, How it Works, About
+4. **Precision Engineering Features Section**
+   - 4 feature cards: Adaptive Flow, Modular Architecture, Validation Gates, Intelligence Layer
+   - Icons with glow effects
+
+5. **CTA Section**
+   - "Begin Your Technical Evolution"
+   - "Get Started" and "Explore Roadmaps" buttons
+
+6. **Navigation Bar (Fixed, Glassmorphism)**
+   - Logo: "PG PathGen" with brand icon
+   - Menu items: Explore, How it Works, Contact
+   - Theme toggle button (light/dark mode)
    - "Get Started" button
+   - Mobile hamburger menu (on smaller screens)
 
-5. **Footer**
-   - Links to Documentation, Privacy, etc.
-   - Copyright information
+7. **Footer**
+   - Brand column with social links
+   - Link columns: Core, Docs, Entity
+   - Copyright and legal links
 
-### 2.2 Skill Roadmap Page
+### 2.2 Explore Page (explore.html)
 
 #### Features:
 1. **Breadcrumb Navigation**
-   - Home > Roadmaps > [Skill Name]
+   - Home > [Category]
+
+2. **Page Header**
+   - Dynamic title based on category (All Roadmaps / Skill Based / Role Based)
+   - Category-specific subtitle
+
+3. **Category Tabs**
+   - All Roadmaps (default)
+   - Skill Based
+   - Role Based
+   - Active tab highlighting
+
+4. **Roadmaps Grid**
+   - 4-column responsive grid
+   - Category badges (Skill/Role Based)
+   - Stats display (phases, duration, technologies, salary)
+   - Links to roadmap detail page
+
+### 2.3 Roadmap Detail Page (roadmap.html)
+
+#### Features:
+1. **Breadcrumb Navigation**
+   - Home > [Roadmap Name]
 
 2. **Roadmap Header**
-   - Skill title (e.g., "Web Development Roadmap")
-   - Description paragraph
-   - Metadata badges:
-     - Duration (e.g., "6 MONTHS")
-     - Difficulty level (e.g., "INTERMEDIATE")
-     - Total modules (e.g., "24 MODULES")
+   - Large icon with glassmorphism background
+   - Title and subtitle from JSON
+   - 4 stat badges in grid:
+     - Number of phases
+     - Duration estimate
+     - Technologies count
+     - Starting salary
 
-3. **Action Buttons**
-   - "Save to Profile" button
-   - "Start Learning" button (primary CTA)
-
-4. **Progress Tracker (Optional)**
-   - Circular progress indicator
-   - "YOUR PROGRESS: 8/24 Lessons Completed"
-   - "Resume Learning" button
-
-5. **Roadmap Phases**
-   Each phase contains:
+3. **Phases Section**
+   - Section title: "Learning Phases"
+   - Expandable phase cards:
+     - Phase number badge (colored)
+     - Phase title and subtitle
+     - Duration badge
+     - Expand/collapse toggle icon
    
-   **Phase Structure:**
-   - Phase number and title (e.g., "Phase 1: Beginner Fundamentals")
-   - Phase description
-   - Expandable/collapsible sections
-   
-   **Module Cards within Each Phase:**
-   - Module icon
-   - Module title (e.g., "HTML & CSS Basics")
-   - Module description
-   - Expandable dropdown showing:
-     - Sub-topics with difficulty badges (EASY/MEDIUM/HARD)
-     - Resource links (e.g., "MDN Structure Guide")
-     - Estimated completion time
+   **Expanded Phase Content:**
+   - Phase description paragraph
+   - Sections grid with:
+     - Section title and subtitle
+     - Topics list with em-dash bullets
+   - Projects block (with rocket emoji)
+   - Outcomes block (with checkmark icons)
+   - Salary/Job outcomes block (green accent)
 
-6. **Locked Content Indicator**
-   - Later phases show lock icon
-   - Indicates prerequisite completion needed
+4. **Timeline Section**
+   - Visual timeline with dots and connecting lines
+   - Period badges (e.g., "WEEK 1-2")
+   - Focus areas for each time period
+   - Milestone descriptions
 
-### 2.3 How It Works Page (Optional Enhancement)
-- Step-by-step explanation of using the platform
-- Visual guide with screenshots/illustrations
+5. **Loading & Error States**
+   - Animated spinner during data load
+   - Error message with retry option
+
+### 2.4 How It Works Page (how-it-works.html)
+- Three-step process explanation
+- Visual cards for each step
+- CTA section at bottom
+
+### 2.5 Contact Page (contact.html)
+- Contact form with fields: Name, Email, Subject, Message
+- Form validation
+- Social media links
 
 ---
 
 ## 3. DATA STRUCTURE (JSON)
 
-### 3.1 Roadmap Data Schema
+### 3.1 Roadmap Data Schema (public/data/roadmaps-data.json)
+
+**14 Complete Roadmaps Implemented:**
+
+**Role Based (6):**
+1. Frontend Developer - 3 phases, 6-9 months
+2. Web Developer - 6 phases, UI/UX focused
+3. AI/ML Engineer - Machine Learning career path
+4. Data Scientist - Analytics & Predictive Modeling
+5. DevOps Engineer - CI/CD & Infrastructure
+6. Data Analyst - Data Analytics & Business Intelligence
+
+**Skill Based (8):**
+1. React - Frontend library with hooks, state management
+2. Node.js - Runtime environment, Express, APIs
+3. Python - Programming language fundamentals
+4. Kubernetes - Container orchestration
+5. Docker - Containerization platform
+6. AWS - Cloud platform services
+7. PostgreSQL - Database management
+8. TypeScript - Typed JavaScript
+
+### 3.2 JSON Structure
 
 ```json
 {
   "roadmaps": [
     {
-      "id": "web-dev-001",
-      "title": "Web Development",
-      "slug": "web-development",
-      "description": "Master the modern frontend and backend ecosystem from HTML/CSS to advanced React and Node.js patterns.",
-      "duration": "12 Weeks",
-      "durationMonths": 6,
-      "difficulty": "INTERMEDIATE",
-      "totalModules": 24,
-      "icon": "💻",
+      "id": "frontend-developer",
+      "title": "Frontend Developer",
+      "subtitle": "UI/UX Implementation",
+      "icon": "computer",
+      "stats": {
+        "phases": 3,
+        "duration": "6-9 Months to Job",
+        "technologies": "25+ Technologies",
+        "salary": "$70K+ Starting Salary"
+      },
       "phases": [
         {
-          "phaseNumber": 1,
-          "title": "Beginner Fundamentals",
-          "description": "Establish the core foundations of the web.",
-          "modules": [
+          "id": 1,
+          "title": "Foundation",
+          "subtitle": "HTML & CSS — The Web's Skeleton",
+          "duration": "4-6 weeks | 2 hrs/day",
+          "description": "Everything on the web is HTML and CSS...",
+          "sections": [
             {
-              "id": "module-001",
-              "title": "HTML & CSS Basics",
-              "icon": "html-icon.png",
-              "description": "Semantic structures, CSS Box Model, and layout techniques.",
+              "title": "HTML Fundamentals",
+              "subtitle": "Structure & Semantics",
               "topics": [
-                {
-                  "name": "MDN Structure Guide",
-                  "difficulty": "EASY",
-                  "link": "#"
-                },
-                {
-                  "name": "Flexbox Crash Course",
-                  "difficulty": "EASY",
-                  "link": "#"
-                }
-              ]
-            },
-            {
-              "id": "module-002",
-              "title": "Responsive Design",
-              "icon": "responsive-icon.png",
-              "description": "Media queries, mobile-first approach, and modern CSS Grid.",
-              "topics": [
-                {
-                  "name": "Mobile First Design",
-                  "difficulty": "MEDIUM",
-                  "link": "#"
-                },
-                {
-                  "name": "CSS Grid Mastery",
-                  "difficulty": "MEDIUM",
-                  "link": "#"
-                }
+                "DOCTYPE, head, body, meta tags",
+                "Semantic elements: header, nav, main...",
+                "..."
               ]
             }
-          ]
-        },
-        {
-          "phaseNumber": 2,
-          "title": "Modern JavaScript",
-          "description": "Master logic, data fetching, and interactivity.",
-          "locked": false,
-          "modules": [
-            {
-              "id": "module-003",
-              "title": "JS Engine & ES6+",
-              "icon": "js-icon.png",
-              "description": "Understanding scopes, closures, and modern syntax features.",
-              "topics": [
-                {
-                  "name": "Async/Await Deep Dive",
-                  "difficulty": "MEDIUM",
-                  "link": "#"
-                },
-                {
-                  "name": "ES6 Module Patterns",
-                  "difficulty": "MEDIUM",
-                  "link": "#"
-                }
-              ]
-            }
+          ],
+          "projects": [
+            "Build a complete portfolio landing page",
+            "Clone any popular website homepage"
+          ],
+          "outcomes": [
+            "Build any layout from a Figma design",
+            "Make any layout work on mobile"
           ]
         }
+      ],
+      "timeline": [
+        {
+          "period": "Week 1-2",
+          "focus": "HTML & CSS Basics",
+          "milestone": "Build first static webpage"
+        }
       ]
-    },
-    {
-      "id": "data-science-001",
-      "title": "Data Science",
-      "slug": "data-science",
-      "description": "Learn to analyze complex datasets, build predictive models, and visualize insights using Python and SQL.",
-      "duration": "24 Weeks",
-      "durationMonths": 6,
-      "difficulty": "INTERMEDIATE",
-      "totalModules": 18,
-      "icon": "📊",
-      "phases": []
     }
   ]
 }
 ```
 
+### 3.3 Data Categories
+- **Skill Based:** Technology-specific learning paths
+- **Role Based:** Career-oriented comprehensive paths
+
 ---
 
 ## 4. DESIGN REQUIREMENTS
 
-### 4.1 Color Scheme
-- **Primary Color:** Brown/Orange (#B8622F - from reference)
-- **Secondary Color:** Beige/Cream (#F5F3EF)
-- **Accent Colors:** 
-  - Easy: Green (#4CAF50)
-  - Medium: Orange (#FF9800)
-  - Hard: Red (#F44336)
-- **Text:** Dark gray (#2C3E50) on light backgrounds
-- **Backgrounds:** White (#FFFFFF), Light gray (#F8F9FA)
+### 4.1 Color Scheme - Dark Tech Theme with Glassmorphism
+
+**Dark Mode (Default):**
+- **Primary Color:** Blue (#3B82F6)
+- **Primary Dark:** #2563EB
+- **Primary Light:** #60A5FA
+- **Background Primary:** #0a0a0a (near black)
+- **Background Secondary:** #111111
+- **Background Elevated:** #1c1c1c
+- **Text Primary:** #ffffff
+- **Text Secondary:** #a1a1aa
+- **Text Muted:** #71717a
+- **Glass Background:** rgba(255, 255, 255, 0.03)
+- **Glass Border:** rgba(255, 255, 255, 0.08)
+- **Accent Green:** #22c55e (for success/outcomes)
+
+**Light Mode (Warm Cream):**
+- **Primary Color:** Brown/Orange (#B8622F)
+- **Background Primary:** #f4f3ee (warm cream)
+- **Background Secondary:** #e8e6e1
+- **Text Primary:** #2C1810 (dark brown)
+- **Text Secondary:** #5c4a42
+- **Glass Background:** rgba(244, 243, 238, 0.85)
 
 ### 4.2 Typography
-- **Headings:** Bold, modern sans-serif (e.g., 'Inter', 'Poppins')
-- **Body Text:** Clean, readable sans-serif
+- **Font Family:** 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif
+- **Font Weights:** 300 (light), 400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 - **Font Sizes:**
-  - Hero heading: 48-56px
-  - Section headings: 32-36px
-  - Module titles: 18-20px
-  - Body text: 14-16px
+  - Hero: clamp(3rem, 8vw, 7rem)
+  - H2: 36px (var(--font-size-3xl))
+  - H3: 28px (var(--font-size-2xl))
+  - Subtitles: 18-22px (bold)
+  - Body: 14-16px
+  - Small/Labels: 10-12px (uppercase, letter-spacing: 0.15em)
 
 ### 4.3 Layout
-- **Responsive Design:** Mobile-first approach
-- **Max Content Width:** 1200px centered
-- **Spacing:** Consistent padding and margins (8px base unit)
-- **Grid System:** Use CSS Grid/Flexbox for card layouts
+- **Responsive Design:** Mobile-first with breakpoints at 480px, 768px, 900px, 1024px
+- **Max Content Width:** 1200px (var(--container-max-width))
+- **Navbar Max Width:** 1000px with pill shape
+- **Spacing System:** 4px base unit (4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128px)
+- **Grid System:** CSS Grid with 4-column layout on desktop, 2 on tablet, 1 on mobile
 
-### 4.4 Components
+### 4.4 Glassmorphism Components
 
-#### Card Component (for skill paths)
+#### Navbar (Pill Shape with Blur)
 ```css
-.skill-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.navbar .container {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 9999px; /* Full rounded */
+  padding: 16px 32px;
+}
+```
+
+#### Roadmap Cards
+```css
+.roadmap-item {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
   padding: 24px;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
 }
 
-.skill-card:hover {
+.roadmap-item:hover {
+  border-color: rgba(59, 130, 246, 0.3);
   transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+```
+
+#### Phase Cards (Expandable)
+```css
+.phase-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.phase-number {
+  background: var(--color-primary);
+  color: white;
+  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 ```
 
 #### Button Styles
 ```css
 .btn-primary {
-  background: #B8622F;
+  background: var(--color-primary);
   color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid #B8622F;
-  color: #B8622F;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
 }
 ```
 
-#### Badge/Chip Component
+#### Category Badges
 ```css
-.badge {
-  display: inline-block;
+.category-badge {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 9999px;
   padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.badge-easy { background: #E8F5E9; color: #2E7D32; }
-.badge-medium { background: #FFF3E0; color: #E65100; }
-.badge-hard { background: #FFEBEE; color: #C62828; }
+.category-badge.role {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
 ```
 
 ---
@@ -420,210 +520,275 @@ function displayRoadmaps(roadmaps) {
 
 ## 6. RESPONSIVE DESIGN
 
-### 6.1 Breakpoints
+### 6.1 Breakpoints (Implemented)
 ```css
-/* Mobile First */
-/* Base styles: 320px - 767px */
+/* Mobile First Approach */
 
-/* Tablet */
-@media (min-width: 768px) {
-  /* Tablet styles */
+/* Small Mobile: 320px - 480px */
+@media (max-width: 480px) {
+  .hero-title { font-size: var(--font-size-3xl); }
+  .roadmaps-grid { grid-template-columns: 1fr; }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  /* Desktop styles */
+/* Mobile: 481px - 768px */
+@media (max-width: 768px) {
+  .nav-menu { display: none; } /* Hidden by default */
+  .nav-menu.active { display: flex; } /* Show when toggled */
+  .mobile-menu-toggle { display: flex; }
+  .roadmaps-grid { grid-template-columns: 1fr; }
+  .hero { min-height: 100vh; }
 }
 
-/* Large Desktop */
-@media (min-width: 1440px) {
-  /* Large screen styles */
+/* Tablet: 769px - 900px */
+@media (max-width: 900px) {
+  .nav-menu { /* Mobile menu styles */ }
+  .mobile-menu-toggle { display: flex; }
 }
+
+/* Tablet: 901px - 1024px */
+@media (max-width: 1024px) {
+  .roadmaps-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Desktop: 1025px+ */
+/* Default styles apply */
 ```
 
-### 6.2 Mobile Considerations
-- Hamburger menu for navigation
-- Single column card layout
-- Touch-friendly button sizes (min 44px)
-- Simplified search interface
-- Reduced text sizes
+### 6.2 Mobile-Specific Features
+- **Hamburger menu** with animated icon (transforms to X)
+- **Slide-down animation** for mobile menu
+- **Touch-friendly targets** (min 44px)
+- **Full-width cards** on mobile
+- **Reduced padding** on smaller screens
+- **Stacked layout** for stats and features
 
 ---
 
-## 7. CONTENT REQUIREMENTS
+## 7. CONTENT REQUIREMENTS (IMPLEMENTED)
 
-### 7.1 Minimum Roadmaps to Include
-1. Web Development
-2. Data Science
-3. Artificial Intelligence/Machine Learning
-4. Cybersecurity
-5. Mobile Development
-6. Cloud Architecture
+### 7.1 Roadmaps Included (14 Total)
 
-### 7.2 Each Roadmap Must Include
-- 3-4 phases minimum
-- 2-3 modules per phase
-- 2-4 topics per module
-- Realistic duration estimates
-- Difficulty progression (Beginner → Intermediate → Advanced)
+**Role Based (6):**
+1. **Frontend Developer** - 3 phases, HTML/CSS → JavaScript → React
+2. **Web Developer** - 6 phases, comprehensive full-stack path
+3. **DevOps Engineer** - Linux, CI/CD, Docker, Kubernetes, Cloud
+4. **AI/ML Engineer** - Python, ML algorithms, Deep Learning, MLOps
+5. **Data Scientist** - Statistics, Python, ML, Visualization, Big Data
+6. **Data Analyst** - Excel, SQL, Python, Visualization, Reporting
+
+**Skill Based (8):**
+1. **React** - Components, Hooks, State, Routing, Testing
+2. **Node.js** - Fundamentals, Express, APIs, DB, Auth, Microservices
+3. **Python** - Basics, OOP, Advanced, Libraries, Web, Data
+4. **Kubernetes** - Containers, K8s basics, Objects, Advanced, Security
+5. **Docker** - Basics, Images, Compose, Networking, Security
+6. **AWS** - Core services, Compute, Storage, Security, Architecture
+7. **PostgreSQL** - SQL, Advanced queries, Performance, Administration
+8. **TypeScript** - Types, Interfaces, Generics, Advanced patterns
+
+### 7.2 Each Roadmap Includes
+- ✅ 3-6 phases per roadmap
+- ✅ 4-6 sections per phase
+- ✅ 5-8 topics per section
+- ✅ 3-4 hands-on projects per phase
+- ✅ 3-4 measurable outcomes per phase
+- ✅ Timeline with weekly milestones
+- ✅ Realistic duration estimates (weeks/months)
+- ✅ Salary/outcome information
+- ✅ Difficulty progression
 
 ---
 
 ## 8. EVALUATION CRITERIA ALIGNMENT
 
-### 8.1 Synopsis Submission (2 marks)
+### 8.1 Synopsis Submission (2 marks) ✅
 **Deliverable:** Project overview document containing:
-- Project description and objectives
-- Technology stack justification
-- Feature list with priorities
-- Team member responsibilities
-- Timeline with milestones
+- ✅ Project description and objectives (AI-driven learning roadmaps)
+- ✅ Technology stack justification (HTML, CSS, JS, JSON)
+- ✅ Feature list with priorities (search, themes, responsive, glassmorphism)
+- ✅ Team member responsibilities
+- ✅ Timeline with milestones
 
-### 8.2 Design and Workflow (4 marks)
+### 8.2 Design and Workflow (4 marks) ✅
 **Deliverable:** Design document including:
-- Wireframes for home and roadmap pages
-- User flow diagrams
-- JSON data structure
-- Color scheme and typography choices
-- Component breakdown
+- ✅ Wireframes for home and roadmap pages (in ui/ folder)
+- ✅ User flow diagrams (Home → Explore → Roadmap Detail)
+- ✅ JSON data structure (comprehensive schema with phases, sections, topics)
+- ✅ Color scheme and typography choices (dark/light themes, Plus Jakarta Sans)
+- ✅ Component breakdown (glassmorphism cards, navbar, phases)
 
-### 8.3 Implementation (6 marks)
+### 8.3 Implementation (6 marks) ✅
 **Assessment Based On:**
-- Clean, semantic HTML structure
-- Well-organized CSS with reusable components
-- Minimal, efficient JavaScript
-- Proper JSON data structure
-- Responsive design implementation
-- Code comments and organization
+- ✅ Clean, semantic HTML5 structure (5 pages)
+- ✅ Well-organized CSS with reusable components (7 CSS files)
+- ✅ Efficient JavaScript (3 JS files, ES6+ features)
+- ✅ Proper JSON data structure (14 complete roadmaps)
+- ✅ Responsive design implementation (4 breakpoints)
+- ✅ Code comments and organization
 
-### 8.4 Testing and Evaluation (3 marks)
+### 8.4 Testing and Evaluation (3 marks) ✅
 **Test Report Should Include:**
-- Browser compatibility testing (Chrome, Firefox, Safari)
-- Responsive design testing (mobile, tablet, desktop)
-- Functionality testing (search, navigation, data loading)
-- Performance testing (page load times)
-- Usability testing with sample users
+- ✅ Browser compatibility testing (Chrome, Firefox, Safari, Edge)
+- ✅ Responsive design testing (mobile, tablet, desktop)
+- ✅ Functionality testing (search, navigation, data loading, theme toggle)
+- ✅ Performance testing (optimized CSS, minimal JS, fast load times)
+- ✅ Usability testing with sample users
 
-### 8.5 Presentation and Viva (5 marks)
+### 8.5 Presentation and Viva (5 marks) ✅
 **Preparation:**
-- Live demo of all features
-- Explanation of technical choices
-- Discussion of challenges and solutions
-- Code walkthrough
-- Future enhancement ideas
+- ✅ Live demo of all features (5 pages, 14 roadmaps)
+- ✅ Explanation of technical choices (glassmorphism, CSS variables, JSON)
+- ✅ Discussion of challenges and solutions (responsive menu, theme toggle)
+- ✅ Code walkthrough (well-commented, organized structure)
+- ✅ Future enhancement ideas (progress tracking, user accounts)
 
 ---
 
-## 9. IMPLEMENTATION PHASES
+## 9. IMPLEMENTATION PHASES (COMPLETED)
 
-### Phase 1: Setup & Structure (Week 1)
-- Create project folder structure
-- Set up HTML skeleton for all pages
-- Create basic CSS framework
-- Design JSON data structure
-- Create initial roadmaps.json with 2 roadmaps
+### Phase 1: Setup & Structure ✅
+- ✅ Project folder structure created
+- ✅ HTML skeleton for 5 pages (index, explore, roadmap, how-it-works, contact)
+- ✅ CSS framework with variables, reset, global styles
+- ✅ JSON data structure designed (phases, sections, topics, projects, outcomes)
+- ✅ 14 complete roadmaps in roadmaps-data.json
 
-### Phase 2: Home Page Development (Week 1-2)
-- Build hero section with search
-- Create popular skills cards
-- Implement navigation bar
-- Add footer
-- Make responsive
+### Phase 2: Home Page Development ✅
+- ✅ Hero section with gradient text and search
+- ✅ Skill Based roadmaps section (8 cards)
+- ✅ Role Based roadmaps section (6 cards)
+- ✅ Precision Engineering features section
+- ✅ CTA section with dual buttons
+- ✅ Glassmorphism navigation bar with theme toggle
+- ✅ Footer with links and social icons
+- ✅ Fully responsive
 
-### Phase 3: Roadmap Page Development (Week 2-3)
-- Build roadmap detail layout
-- Create phase and module components
-- Implement expandable sections
-- Add progress tracker UI
-- Connect to JSON data
+### Phase 3: Explore & Roadmap Pages ✅
+- ✅ Explore page with category tabs (All/Skill/Role)
+- ✅ Dynamic roadmap grid generation from JSON
+- ✅ Roadmap detail page with stats badges
+- ✅ Expandable phase cards with sections
+- ✅ Projects and outcomes blocks
+- ✅ Timeline section with milestones
+- ✅ Loading and error states
 
-### Phase 4: JavaScript Integration (Week 3)
-- Implement search functionality
-- Add data loading from JSON
-- Create dynamic roadmap generation
-- Add URL parameter handling
-- Implement toggle/expand features
+### Phase 4: JavaScript Integration ✅
+- ✅ Real-time search with dropdown results
+- ✅ Dynamic data loading from JSON
+- ✅ Category filtering on explore page
+- ✅ URL parameter handling (?id=, ?category=)
+- ✅ Phase expand/collapse functionality
+- ✅ Theme toggle (dark/light mode)
+- ✅ Mobile menu toggle
+- ✅ Smooth scroll navigation
 
-### Phase 5: Testing & Polish (Week 4-5)
-- Cross-browser testing
-- Responsive design refinement
-- Performance optimization
-- Bug fixes
-- Documentation
+### Phase 5: Testing & Polish ✅
+- ✅ Cross-browser testing (Chrome, Firefox, Safari)
+- ✅ Responsive design refinement (4 breakpoints)
+- ✅ Performance optimization (minimal JS, CSS variables)
+- ✅ Glassmorphism effects with backdrop-filter
+- ✅ Bug fixes and edge cases
+- ✅ Documentation (PRD, README)
 
 ---
 
-## 10. BONUS FEATURES (Optional)
+## 10. BONUS FEATURES (IMPLEMENTED)
 
-### If Time Permits:
+### Features Completed:
+1. ✅ **Theme Toggle**
+   - Dark/Light mode switch with persistence (localStorage)
+   - CSS custom properties for complete theming
+   - Warm cream light mode, dark tech dark mode
+
+2. ✅ **Search with Real-time Results**
+   - Search bar with dropdown suggestions
+   - Matches titles and subtitles
+   - Keyboard navigation support
+
+3. ✅ **Mobile Menu**
+   - Animated hamburger icon (transforms to X)
+   - Slide-down menu with glassmorphism
+   - Closes on link click or outside click
+
+4. ✅ **Glassmorphism Design**
+   - Backdrop-filter blur effects
+   - Semi-transparent backgrounds
+   - Border accents with hover effects
+
+5. ✅ **Dynamic Content Loading**
+   - All roadmaps loaded from JSON
+   - Category filtering
+   - No hardcoded roadmap data in HTML
+
+### Future Enhancements (Optional):
 1. **Local Storage for Progress Tracking**
    - Save user's completed modules
-   - Track learning progress
+   - Track learning progress per roadmap
    - Resume from last position
 
-2. **Theme Toggle**
-   - Light/Dark mode switch
-   - CSS custom properties for theming
-
-3. **Print-Friendly View**
+2. **Print-Friendly View**
    - CSS print styles
    - Downloadable roadmap as PDF
 
-4. **Bookmark/Save Feature**
+3. **Bookmark/Save Feature**
    - Save favorite roadmaps to profile
    - Using localStorage
 
-5. **Estimated Time Calculator**
+4. **Estimated Time Calculator**
    - Input hours per week
-   - Calculate completion date
+   - Calculate personalized completion date
 
 ---
 
-## 11. SUCCESS METRICS
+## 11. SUCCESS METRICS ✅
 
-### Project is Successful When:
-- ✅ All pages are responsive (mobile, tablet, desktop)
-- ✅ At least 6 complete roadmaps with detailed phases
-- ✅ Search functionality works correctly
-- ✅ Data loads dynamically from JSON
-- ✅ No console errors
-- ✅ Clean, commented code
-- ✅ Professional visual design
-- ✅ Fast page load times (<2 seconds)
+### Project Completion Status:
+- ✅ **All 5 pages responsive** (mobile, tablet, desktop) - 4 breakpoints implemented
+- ✅ **14 complete roadmaps** with detailed phases (exceeds requirement of 6)
+- ✅ **Search functionality** works with real-time dropdown results
+- ✅ **Data loads dynamically** from JSON (no hardcoded content)
+- ✅ **No console errors** - clean JavaScript implementation
+- ✅ **Clean, commented code** - well-organized file structure
+- ✅ **Professional visual design** - glassmorphism dark tech aesthetic
+- ✅ **Fast page load times** - optimized CSS, minimal JS, efficient JSON structure
+- ✅ **Theme toggle** - dark/light mode with persistence
+- ✅ **Mobile menu** - hamburger navigation for small screens
+- ✅ **Expandable phases** - interactive roadmap detail view
 
 ---
 
-## 12. DELIVERABLES CHECKLIST
+## 12. DELIVERABLES CHECKLIST ✅
 
-### Week 1:
-- [ ] PBL Synopsis submitted
-- [ ] Design wireframes created
-- [ ] JSON structure finalized
-- [ ] Basic HTML structure complete
+### Week 1: ✅
+- [x] PBL Synopsis submitted
+- [x] Design wireframes created (ui/v1.0 and v2.0)
+- [x] JSON structure finalized (phases, sections, topics, projects, outcomes)
+- [x] Basic HTML structure complete (5 pages)
 
-### Week 2:
-- [ ] Design document submitted
-- [ ] Home page implemented
-- [ ] CSS framework created
-- [ ] Navigation functional
+### Week 2: ✅
+- [x] Design document submitted (this PRD)
+- [x] Home page implemented (hero, search, roadmaps, features, CTA)
+- [x] CSS framework created (7 CSS files with variables, components)
+- [x] Navigation functional (glassmorphism pill navbar)
 
-### Week 3:
-- [ ] Source code submitted
-- [ ] Roadmap page complete
-- [ ] JavaScript features working
-- [ ] All 6 roadmaps with data
+### Week 3: ✅
+- [x] Source code submitted (complete project structure)
+- [x] Roadmap pages complete (explore.html, roadmap.html)
+- [x] JavaScript features working (search, theme, menu, JSON loading)
+- [x] All 14 roadmaps with data (exceeds 6 requirement)
 
-### Week 5:
-- [ ] Test report submitted
-- [ ] Bug fixes completed
-- [ ] PBL Report document ready
-- [ ] Code documentation complete
+### Week 5: ✅
+- [x] Test report submitted
+- [x] Bug fixes completed (responsive, cross-browser)
+- [x] PBL Report document ready
+- [x] Code documentation complete (comments, PRD, README)
 
-### Week 7:
-- [ ] PowerPoint presentation ready
-- [ ] Live demo prepared
-- [ ] Viva-voce questions anticipated
-- [ ] Final submission complete
+### Week 7: ✅
+- [x] PowerPoint presentation ready
+- [x] Live demo prepared (5 pages, 14 roadmaps, all features)
+- [x] Viva-voce questions anticipated
+- [x] Final submission complete
 
 ---
 
@@ -684,7 +849,32 @@ By following this PRD, your team will deliver a high-quality project that meets 
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** February 2026  
-**Authors:** [Team Fervikar]  
+**Document Version:** 2.0
+**Last Updated:** March 2026
+**Authors:** Team Fervikar - PathGen
 **Project ID:** PBL-3
+**Status:** ✅ COMPLETED
+
+---
+
+## APPENDIX: Quick Reference
+
+### Color Variables (Dark Mode)
+```css
+--color-primary: #3B82F6;
+--color-bg-primary: #0a0a0a;
+--color-text-primary: #ffffff;
+--glass-bg: rgba(255, 255, 255, 0.03);
+--glass-border: rgba(255, 255, 255, 0.08);
+```
+
+### Roadmap IDs for Reference
+**Skills:** react, nodejs, python, kubernetes, docker, aws, postgresql, typescript
+**Roles:** frontend-developer, web-developer, devops-engineer, aiml-engineer, data-scientist, data-analyst
+
+### File Size Summary
+- HTML: 5 files (~2,000 lines total)
+- CSS: 7 files (~2,500 lines total)
+- JavaScript: 3 files (~1,000 lines total)
+- JSON: 1 file (~5,400 lines, 14 roadmaps)
+- Total: ~11,000 lines of code
