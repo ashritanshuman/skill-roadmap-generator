@@ -108,9 +108,9 @@
 }
 
 .roadmaps-subtitle {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     color: var(--color-text-secondary);
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-bold);
 }
 
 /* ============================================
@@ -221,8 +221,8 @@
 }
 
 .roadmap-card-subtitle {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
     color: var(--color-silver-muted);
     letter-spacing: 0.02em;
 }

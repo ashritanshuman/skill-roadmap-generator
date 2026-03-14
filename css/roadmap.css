@@ -137,9 +137,9 @@
 }
 
 .roadmap-subtitle {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     color: var(--color-text-secondary);
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-bold);
 }
 
 /* ============================================
@@ -287,7 +287,7 @@
 }
 
 .phase-subtitle {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--color-text-secondary);
     font-weight: var(--font-weight-bold);
 }
@@ -368,7 +368,7 @@
 }
 
 .section-subtitle {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     color: var(--color-text-muted);
     margin-bottom: var(--spacing-4);
     text-transform: uppercase;
@@ -603,7 +603,7 @@
 }
 
 .timeline-milestone {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--color-text-secondary);
     font-style: italic;
     font-weight: var(--font-weight-bold);
