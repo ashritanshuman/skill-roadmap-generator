@@ -122,20 +122,20 @@ function initSmoothScroll() {
 // Search data - all available roadmaps
 const searchData = [
   // Skill Based Roadmaps
-  { id: 'react', title: 'React', subtitle: 'Frontend Library', type: 'skill', icon: 'code' },
-  { id: 'nodejs', title: 'Node.js', subtitle: 'Runtime Environment', type: 'skill', icon: 'terminal' },
-  { id: 'python', title: 'Python', subtitle: 'Programming Language', type: 'skill', icon: 'psychology' },
-  { id: 'kubernetes', title: 'Kubernetes', subtitle: 'Container Orchestration', type: 'skill', icon: 'view_in_ar' },
-  { id: 'docker', title: 'Docker', subtitle: 'Containerization', type: 'skill', icon: 'inventory_2' },
-  { id: 'aws', title: 'AWS', subtitle: 'Cloud Platform', type: 'skill', icon: 'cloud' },
-  { id: 'postgresql', title: 'PostgreSQL', subtitle: 'Database', type: 'skill', icon: 'database' },
-  { id: 'typescript', title: 'TypeScript', subtitle: 'Typed JavaScript', type: 'skill', icon: 'data_object' },
+  { id: 'react', title: 'React', subtitle: 'Frontend Library', type: 'skill', icon: 'widgets' },
+  { id: 'nodejs', title: 'Node.js', subtitle: 'Runtime Environment', type: 'skill', icon: 'dns' },
+  { id: 'python', title: 'Python', subtitle: 'Programming Language', type: 'skill', icon: 'code_blocks' },
+  { id: 'kubernetes', title: 'Kubernetes', subtitle: 'Container Orchestration', type: 'skill', icon: 'account_tree' },
+  { id: 'docker', title: 'Docker', subtitle: 'Containerization', type: 'skill', icon: 'deployed_code' },
+  { id: 'aws', title: 'AWS', subtitle: 'Cloud Platform', type: 'skill', icon: 'cloud_sync' },
+  { id: 'postgresql', title: 'PostgreSQL', subtitle: 'Database', type: 'skill', icon: 'table' },
+  { id: 'typescript', title: 'TypeScript', subtitle: 'Typed JavaScript', type: 'skill', icon: 'integration_instructions' },
   // Role Based Roadmaps
-  { id: 'frontend-developer', title: 'Frontend Developer', subtitle: 'UI/UX Implementation', type: 'role', icon: 'computer' },
-  { id: 'web-developer', title: 'Full Stack Developer', subtitle: 'Frontend + Backend + DevOps', type: 'role', icon: 'monitor' },
-  { id: 'devops-engineer', title: 'DevOps Engineer', subtitle: 'CI/CD & Infrastructure', type: 'role', icon: 'rocket_launch' },
-  { id: 'aiml-engineer', title: 'AI/ML Engineer', subtitle: 'Machine Learning', type: 'role', icon: 'psychology' },
-  { id: 'data-scientist', title: 'Data Scientist', subtitle: 'Analytics & Predictive Modeling', type: 'role', icon: 'analytics' }
+  { id: 'frontend-developer', title: 'Frontend Developer', subtitle: 'UI/UX Implementation', type: 'role', icon: 'web' },
+  { id: 'web-developer', title: 'Web Developer', subtitle: 'UI/UX Implementation', type: 'role', icon: 'devices' },
+  { id: 'devops-engineer', title: 'DevOps Engineer', subtitle: 'CI/CD & Infrastructure', type: 'role', icon: 'engineering' },
+  { id: 'aiml-engineer', title: 'AI/ML Engineer', subtitle: 'Machine Learning', type: 'role', icon: 'neurology' },
+  { id: 'data-scientist', title: 'Data Scientist', subtitle: 'Analytics & Predictive Modeling', type: 'role', icon: 'query_stats' }
 ];
 
 function initSearch() {

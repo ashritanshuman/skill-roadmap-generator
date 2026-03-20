@@ -4,7 +4,7 @@
       "id": "frontend-developer",
       "title": "Frontend Developer",
       "subtitle": "UI/UX Implementation",
-      "icon": "computer",
+      "icon": "web",
       "stats": {
         "phases": 3,
         "duration": "6-9 Months to Job",
@@ -282,7 +282,7 @@
       "id": "web-developer",
       "title": "Web Developer",
       "subtitle": "UI/UX Implementation",
-      "icon": "monitor",
+      "icon": "devices",
       "stats": {
         "phases": 6,
         "duration": "12-18 Months to Job",
@@ -857,7 +857,7 @@
       "id": "aiml-engineer",
       "title": "AI/ML Engineer",
       "subtitle": "Machine Learning",
-      "icon": "psychology",
+      "icon": "code_blocks",
       "stats": {
         "phases": 7,
         "duration": "18-24 Months to Job",
@@ -1532,7 +1532,7 @@
       "id": "data-scientist",
       "title": "Data Scientist",
       "subtitle": "Analytics & Predictive Modeling",
-      "icon": "analytics",
+      "icon": "query_stats",
       "stats": {
         "phases": 7,
         "duration": "14-20 Months to Job",
@@ -2151,7 +2151,7 @@
       "id": "devops-engineer",
       "title": "DevOps Engineer",
       "subtitle": "CI/CD & Infrastructure",
-      "icon": "rocket_launch",
+      "icon": "engineering",
       "stats": {
         "phases": 7,
         "duration": "14-20 Months to Job",
@@ -2858,7 +2858,7 @@
       "id": "data-analyst",
       "title": "Data Analyst",
       "subtitle": "Data Analytics & Business Intelligence",
-      "icon": "pie-chart",
+      "icon": "bar_chart",
       "stats": {
         "phases": 7,
         "duration": "10-16 Months to Job",
@@ -3616,7 +3616,7 @@
       "id": "react",
       "title": "React",
       "subtitle": "Frontend Library",
-      "icon": "code",
+      "icon": "widgets",
       "stats": {
         "phases": 4,
         "duration": "3-4 Months",
@@ -3865,7 +3865,7 @@
       "id": "nodejs",
       "title": "Node.js",
       "subtitle": "Runtime Environment",
-      "icon": "terminal",
+      "icon": "dns",
       "stats": {
         "phases": 4,
         "duration": "3-4 Months",
@@ -4114,7 +4114,7 @@
       "id": "python",
       "title": "Python",
       "subtitle": "Programming Language",
-      "icon": "psychology",
+      "icon": "code_blocks",
       "stats": {
         "phases": 4,
         "duration": "3-4 Months",
@@ -4357,7 +4357,7 @@
       "id": "docker",
       "title": "Docker",
       "subtitle": "Containerization",
-      "icon": "inventory_2",
+      "icon": "deployed_code",
       "stats": {
         "phases": 3,
         "duration": "2-3 Months",
@@ -4537,7 +4537,7 @@
       "id": "kubernetes",
       "title": "Kubernetes",
       "subtitle": "Container Orchestration",
-      "icon": "view_in_ar",
+      "icon": "account_tree",
       "stats": {
         "phases": 4,
         "duration": "4-5 Months",
@@ -4786,7 +4786,7 @@
       "id": "aws",
       "title": "AWS",
       "subtitle": "Cloud Platform",
-      "icon": "cloud",
+      "icon": "cloud_sync",
       "stats": {
         "phases": 4,
         "duration": "4-5 Months",
@@ -5036,7 +5036,7 @@
       "id": "postgresql",
       "title": "PostgreSQL",
       "subtitle": "Database",
-      "icon": "database",
+      "icon": "table",
       "stats": {
         "phases": 3,
         "duration": "2-3 Months",
@@ -5224,7 +5224,7 @@
       "id": "typescript",
       "title": "TypeScript",
       "subtitle": "Typed JavaScript",
-      "icon": "data_object",
+      "icon": "integration_instructions",
       "stats": {
         "phases": 3,
         "duration": "2-3 Months",
