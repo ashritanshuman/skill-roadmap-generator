@@ -39,6 +39,7 @@ This web application provides:
 ### Core Features
 
 - **🗺️ Multiple Skill Roadmaps**: Comprehensive learning paths for 5 role-based technical career paths including Frontend Developer, Full Stack Developer, AI/ML Engineer, Data Scientist, and DevOps Engineer
+- **🔐 User Authentication**: Complete signup/login system with form validation and JSON-based data storage
 - **🎨 Interactive UI**: Clean, modern interface with smooth animations
 - **📂 Dynamic Content**: JSON-based data structure for easy updates
 - **🔎 Search & Filter**: Find skills quickly by name, category, or difficulty
@@ -132,6 +133,8 @@ skill-roadmap-generator/
 ├── roadmap.html              # Individual roadmap detail page
 ├── how-it-works.html         # How it Works page
 ├── contact.html              # Contact page
+├── signup.html               # User registration page
+├── login.html                # User login page
 ├── PRD.md                    # Product Requirements Document
 ├── README.md                 # Project documentation
 │
@@ -146,13 +149,15 @@ skill-roadmap-generator/
 │   └── responsive.css        # Media queries and responsive adjustments
 │
 ├── js/                       # JavaScript files
-│   ├── main.js               # Core functionality (theme toggle, navigation, search, etc.)
+│   ├── main.js               # Core functionality (navigation, search, etc.)
+│   ├── auth.js               # Authentication system (signup, login, session management)
 │   ├── explore.js            # Explore page logic
 │   └── roadmap.js            # Roadmap detail page logic
 │
 ├── public/                   # Public assets and data
 │   └── data/
-│       └── roadmaps-data.json # All roadmap data (JSON)
+│       ├── roadmaps-data.json # All roadmap data (JSON)
+│       └── users-data.json    # User data storage structure (JSON)
 │
 ├── assets/                   # Static assets
 │   ├── icons/                # Icon files
@@ -175,18 +180,21 @@ skill-roadmap-generator/
 
 ### For Users
 
-1. **Browse Skills**: Visit the landing page (`index.html`) to see featured skill and role roadmaps
-2. **Explore All**: Go to `explore.html` to browse all roadmaps with category filters
-3. **Select a Roadmap**: Click on any roadmap card to view its detailed learning path
-4. **View Details**: On `roadmap.html`, see phases, timeline, and learning objectives
-5. **Expand Topics**: Click on any phase to see detailed information, projects, and outcomes
-6. **Access Resources**: Follow the structured learning path to master the skill
+1. **Create Account**: Visit `signup.html` to register with your email and password
+2. **Sign In**: Visit `login.html` to access your account (or click "Get Started" on any page)
+3. **Browse Skills**: Visit the landing page (`index.html`) to see featured skill and role roadmaps
+4. **Explore All**: Go to `explore.html` to browse all roadmaps with category filters
+5. **Select a Roadmap**: Click on any roadmap card to view its detailed learning path
+6. **View Details**: On `roadmap.html`, see phases, timeline, and learning objectives
+7. **Expand Topics**: Click on any phase to see detailed information, projects, and outcomes
+8. **Access Resources**: Follow the structured learning path to master the skill
 
 ### For Developers
 
 1. **Adding New Roadmaps**: Edit `public/data/roadmaps-data.json` and add your roadmap following the existing structure
 2. **Customizing Styles**: Modify CSS files in the `css/` directory
 3. **Adding Features**: Extend JavaScript files in the `js/` directory
+4. **Authentication**: The auth system uses localStorage for JSON data storage. See `js/auth.js` for implementation details
 
 ### Available Roadmaps
 
@@ -481,8 +489,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Planned Features
 
-- [x] **Dark Mode**: Toggle between light and dark themes ✅ Implemented
-- [ ] **User Authentication**: Save progress and bookmarks
+- [x] **User Authentication**: Complete signup/login system with form validation ✅ Implemented
 - [ ] **Progress Tracker**: Visual representation of completed topics
 - [ ] **AI Recommendations**: Personalized roadmap suggestions
 - [ ] **Community Features**: Discussion forums and mentor connections
@@ -494,7 +501,16 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Version History
 
-- **v1.2.0** (Current) - Added Dark/Light Theme Toggle & UI Improvements
+- **v1.3.0** (Current) - Added User Authentication System
+  - Complete signup/login functionality with form validation
+  - Password hashing for security
+  - Real-time form validation with visual feedback
+  - Session management with "remember me" option
+  - User data stored in localStorage as JSON
+  - Navigation updates based on authentication state
+  - Removed theme toggle (dark theme only)
+  - Simplified button styling (solid blue, no animations)
+- **v1.2.0** - Added Dark/Light Theme Toggle & UI Improvements
   - Theme toggle button in navigation bar
   - Dark theme (default): Modern dark tech aesthetic
   - Light theme: Warm cream (#f4f3ee) background with brown/orange accents
@@ -555,4 +571,4 @@ Through this project, our team has gained:
 
 ---
 
-*Last Updated: March 10, 2026*
+*Last Updated: April 2, 2026*
