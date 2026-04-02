@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - PathGen</title>
+    <meta name="description" content="Create your PathGen account and start your learning journey">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--color-bg-primary);
+        }
+        
+        .auth-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-8) var(--spacing-4);
+        }
+        
+        .auth-card {
+            width: 100%;
+            max-width: 480px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-2xl);
+            padding: var(--spacing-8);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .auth-header {
+            text-align: center;
+            margin-bottom: var(--spacing-6);
+        }
+        
+        .auth-header .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            margin-bottom: var(--spacing-4);
+            text-decoration: none;
+        }
+        
+        .auth-header .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            border-radius: var(--border-radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .auth-header .logo-text {
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-text-primary);
+        }
+        
+        .auth-header h1 {
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-2);
+        }
+        
+        .auth-header p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-base);
+        }
+        
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-4);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-2);
+        }
+        
+        .form-label {
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+        
+        .form-input-wrapper {
+            position: relative;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-3) var(--spacing-4);
+            padding-left: var(--spacing-10);
+            background: var(--color-bg-secondary);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+            color: var(--color-text-primary);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-fast);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-primary-subtle);
+        }
+        
+        .form-input.error {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.05);
+        }
+        
+        .form-input.success {
+            border-color: #22c55e;
+            background: rgba(34, 197, 94, 0.05);
+        }
+        
+        .form-input-icon {
+            position: absolute;
+            left: var(--spacing-3);
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xl);
+        }
+        
+        .form-input:focus + .form-input-icon,
+        .form-input-wrapper:focus-within .form-input-icon {
+            color: var(--color-primary);
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: var(--spacing-3);
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-md);
+            color: var(--color-text-muted);
+            cursor: pointer;
+            padding: var(--spacing-1) var(--spacing-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 32px;
+            height: 32px;
+        }
+        
+        .password-toggle:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+            background: var(--color-primary-subtle);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .password-toggle:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+        
+        .password-toggle .material-symbols-outlined {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        
+        .password-toggle:hover .material-symbols-outlined {
+            transform: scale(1.1);
+        }
+        
+        .field-error {
+            display: none;
+            align-items: center;
+            gap: var(--spacing-1);
+            color: #ef4444;
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-1);
+        }
+        
+        .field-error.visible {
+            display: flex;
+        }
+        
+        .field-error .material-symbols-outlined {
+            font-size: var(--font-size-base);
+        }
+        
+        .field-hint {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xs);
+            margin-top: var(--spacing-1);
+        }
+        
+        /* Password Strength Indicator */
+        .password-strength {
+            display: none;
+            margin-top: var(--spacing-2);
+        }
+        
+        .strength-bar-container {
+            height: 4px;
+            background: var(--color-bg-tertiary);
+            border-radius: var(--border-radius-full);
+            overflow: hidden;
+            margin-bottom: var(--spacing-1);
+        }
+        
+        .strength-bar {
+            height: 100%;
+            width: 0;
+            border-radius: var(--border-radius-full);
+        }
+        
+        .strength-bar.weak {
+            background: #ef4444;
+            width: 25%;
+        }
+        
+        .strength-bar.fair {
+            background: #f97316;
+            width: 50%;
+        }
+        
+        .strength-bar.medium {
+            background: #eab308;
+            width: 75%;
+        }
+        
+        .strength-bar.strong {
+            background: #22c55e;
+            width: 100%;
+        }
+        
+        .strength-text {
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+        }
+        
+        .strength-text.weak {
+            color: #ef4444;
+        }
+        
+        .strength-text.fair {
+            color: #f97316;
+        }
+        
+        .strength-text.medium {
+            color: #eab308;
+        }
+        
+        .strength-text.strong {
+            color: #22c55e;
+        }
+        
+        .role-selection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-3);
+        }
+        
+        .role-option {
+            position: relative;
+        }
+        
+        .role-option input {
+            position: absolute;
+            opacity: 0;
+        }
+        
+        .role-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-2);
+            padding: var(--spacing-4);
+            background: var(--color-bg-secondary);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+            cursor: pointer;
+        }
+        
+        .role-label:hover {
+            border-color: var(--color-primary);
+        }
+        
+        .role-option input:checked + .role-label {
+            border-color: var(--color-primary);
+            background: var(--color-primary-subtle);
+        }
+        
+        .role-label .material-symbols-outlined {
+            font-size: var(--font-size-3xl);
+            color: var(--color-text-secondary);
+        }
+        
+        .role-label:hover .material-symbols-outlined {
+            color: var(--color-primary);
+        }
+        
+        .role-option input:checked + .role-label .material-symbols-outlined {
+            color: var(--color-primary);
+        }
+        
+        .role-label span:last-child {
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+        
+        .role-label:hover span:last-child {
+            color: var(--color-text-primary);
+        }
+        
+        .role-option input:checked + .role-label span:last-child {
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+        
+        .auth-message {
+            display: none;
+            padding: var(--spacing-3) var(--spacing-4);
+            border-radius: var(--border-radius-lg);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-4);
+        }
+        
+        .auth-message.visible {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-2);
+        }
+        
+        .auth-message.error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+        
+        .auth-message.success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid #22c55e;
+            color: #22c55e;
+        }
+        
+        .btn-auth {
+            width: 100%;
+            padding: var(--spacing-4) var(--spacing-6);
+            background: #3b82f6;
+            border: none;
+            border-radius: var(--border-radius-lg);
+            color: white;
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2);
+        }
+        
+        .btn-auth:hover {
+            background: #2563eb;
+        }
+        
+        .btn-auth:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            background: #6b7280;
+        }
+        
+        .auth-footer {
+            text-align: center;
+            margin-top: var(--spacing-6);
+            padding-top: var(--spacing-6);
+            border-top: 1px solid var(--glass-border);
+        }
+        
+        .auth-footer p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+        }
+        
+        .auth-footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+        }
+        
+        .auth-footer a:hover {
+            color: var(--color-primary-light);
+        }
+        
+        .terms-text {
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xs);
+            margin-top: var(--spacing-4);
+        }
+        
+        .terms-text a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        
+        .terms-text a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .auth-card {
+                padding: var(--spacing-6);
+            }
+            
+            .role-selection {
+                grid-template-columns: 1fr;
+            }
+            
+            .auth-header h1 {
+                font-size: var(--font-size-2xl);
+            }
+        }
+    </style>
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="material-symbols-outlined">route</span>
+                    </div>
+                    <span class="logo-text">PathGen</span>
+                </a>
+                <h1>Create Account</h1>
+                <p>Start your learning journey today</p>
+            </div>
+            
+            <div id="auth-message" class="auth-message"></div>
+            
+            <form id="signup-form" class="auth-form" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">person</span>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="Enter your full name"
+                            data-validate="name"
+                            required
+                            autocomplete="name"
+                        >
+                    </div>
+                    <div class="field-error" id="name-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">email</span>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="Enter your email"
+                            data-validate="email"
+                            required
+                            autocomplete="email"
+                        >
+                    </div>
+                    <div class="field-error" id="email-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">lock</span>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Create a password"
+                            data-validate="password"
+                            required
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="password-toggle" onclick="togglePassword('password')">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                    </div>
+                    <div class="field-error" id="password-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                    <!-- Password Strength Indicator -->
+                    <div class="password-strength" id="password-strength">
+                        <div class="strength-bar-container">
+                            <div class="strength-bar"></div>
+                        </div>
+                        <span class="strength-text"></span>
+                    </div>
+                    <p class="field-hint">Must be 8+ characters with uppercase, lowercase, number, and special character</p>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="confirmPassword">Confirm Password</label>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">lock_reset</span>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            class="form-input" 
+                            placeholder="Confirm your password"
+                            data-validate="confirmPassword"
+                            required
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="password-toggle" onclick="togglePassword('confirmPassword')">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                    </div>
+                    <div class="field-error" id="confirmPassword-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">I am a</label>
+                    <div class="role-selection">
+                        <div class="role-option">
+                            <input type="radio" id="role-student" name="role" value="student" checked>
+                            <label for="role-student" class="role-label">
+                                <span class="material-symbols-outlined">school</span>
+                                <span>Student</span>
+                            </label>
+                        </div>
+                        <div class="role-option">
+                            <input type="radio" id="role-professional" name="role" value="professional">
+                            <label for="role-professional" class="role-label">
+                                <span class="material-symbols-outlined">work</span>
+                                <span>Professional</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-auth" id="signup-btn">
+                    <span class="material-symbols-outlined">person_add</span>
+                    Create Account
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+            
+            <p class="terms-text">
+                By creating an account, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+    <script>
+        // Password visibility toggle
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const button = input.parentElement.querySelector('.password-toggle .material-symbols-outlined');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                button.textContent = 'visibility_off';
+            } else {
+                input.type = 'password';
+                button.textContent = 'visibility';
+            }
+        }
+        
+        // Show message helper
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('auth-message');
+            messageDiv.textContent = message;
+            messageDiv.className = `auth-message visible ${type}`;
+            
+            // Auto-hide after 5 seconds for success messages
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageDiv.classList.remove('visible');
+                }, 5000);
+            }
+        }
+        
+        // Initialize password strength indicator
+        function initPasswordStrength() {
+            const passwordInput = document.getElementById('password');
+            const strengthContainer = document.getElementById('password-strength');
+            const strengthBar = strengthContainer.querySelector('.strength-bar');
+            const strengthText = strengthContainer.querySelector('.strength-text');
+            
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                
+                if (password.length === 0) {
+                    strengthContainer.style.display = 'none';
+                    return;
+                }
+                
+                strengthContainer.style.display = 'block';
+                
+                // Calculate strength
+                const strength = window.Auth ? window.Auth.calculatePasswordStrength(password) : calculateStrength(password);
+                
+                // Update bar
+                strengthBar.className = 'strength-bar ' + strength.level;
+                
+                // Update text
+                const levelText = {
+                    weak: 'Weak - Add more characters',
+                    fair: 'Fair - Add uppercase & numbers',
+                    medium: 'Medium - Add special characters',
+                    strong: 'Strong password!'
+                };
+                strengthText.textContent = levelText[strength.level];
+                strengthText.className = 'strength-text ' + strength.level;
+            });
+        }
+        
+        // Fallback strength calculator if Auth isn't loaded
+        function calculateStrength(password) {
+            let score = 0;
+            const checks = {
+                length: password.length >= 8,
+                lowercase: /[a-z]/.test(password),
+                uppercase: /[A-Z]/.test(password),
+                numbers: /\d/.test(password),
+                special: /[@$!%*?&]/.test(password),
+                minLength: password.length >= 12
+            };
+            
+            if (checks.length) score += 20;
+            if (checks.lowercase) score += 15;
+            if (checks.uppercase) score += 15;
+            if (checks.numbers) score += 20;
+            if (checks.special) score += 20;
+            if (checks.minLength) score += 10;
+            
+            let level = 'weak';
+            if (score >= 80) level = 'strong';
+            else if (score >= 50) level = 'medium';
+            else if (score >= 30) level = 'fair';
+            
+            return { score, level, checks };
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize password strength
+            initPasswordStrength();
+            
+            // Focus first input
+            document.getElementById('name').focus();
+        });
+    </script>
+</body>
+</html>
