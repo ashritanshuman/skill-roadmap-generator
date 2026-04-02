@@ -345,3 +345,86 @@
 .mobile-menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* ============================================
+   AUTH NAVIGATION BUTTONS
+   ============================================ */
+.auth-nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.auth-nav-buttons .btn {
+    white-space: nowrap;
+}
+
+.auth-nav-buttons .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+}
+
+.auth-nav-buttons .btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.user-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.user-greeting {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.user-nav-menu .btn-secondary {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+}
+
+/* Mobile adjustments for auth nav */
+@media (max-width: 768px) {
+    .auth-nav-buttons {
+        display: none;
+    }
+    
+    .user-nav-menu {
+        display: none;
+    }
+    
+    .nav-actions {
+        gap: var(--space-2);
+    }
+}
+
+/* Secondary button style (if not already defined) */
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    background: rgba(99, 102, 241, 0.05);
+    transform: translateY(-1px);
+}
