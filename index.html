@@ -34,11 +34,13 @@
             </div>
             
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <span class="material-symbols-outlined theme-icon-light">light_mode</span>
-                    <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
-                </button>
-                <a href="index.html" class="btn btn-primary">Get Started</a>
+                <div class="auth-nav-buttons" id="auth-nav-buttons">
+                    <a href="signup.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="user-nav-menu" id="user-nav-menu" style="display: none;">
+                    <span class="user-greeting" id="user-greeting">Hello, User</span>
+                    <button class="btn btn-secondary" onclick="Auth.logout()">Sign Out</button>
+                </div>
                 <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
                     <span></span>
                     <span></span>
@@ -366,6 +368,18 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="js/auth.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Update navigation based on auth state
+        document.addEventListener('DOMContentLoaded', function() {
+            // Theme is now handled by auth.js initTheme()
+            
+            // Update auth UI
+            if (window.Auth && typeof window.Auth.updateAuthUI === 'function') {
+                window.Auth.updateAuthUI();
+            }
+        });
+    </script>
 </body>
 </html>
