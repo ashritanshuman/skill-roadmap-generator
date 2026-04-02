@@ -545,20 +545,6 @@ Through this project, our team has gained:
 
 ---
 
-## 📚 Additional Resources
-
-### Documentation
-- [Project Synopsis](docs/synopsis.pdf)
-- [Design Document](docs/design-document.pdf)
-- [Test Report](docs/test-report.pdf)
-- [Presentation Slides](docs/presentation.pptx)
-
-### External Links
-- [Course Syllabus](link-to-syllabus)
-- [Web Technology Resources](link-to-resources)
-- [Department Website](https://itm.edu)
-
----
 
 <div align="center">
 
