@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - PathGen</title>
+    <meta name="description" content="Sign in to your PathGen account">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--color-bg-primary);
+        }
+        
+        .auth-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-8) var(--spacing-4);
+        }
+        
+        .auth-card {
+            width: 100%;
+            max-width: 440px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-2xl);
+            padding: var(--spacing-8);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .auth-header {
+            text-align: center;
+            margin-bottom: var(--spacing-6);
+        }
+        
+        .auth-header .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            margin-bottom: var(--spacing-4);
+            text-decoration: none;
+        }
+        
+        .auth-header .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            border-radius: var(--border-radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .auth-header .logo-text {
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-text-primary);
+        }
+        
+        .auth-header h1 {
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-2);
+        }
+        
+        .auth-header p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-base);
+        }
+        
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-4);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-2);
+        }
+        
+        .form-label {
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+        
+        .form-label-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .forgot-password {
+            font-size: var(--font-size-sm);
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        .forgot-password:hover {
+            color: var(--color-primary-light);
+        }
+        
+        .form-input-wrapper {
+            position: relative;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-3) var(--spacing-4);
+            padding-left: var(--spacing-10);
+            background: var(--color-bg-secondary);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+            color: var(--color-text-primary);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-fast);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-primary-subtle);
+        }
+        
+        .form-input.error {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.05);
+        }
+        
+        .form-input.success {
+            border-color: #22c55e;
+            background: rgba(34, 197, 94, 0.05);
+        }
+        
+        .form-input-icon {
+            position: absolute;
+            left: var(--spacing-3);
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xl);
+        }
+        
+        .form-input:focus + .form-input-icon,
+        .form-input-wrapper:focus-within .form-input-icon {
+            color: var(--color-primary);
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: var(--spacing-3);
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--color-text-muted);
+            cursor: pointer;
+            padding: var(--spacing-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color var(--transition-fast);
+        }
+        
+        .password-toggle:hover {
+            color: var(--color-text-secondary);
+        }
+        
+        .field-error {
+            display: none;
+            align-items: center;
+            gap: var(--spacing-1);
+            color: #ef4444;
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-1);
+        }
+        
+        .field-error.visible {
+            display: flex;
+        }
+        
+        .field-error .material-symbols-outlined {
+            font-size: var(--font-size-base);
+        }
+        
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-2);
+        }
+        
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            cursor: pointer;
+        }
+        
+        .checkbox-wrapper input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-primary);
+            cursor: pointer;
+        }
+        
+        .checkbox-wrapper span {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+        
+        .auth-message {
+            display: none;
+            padding: var(--spacing-3) var(--spacing-4);
+            border-radius: var(--border-radius-lg);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-4);
+        }
+        
+        .auth-message.visible {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-2);
+        }
+        
+        .auth-message.error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+        
+        .auth-message.success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid #22c55e;
+            color: #22c55e;
+        }
+        
+        .btn-auth {
+            width: 100%;
+            padding: var(--spacing-4) var(--spacing-6);
+            background: #3b82f6;
+            border: none;
+            border-radius: var(--border-radius-lg);
+            color: white;
+            font-family: var(--font-family-display);
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2);
+            margin-top: var(--spacing-2);
+        }
+        
+        .btn-auth:hover {
+            background: #2563eb;
+        }
+        
+        .btn-auth:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            background: #6b7280;
+        }
+        
+        .auth-footer {
+            text-align: center;
+            margin-top: var(--spacing-6);
+            padding-top: var(--spacing-6);
+            border-top: 1px solid var(--glass-border);
+        }
+        
+        .auth-footer p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+        }
+        
+        .auth-footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+        }
+        
+        .auth-footer a:hover {
+            color: var(--color-primary-light);
+        }
+        
+        @media (max-width: 480px) {
+            .auth-card {
+                padding: var(--spacing-6);
+            }
+            
+            .auth-header h1 {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .form-options {
+                flex-direction: column;
+                gap: var(--spacing-3);
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="material-symbols-outlined">route</span>
+                    </div>
+                    <span class="logo-text">PathGen</span>
+                </a>
+                <h1>Welcome Back</h1>
+                <p>Sign in to continue your journey</p>
+            </div>
+            
+            <div id="auth-message" class="auth-message"></div>
+            
+            <form id="login-form" class="auth-form" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">email</span>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="Enter your email"
+                            data-validate="email"
+                            required
+                            autocomplete="email"
+                        >
+                    </div>
+                    <div class="field-error" id="email-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-label-row">
+                        <label class="form-label" for="password">Password</label>
+                        <a href="#" class="forgot-password" onclick="showForgotPasswordMessage(); return false;">Forgot password?</a>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <span class="material-symbols-outlined form-input-icon">lock</span>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            data-validate="password"
+                            required
+                            autocomplete="current-password"
+                        >
+                        <button type="button" class="password-toggle" onclick="togglePassword('password')">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                    </div>
+                    <div class="field-error" id="password-error">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="error-text"></span>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="remember-me" name="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-auth" id="login-btn">
+                    <span class="material-symbols-outlined">login</span>
+                    Sign In
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="signup.html">Create one</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+    <script>
+        // Password visibility toggle
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const button = input.parentElement.querySelector('.password-toggle .material-symbols-outlined');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                button.textContent = 'visibility_off';
+            } else {
+                input.type = 'password';
+                button.textContent = 'visibility';
+            }
+        }
+        
+        // Show forgot password message
+        function showForgotPasswordMessage() {
+            showMessage('Password reset feature coming soon! Contact support for assistance.', 'error');
+        }
+        
+        // Show message helper
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('auth-message');
+            messageDiv.textContent = message;
+            messageDiv.className = `auth-message visible ${type}`;
+            
+            // Auto-hide after 5 seconds for success messages
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageDiv.classList.remove('visible');
+                }, 5000);
+            }
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if already logged in
+            if (window.Auth && typeof window.Auth.isAuthenticated === 'function') {
+                if (window.Auth.isAuthenticated()) {
+                    window.location.href = 'index.html';
+                    return;
+                }
+            }
+            
+            // Focus first input
+            document.getElementById('email').focus();
+        });
+    </script>
+</body>
+</html>
