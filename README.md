@@ -441,7 +441,6 @@ This project is developed by:
 
 - [Feather Icons](https://feathericons.com/) - Beautiful open-source icons
 - [Google Fonts](https://fonts.google.com/) - Typography
-- [Unsplash](https://unsplash.com/) - Free images
 
 ### Special Thanks
 
@@ -542,21 +541,6 @@ Through this project, our team has gained:
 - ✅ Collaborative development using Git
 - ✅ Problem-solving and debugging skills
 - ✅ Project management and documentation
-
----
-
-## 📚 Additional Resources
-
-### Documentation
-- [Project Synopsis](docs/synopsis.pdf)
-- [Design Document](docs/design-document.pdf)
-- [Test Report](docs/test-report.pdf)
-- [Presentation Slides](docs/presentation.pptx)
-
-### External Links
-- [Course Syllabus](link-to-syllabus)
-- [Web Technology Resources](link-to-resources)
-- [Department Website](https://itm.edu)
 
 ---
 
