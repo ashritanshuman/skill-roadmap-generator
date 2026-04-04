@@ -225,7 +225,8 @@
 
 .footer-tagline {
     font-size: var(--font-size-xs);
-    color: var(--color-silver-muted);
+    color: #ffffff;
+    font-weight: var(--font-weight-semibold);
     line-height: 1.6;
     margin-bottom: var(--spacing-8);
     text-transform: uppercase;
@@ -238,7 +239,8 @@
 }
 
 .social-icon {
-    color: var(--color-silver-muted);
+    color: #ffffff;
+    font-weight: var(--font-weight-medium);
     transition: color var(--transition-fast);
 }
 
@@ -249,7 +251,7 @@
 .footer-column h4 {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-bottom: var(--spacing-6);
@@ -263,15 +265,15 @@
 
 .footer-link {
     font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-silver-muted);
+    font-weight: var(--font-weight-semibold);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-    color: var(--color-text-primary);
+    color: var(--color-primary);
 }
 
 .footer-bottom {
@@ -281,13 +283,15 @@
     padding-top: var(--spacing-10);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     font-size: var(--font-size-xs);
-    color: var(--color-silver-muted);
+    font-weight: var(--font-weight-semibold);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 
 .footer-bottom a {
-    color: var(--color-silver-muted);
+    color: #ffffff;
+    font-weight: var(--font-weight-semibold);
     transition: color var(--transition-fast);
 }
 

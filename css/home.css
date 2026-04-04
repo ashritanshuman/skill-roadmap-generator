@@ -51,7 +51,7 @@
 
 .hero-subtitle {
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto var(--spacing-12);
@@ -485,7 +485,7 @@ mark {
 
 .cta-subtitle {
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-10);
 }

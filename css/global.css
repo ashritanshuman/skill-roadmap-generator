@@ -86,7 +86,7 @@ h4 {
 
 p {
     color: var(--color-text-secondary);
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-regular);
 }
 
 /* Selection */

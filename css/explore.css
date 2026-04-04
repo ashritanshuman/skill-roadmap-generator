@@ -110,7 +110,7 @@
 .roadmaps-subtitle {
     font-size: var(--font-size-xl);
     color: var(--color-text-secondary);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
 }
 
 /* ============================================
