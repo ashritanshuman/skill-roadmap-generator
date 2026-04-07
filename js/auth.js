@@ -735,19 +735,22 @@ function updateAuthUI() {
   
   // Update navbar auth links
   const authNavButtons = document.getElementById('auth-nav-buttons');
-  const userNavMenu = document.getElementById('user-nav-menu');
   const userGreeting = document.getElementById('user-greeting');
+  const footerSignout = document.getElementById('footer-signout');
   
-  if (authNavButtons && userNavMenu) {
+  if (authNavButtons && userGreeting) {
     if (currentUser) {
       authNavButtons.style.display = 'none';
-      userNavMenu.style.display = 'flex';
-      if (userGreeting) {
-        userGreeting.textContent = `Hello, ${currentUser.name.split(' ')[0]}`;
-      }
+      userGreeting.style.display = 'inline';
+      // Show greeting with first name only
+      userGreeting.textContent = `Hello, ${currentUser.name.split(' ')[0]}`;
+      // Show footer sign out button
+      if (footerSignout) footerSignout.style.display = 'inline-flex';
     } else {
       authNavButtons.style.display = 'flex';
-      userNavMenu.style.display = 'none';
+      userGreeting.style.display = 'none';
+      // Hide footer sign out button
+      if (footerSignout) footerSignout.style.display = 'none';
     }
   }
   
