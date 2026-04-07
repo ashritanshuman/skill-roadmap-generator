@@ -16,6 +16,13 @@
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+    pointer-events: auto;
+    z-index: 1001;
+    flex-shrink: 0;
+}
+
+.theme-toggle * {
+    pointer-events: none;
 }
 
 .theme-toggle:hover {
@@ -29,28 +36,6 @@
     color: var(--color-text-secondary);
     transition: all var(--transition-base);
     position: absolute;
-}
-
-/* Light icon - show in dark mode, hide in light mode */
-.theme-icon-light {
-    opacity: 1;
-    transform: rotate(0deg);
-}
-
-[data-theme="light"] .theme-icon-light {
-    opacity: 0;
-    transform: rotate(90deg);
-}
-
-/* Dark icon - hide in dark mode, show in light mode */
-.theme-icon-dark {
-    opacity: 0;
-    transform: rotate(-90deg);
-}
-
-[data-theme="light"] .theme-icon-dark {
-    opacity: 1;
-    transform: rotate(0deg);
 }
 
 /* ============================================
@@ -80,11 +65,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-/* Light mode navbar adjustment */
-[data-theme="light"] .navbar .container {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .nav-brand {
@@ -139,6 +119,8 @@
     align-items: center;
     gap: var(--spacing-6);
     flex-shrink: 0;
+    position: relative;
+    z-index: 1001;
 }
 
 .nav-actions-text {
@@ -375,21 +357,48 @@
     background: rgba(99, 102, 241, 0.05);
 }
 
-.user-nav-menu {
+.user-greeting {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-semibold);
+    margin-right: var(--spacing-4);
+}
+
+/* Footer Sign Out Button */
+.footer-bottom {
     display: flex;
     align-items: center;
-    gap: var(--space-3);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
 }
 
-.user-greeting {
-    font-size: var(--text-sm);
-    color: var(--text-secondary);
-    font-weight: 500;
+.footer-signout {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-6);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-radius: var(--border-radius-full);
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
-.user-nav-menu .btn-secondary {
-    padding: var(--space-2) var(--space-4);
-    font-size: var(--text-sm);
+.footer-signout:hover {
+    background: var(--color-primary-dark);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.footer-signout .material-symbols-outlined {
+    font-size: 18px;
 }
 
 /* Mobile adjustments for auth nav */
