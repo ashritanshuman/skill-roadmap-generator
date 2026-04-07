@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,10 +37,7 @@
                 <div class="auth-nav-buttons" id="auth-nav-buttons">
                     <a href="signup.html" class="btn btn-primary">Get Started</a>
                 </div>
-                <div class="user-nav-menu" id="user-nav-menu" style="display: none;">
-                    <span class="user-greeting" id="user-greeting">Hello, User</span>
-                    <button class="btn btn-secondary" onclick="Auth.logout()">Sign Out</button>
-                </div>
+                <span class="user-greeting" id="user-greeting" style="display: none;">User</span>
                 <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
                     <span></span>
                     <span></span>
@@ -244,6 +241,9 @@
             
             <div class="footer-bottom">
                 <span>© 2026 PathGen Intelligence. All systems operational.</span>
+                <button class="btn btn-primary footer-signout" id="footer-signout" onclick="Auth.logout()" style="display: none;">
+                    <span class="material-symbols-outlined">logout</span> Sign Out
+                </button>
             </div>
         </div>
     </footer>
@@ -255,16 +255,7 @@
         // Update navigation based on auth state
         document.addEventListener('DOMContentLoaded', function() {
             if (window.Auth) {
-                const currentUser = window.Auth.getCurrentUser();
-                const authNavButtons = document.getElementById('auth-nav-buttons');
-                const userNavMenu = document.getElementById('user-nav-menu');
-                const userGreeting = document.getElementById('user-greeting');
-                
-                if (currentUser && authNavButtons && userNavMenu) {
-                    authNavButtons.style.display = 'none';
-                    userNavMenu.style.display = 'flex';
-                    userGreeting.textContent = `Hello, ${currentUser.name.split(' ')[0]}`;
-                }
+                window.Auth.updateAuthUI();
             }
         });
     </script>
