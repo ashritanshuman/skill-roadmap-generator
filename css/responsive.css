@@ -1,6 +1,8 @@
-/* Responsive Styles - Glassmorphism Theme */
+/* Responsive Styles - Theme-Aware Glassmorphism */
 
-/* Tablet */
+/* ============================================
+   TABLET (1024px)
+   ============================================ */
 @media (max-width: 1024px) {
     .container {
         padding: 0 var(--spacing-5);
@@ -58,7 +60,9 @@
     }
 }
 
-/* Tablet - Show mobile menu on smaller tablets */
+/* ============================================
+   TABLET - Show mobile menu (900px)
+   ============================================ */
 @media (max-width: 900px) {
     .nav-menu {
         display: none;
@@ -66,14 +70,14 @@
         top: calc(100% + var(--spacing-3));
         left: var(--spacing-4);
         right: var(--spacing-4);
-        background: var(--color-bg-elevated);
+        background: var(--glass-bg-strong);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         padding: var(--spacing-4);
         border-radius: var(--border-radius-xl);
         border: 1px solid var(--glass-border);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        box-shadow: var(--shadow-xl);
         z-index: 999;
         min-width: 200px;
     }
@@ -103,7 +107,7 @@
     }
     
     .nav-menu .nav-link:hover {
-        background: var(--glass-bg);
+        background: var(--glass-bg-hover);
         color: var(--color-primary);
     }
     
@@ -115,9 +119,21 @@
     .nav-actions {
         gap: var(--spacing-3);
     }
+    
+    /* Adjust theme toggle for mobile */
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .theme-toggle .material-symbols-outlined {
+        font-size: 18px;
+    }
 }
 
-/* Mobile */
+/* ============================================
+   MOBILE (768px)
+   ============================================ */
 @media (max-width: 768px) {
     .navbar {
         padding: var(--spacing-3);
@@ -223,9 +239,27 @@
         gap: var(--spacing-4);
         text-align: center;
     }
+    
+    /* Search results on mobile */
+    .search-results {
+        max-height: 300px;
+        margin-top: var(--spacing-2);
+    }
+    
+    .search-result-item {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+    
+    .search-result-item .result-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
 }
 
-/* Small Mobile */
+/* ============================================
+   SMALL MOBILE (480px)
+   ============================================ */
 @media (max-width: 480px) {
     .hero {
         padding: calc(60px + var(--spacing-6)) var(--spacing-4) var(--spacing-6);
@@ -279,9 +313,45 @@
         margin-left: 4px;
         min-height: 28px;
     }
+    
+    /* Roadmap items on small screens */
+    .roadmap-item {
+        padding: var(--spacing-4);
+    }
+    
+    .roadmap-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    /* Footer adjustments */
+    .footer-column h4 {
+        font-size: var(--font-size-xs);
+    }
+    
+    .footer-link {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Modal adjustments */
+    .modal-content {
+        padding: var(--spacing-8);
+        margin: var(--spacing-4);
+    }
+    
+    .modal-icon {
+        font-size: 36px;
+    }
+    
+    .modal-title {
+        font-size: var(--font-size-lg);
+    }
 }
 
-/* Extra Small Mobile */
+/* ============================================
+   EXTRA SMALL MOBILE (360px)
+   ============================================ */
 @media (max-width: 360px) {
     .search-wrapper {
         padding: 0 10px;
@@ -311,5 +381,62 @@
         font-size: 11px;
         min-height: 26px;
     }
+    
+    /* Nav brand adjustments */
+    .nav-brand {
+        font-size: var(--font-size-base);
+    }
+    
+    .nav-brand-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+    }
+    
+    /* Theme toggle extra small */
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .theme-toggle .material-symbols-outlined {
+        font-size: 16px;
+    }
 }
 
+/* ============================================
+   HIGH CONTRAST MODE (Accessibility)
+   ============================================ */
+@media (prefers-contrast: high) {
+    .nav-menu {
+        border-width: 2px;
+    }
+    
+    .roadmap-item,
+    .roadmap-card,
+    .phase-card,
+    .stat-badge {
+        border-width: 2px;
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION (Accessibility)
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .nav-menu.active {
+        animation: none;
+    }
+    
+    .search-container,
+    .roadmap-item,
+    .roadmap-card,
+    .stat-badge,
+    .phase-card {
+        transition: none;
+    }
+}

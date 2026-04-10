@@ -1,4 +1,4 @@
-/* Home Page Styles - Glassmorphism Theme */
+/* Home Page Styles - Theme-Aware Glassmorphism */
 
 /* ============================================
    HERO SECTION
@@ -43,7 +43,7 @@
 .hero-title .line-2 {
     display: block;
     font-style: italic;
-    background: linear-gradient(to right, var(--color-text-primary), var(--color-primary));
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -79,7 +79,7 @@
     border-radius: 24px;
     padding: 8px 16px;
     min-height: 44px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-md);
     transition: all 0.2s ease;
     width: 100%;
 }
@@ -87,13 +87,13 @@
 .search-container:hover {
     background: var(--glass-bg-hover);
     border-color: var(--glass-border-hover);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-lg);
 }
 
 .search-container:focus-within {
-    background: var(--glass-bg-hover);
+    background: var(--glass-bg-strong);
     border-color: var(--color-primary);
-    box-shadow: 0 2px 12px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 12px var(--color-primary-glow);
 }
 
 .search-icon {
@@ -105,6 +105,10 @@
     flex-shrink: 0;
 }
 
+.search-container:focus-within .search-icon {
+    color: var(--color-primary);
+}
+
 .search-input {
     flex: 1;
     border: none;
@@ -113,7 +117,7 @@
     font-weight: var(--font-weight-normal);
     background: transparent;
     color: var(--color-text-primary);
-    min-width: 0; /* Allows flex item to shrink below default min-width */
+    min-width: 0;
 }
 
 .search-input:focus {
@@ -121,7 +125,7 @@
 }
 
 .search-input::placeholder {
-    color: var(--color-text-muted);
+    color: var(--color-text-placeholder);
     opacity: 0.7;
 }
 
@@ -145,7 +149,7 @@
     left: 0;
     right: 0;
     margin-top: var(--spacing-3);
-    background: var(--glass-bg);
+    background: var(--glass-bg-strong);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
@@ -153,7 +157,7 @@
     max-height: 400px;
     overflow-y: auto;
     z-index: 100;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-xl);
 }
 
 .search-result-item {
@@ -170,20 +174,31 @@
     border-bottom: none;
 }
 
-.search-result-item:hover {
+.search-result-item:hover,
+.search-result-item.active {
     background: var(--glass-bg-hover);
+}
+
+.search-result-item.active {
+    border-left: 3px solid var(--color-primary);
 }
 
 .search-result-item .result-icon {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-card);
+    border: 1px solid var(--glass-border);
     border-radius: var(--border-radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
+    transition: all var(--transition-fast);
+}
+
+.search-result-item:hover .result-icon {
+    border-color: var(--glass-border-hover);
+    background: var(--color-primary-subtle);
 }
 
 .search-result-item .result-info h4 {
@@ -207,11 +222,6 @@
     border-radius: var(--border-radius-sm);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.search-result-item.active {
-    background: var(--glass-bg-hover);
-    border-left: 3px solid var(--color-primary);
 }
 
 .search-no-results {
@@ -249,7 +259,7 @@ mark {
 .trending-label {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -263,17 +273,20 @@ mark {
 .trending-tag {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    transition: color var(--transition-fast);
+    transition: all var(--transition-fast);
     cursor: pointer;
     background: none;
     border: none;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius-sm);
 }
 
 .trending-tag:hover {
     color: var(--color-primary);
+    background: var(--color-primary-subtle);
 }
 
 /* ============================================
@@ -285,9 +298,9 @@ mark {
 }
 
 .roadmaps-category-section.alt-bg {
-    background: rgba(255, 255, 255, 0.01);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .section-header {
@@ -307,7 +320,7 @@ mark {
 .section-subtitle {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
 }
 
 .view-all-link {
@@ -319,12 +332,23 @@ mark {
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    border-bottom: 1px solid var(--color-primary-glow);
     padding-bottom: var(--spacing-1);
+    transition: all var(--transition-fast);
 }
 
 .view-all-link:hover {
     color: var(--color-primary-light);
+    border-color: var(--color-primary);
+}
+
+.view-all-link .material-symbols-outlined {
+    font-size: 16px;
+    transition: transform var(--transition-fast);
+}
+
+.view-all-link:hover .material-symbols-outlined {
+    transform: translateX(4px);
 }
 
 /* Roadmaps Grid - 4 columns */
@@ -353,14 +377,14 @@ mark {
     border-color: var(--glass-border-hover);
     background: var(--glass-bg-hover);
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-card);
 }
 
 .roadmap-icon {
     width: 48px;
     height: 48px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--color-bg-card);
+    border: 1px solid var(--glass-border);
     border-radius: var(--border-radius-lg);
     display: flex;
     align-items: center;
@@ -368,11 +392,13 @@ mark {
     font-size: 22px;
     flex-shrink: 0;
     transition: all var(--transition-base);
+    color: var(--color-primary);
 }
 
 .roadmap-item:hover .roadmap-icon {
-    border-color: rgba(59, 130, 246, 0.3);
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    border-color: var(--color-primary-glow);
+    background: var(--color-primary-subtle);
+    box-shadow: 0 0 20px var(--color-primary-glow);
 }
 
 .roadmap-info h4 {
@@ -386,7 +412,7 @@ mark {
 .roadmap-meta {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
     letter-spacing: 0.02em;
 }
 
@@ -395,9 +421,9 @@ mark {
    ============================================ */
 .features-section {
     padding: var(--spacing-32) 0;
-    background: rgba(255, 255, 255, 0.01);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .features-header {
@@ -415,7 +441,7 @@ mark {
 .features-header .subtitle {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-light);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.3em;
 }
@@ -433,8 +459,8 @@ mark {
 .feature-icon {
     width: 64px;
     height: 64px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--color-bg-card);
+    border: 1px solid var(--glass-border);
     border-radius: var(--border-radius-xl);
     display: flex;
     align-items: center;
@@ -446,8 +472,10 @@ mark {
 }
 
 .feature-item:hover .feature-icon {
-    border-color: rgba(59, 130, 246, 0.4);
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    border-color: var(--color-primary-glow);
+    background: var(--color-primary-subtle);
+    box-shadow: 0 0 20px var(--color-primary-glow);
+    transform: scale(1.05);
 }
 
 .feature-title {
@@ -462,7 +490,7 @@ mark {
 .feature-description {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
-    color: var(--color-silver-muted);
+    color: var(--color-text-muted);
     line-height: 1.6;
 }
 
@@ -497,7 +525,11 @@ mark {
 }
 
 .cta-buttons .btn-primary {
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+    box-shadow: var(--shadow-glow);
+}
+
+.cta-buttons .btn-primary:hover {
+    box-shadow: var(--shadow-glow-strong);
 }
 
 /* ============================================
@@ -532,7 +564,7 @@ mark {
     padding: var(--spacing-12);
     max-width: 400px;
     text-align: center;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-modal);
     transform: scale(0.9);
     animation: scaleIn 0.3s ease forwards;
 }
@@ -556,4 +588,9 @@ mark {
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-8);
     font-size: var(--font-size-base);
+}
+
+/* Light theme modal adjustments */
+[data-theme="light"] .modal-overlay {
+    background: rgba(0, 0, 0, 0.6);
 }
