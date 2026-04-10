@@ -40,6 +40,7 @@ This web application provides:
 
 - **🗺️ Multiple Skill Roadmaps**: Comprehensive learning paths for 5 role-based technical career paths including Frontend Developer, Full Stack Developer, AI/ML Engineer, Data Scientist, and DevOps Engineer
 - **🔐 User Authentication**: Complete signup/login system with form validation and JSON-based data storage
+- **🌓 Dark/Light Mode**: Full theme system with system preference detection and localStorage persistence
 - **🎨 Interactive UI**: Clean, modern interface with smooth animations
 - **📂 Dynamic Content**: JSON-based data structure for easy updates
 - **🔎 Search & Filter**: Find skills quickly by name, category, or difficulty
@@ -140,9 +141,9 @@ skill-roadmap-generator/
 │
 ├── css/                      # Stylesheets
 │   ├── reset.css             # CSS reset/normalize
-│   ├── variables.css         # CSS custom properties (colors, spacing, etc.)
+│   ├── variables.css         # CSS custom properties (colors, spacing, themes)
 │   ├── global.css            # Global styles and utilities
-│   ├── components.css        # Reusable UI components (buttons, cards, nav)
+│   ├── components.css        # Reusable UI components (buttons, cards, nav, theme toggle)
 │   ├── home.css              # Home page specific styles
 │   ├── explore.css           # Explore page styles
 │   ├── roadmap.css           # Roadmap detail page styles
@@ -151,6 +152,7 @@ skill-roadmap-generator/
 ├── js/                       # JavaScript files
 │   ├── main.js               # Core functionality (navigation, search, etc.)
 │   ├── auth.js               # Authentication system (signup, login, session management)
+│   ├── theme.js              # Theme system (dark/light mode toggle)
 │   ├── explore.js            # Explore page logic
 │   └── roadmap.js            # Roadmap detail page logic
 │
@@ -195,6 +197,14 @@ skill-roadmap-generator/
 2. **Customizing Styles**: Modify CSS files in the `css/` directory
 3. **Adding Features**: Extend JavaScript files in the `js/` directory
 4. **Authentication**: The auth system uses localStorage for JSON data storage. See `js/auth.js` for implementation details
+5. **Theme System**: The theme system is managed by `js/theme.js`. Access via `window.Theme` API:
+   ```javascript
+   window.Theme.toggle();        // Toggle between dark/light
+   window.Theme.set('light');    // Set specific theme
+   window.Theme.get();           // Get current theme
+   window.Theme.isDark();        // Check if dark mode
+   window.Theme.isLight();       // Check if light mode
+   ```
 
 ### Available Roadmaps
 
@@ -501,20 +511,23 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ### Version History
 
-- **v1.3.0** (Current) - Added User Authentication System
+- **v1.4.0** (Current) - Enhanced Theme System & UI Improvements
+  - Complete dark/light mode implementation
+  - System preference detection via `prefers-color-scheme`
+  - Theme preference persistence in localStorage
+  - Smooth 250ms transitions between themes
+  - Theme toggle button with sun/moon icons in all page navbars
+  - CSS custom properties for consistent theming across all components
+  - Accessibility support (reduced motion, high contrast)
+  - Glassmorphism effects adapted for both themes
+- **v1.3.0** - Added User Authentication System
   - Complete signup/login functionality with form validation
   - Password hashing for security
   - Real-time form validation with visual feedback
   - Session management with "remember me" option
   - User data stored in localStorage as JSON
   - Navigation updates based on authentication state
-  - Removed theme toggle (dark theme only)
-  - Simplified button styling (solid blue, no animations)
-- **v1.2.0** - Added Dark/Light Theme Toggle & UI Improvements
-  - Theme toggle button in navigation bar
-  - Dark theme (default): Modern dark tech aesthetic
-  - Light theme: Warm cream (#f4f3ee) background with brown/orange accents
-  - Theme preference saved to localStorage
+- **v1.2.0** - UI Improvements
   - Bold typography for all roadmap content
   - Improved mobile responsive hero text
 - **v1.1.0** - Added comprehensive DevOps Engineer roadmap with 7 phases
@@ -571,4 +584,4 @@ Through this project, our team has gained:
 
 ---
 
-*Last Updated: April 2, 2026*
+*Last Updated: April 10, 2026*
