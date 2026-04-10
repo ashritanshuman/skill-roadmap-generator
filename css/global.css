@@ -1,8 +1,31 @@
-/* Global Styles - Dark Tech Theme with Glassmorphism */
+/* Global Styles - Theme-Aware with Glassmorphism */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-/* Material Symbols Outlined */
+/* ============================================
+   THEME TRANSITIONS
+   ============================================ */
+*,
+*::before,
+*::after {
+    transition: var(--transition-theme);
+    transition-property: background-color, color, border-color, box-shadow, fill, stroke;
+}
+
+/* Disable transitions for motion-sensitive users */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+/* ============================================
+   MATERIAL SYMBOLS
+   ============================================ */
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: 200;
@@ -18,8 +41,12 @@
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
     font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+    transition: color var(--transition-fast);
 }
 
+/* ============================================
+   BASE HTML & BODY
+   ============================================ */
 html {
     scroll-behavior: smooth;
 }
@@ -38,12 +65,14 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: 
-        radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.03) 0%, transparent 40%);
+    background-image: var(--gradient-hero);
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
+/* ============================================
+   LAYOUT CONTAINER
+   ============================================ */
 .container {
     width: 100%;
     max-width: var(--container-max-width);
@@ -51,13 +80,28 @@ body {
     padding: 0 var(--container-padding);
 }
 
+/* ============================================
+   LINKS
+   ============================================ */
 a {
     text-decoration: none;
     color: inherit;
     transition: color var(--transition-fast);
 }
 
-/* Typography */
+a:hover {
+    color: var(--color-primary);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--border-radius-sm);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-display);
     font-weight: var(--font-weight-medium);
@@ -89,54 +133,94 @@ p {
     font-weight: var(--font-weight-regular);
 }
 
-/* Selection */
-::selection {
-    background: var(--color-primary-subtle);
-    color: var(--color-primary-light);
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
+.text-center { 
+    text-align: center; 
 }
 
-/* Scrollbar */
+.text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+    background: var(--selection-bg);
+    color: var(--selection-color);
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-bg-secondary);
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-border);
+    background: var(--scrollbar-thumb);
     border-radius: var(--border-radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-border-light);
+    background: var(--scrollbar-thumb-hover);
 }
 
-/* Focus Styles */
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* ============================================
+   FOCUS STYLES
+   ============================================ */
 :focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
 
-/* Utility Classes */
-.text-center { text-align: center; }
-
-/* Gradient Text */
-.text-gradient {
-    background: linear-gradient(to right, #ffffff, var(--color-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* Skip to main content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2) var(--spacing-4);
+    z-index: 10000;
+    transition: top var(--transition-fast);
 }
 
-/* Glow Icon */
-.glow-icon {
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+.skip-link:focus {
+    top: 0;
 }
 
-/* Glass Card Base */
+/* ============================================
+   GLASSMORPHISM UTILITIES
+   ============================================ */
 .glass-card {
     background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
@@ -150,10 +234,118 @@ p {
     background: var(--glass-bg-hover);
 }
 
-/* Nav Blur */
-.nav-blur {
-    background: rgba(10, 10, 10, 0.7);
+.glass-nav {
+    background: var(--glass-bg);
     backdrop-filter: var(--glass-blur-strong);
     -webkit-backdrop-filter: var(--glass-blur-strong);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+}
+
+/* ============================================
+   ICON UTILITIES
+   ============================================ */
+.glow-icon {
+    filter: drop-shadow(0 0 8px var(--color-primary-glow));
+    transition: filter var(--transition-base);
+}
+
+.glow-icon:hover {
+    filter: drop-shadow(0 0 12px var(--color-primary-glow));
+}
+
+/* ============================================
+   ALTERNATE BACKGROUNDS
+   ============================================ */
+.alt-bg {
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+[data-theme="light"] .alt-bg {
+    background: var(--color-bg-secondary);
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--color-bg-tertiary) 25%,
+        var(--color-bg-card-hover) 50%,
+        var(--color-bg-tertiary) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: var(--border-radius-md);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ============================================
+   SPINNER
+   ============================================ */
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--color-primary-subtle);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .navbar,
+    .site-footer,
+    .theme-toggle,
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    
+    .glass-card,
+    .hero,
+    .cta-section {
+        background: white !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
 }

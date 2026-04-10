@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Theme initialization (must be early to prevent flash) -->
+    <script src="js/theme.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -34,6 +37,12 @@
             </div>
             
             <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode" onclick="window.Theme && window.Theme.toggle()">
+                    <span class="material-symbols-outlined icon-sun">light_mode</span>
+                    <span class="material-symbols-outlined icon-moon">dark_mode</span>
+                </button>
+                
                 <div class="auth-nav-buttons" id="auth-nav-buttons">
                     <a href="signup.html" class="btn btn-primary">Get Started</a>
                 </div>

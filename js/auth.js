@@ -1,5 +1,6 @@
 // PathGen - Authentication System
 // Handles user registration, login, logout, and session management
+// Theme management is now handled by theme.js
 
 // ============================================
 // AUTH STATE & CONFIGURATION
@@ -10,14 +11,14 @@ const AUTH_CONFIG = {
   sessionDuration: 24 * 60 * 60 * 1000, // 24 hours in milliseconds
   storageKey: 'pathgen_users',
   sessionKey: 'pathgen_session',
-  currentUserKey: 'pathgen_current_user',
-  themeKey: 'pathgen_theme'
+  currentUserKey: 'pathgen_current_user'
+  // themeKey removed - now handled by theme.js
 };
 
 // Initialize auth system
 document.addEventListener('DOMContentLoaded', () => {
   initAuth();
-  initTheme();
+  // Theme is now initialized by theme.js automatically
 });
 
 function initAuth() {
@@ -32,46 +33,51 @@ function initAuth() {
 }
 
 // ============================================
-// THEME MANAGEMENT
+// THEME MANAGEMENT (Delegated to theme.js)
 // ============================================
 
+/**
+ * Initialize theme - now handled by theme.js
+ * Kept for backward compatibility, delegates to Theme namespace
+ */
 function initTheme() {
-  const savedTheme = localStorage.getItem(AUTH_CONFIG.themeKey);
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
-  if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  } else {
-    const defaultTheme = systemPrefersDark ? 'dark' : 'dark'; // Default to dark for this app
-    document.documentElement.setAttribute('data-theme', defaultTheme);
-    localStorage.setItem(AUTH_CONFIG.themeKey, defaultTheme);
+  // Theme is automatically initialized by theme.js
+  // This function is kept for any pages that might call it directly
+  if (window.Theme && window.Theme.init) {
+    window.Theme.init();
   }
-  
-  // Initialize theme toggle buttons
-  initThemeToggles();
 }
 
-function initThemeToggles() {
-  const themeToggles = document.querySelectorAll('#theme-toggle, .theme-toggle');
-  
-  themeToggles.forEach(toggle => {
-    toggle.addEventListener('click', toggleTheme);
-  });
-}
-
+/**
+ * Toggle theme - delegates to Theme namespace
+ */
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem(AUTH_CONFIG.themeKey, newTheme);
-  
-  // Dispatch custom event for other components
-  window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: newTheme } }));
+  if (window.Theme && window.Theme.toggle) {
+    window.Theme.toggle();
+  }
 }
 
+/**
+ * Get current theme - delegates to Theme namespace
+ * @returns {string} Current theme ('dark' or 'light')
+ */
 function getCurrentTheme() {
+  if (window.Theme && window.Theme.get) {
+    return window.Theme.get();
+  }
+  // Fallback
   return document.documentElement.getAttribute('data-theme') || 'dark';
+}
+
+/**
+ * Initialize theme toggle buttons - delegates to Theme namespace
+ */
+function initThemeToggles() {
+  // Theme toggles are now initialized by theme.js automatically
+  // This function is kept for backward compatibility
+  if (window.Theme && window.Theme.init) {
+    window.Theme.init();
+  }
 }
 
 // ============================================
