@@ -1,10 +1,3 @@
-// PathGen - Authentication System
-// Handles user registration, login, logout, and session management
-// Theme management is now handled by theme.js
-
-// ============================================
-// AUTH STATE & CONFIGURATION
-// ============================================
 const AUTH_CONFIG = {
   minPasswordLength: 8,
   maxPasswordLength: 64,
