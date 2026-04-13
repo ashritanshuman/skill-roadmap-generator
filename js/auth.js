@@ -5,7 +5,6 @@ const AUTH_CONFIG = {
   storageKey: 'pathgen_users',
   sessionKey: 'pathgen_session',
   currentUserKey: 'pathgen_current_user'
-  // themeKey removed - now handled by theme.js
 };
 
 // Initialize auth system
