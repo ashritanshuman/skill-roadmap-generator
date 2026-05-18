@@ -543,21 +543,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ---
 
-## 🎓 Learning Outcomes
-
-Through this project, our team has gained:
-
-- ✅ Proficiency in HTML5, CSS3, and JavaScript
-- ✅ Understanding of DOM manipulation and event handling
-- ✅ Experience with JSON data structures
-- ✅ Knowledge of responsive web design principles
-- ✅ Practical application of UI/UX design concepts
-- ✅ Collaborative development using Git
-- ✅ Problem-solving and debugging skills
-- ✅ Project management and documentation
-
----
-
 <div align="center">
 
 ### ⭐ Star this repository if you find it helpful!
