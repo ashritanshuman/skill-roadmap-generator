@@ -23,7 +23,7 @@ Students and self-learners face significant challenges in navigating the vast la
 - **Time Management**: Inability to estimate realistic learning timelines
 - **Resource Quality**: Challenge in identifying high-quality materials
 
-### Our Solution
+### Our Solution:
 
 This web application provides:
 - 📊 **Visual Learning Paths**: Interactive timelines showing progression from Beginner → Intermediate → Advanced
@@ -34,7 +34,7 @@ This web application provides:
 
 ---
 
-## ✨ Features
+## ✨ Features:
 
 ### Core Features
 
