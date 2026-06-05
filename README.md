@@ -53,10 +53,7 @@ This web application provides:
 
 ---
 
-## 🎬 Demo
-
-
-### Live Demo
+### 🎬 Demo
 
 🔗 [View Live Demo](https://ashritanshuman.github.io/skill-roadmap-generator/)
 
